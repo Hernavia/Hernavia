@@ -20,22 +20,28 @@ header h1 {
     font-size: 2.5em;
 }
 
-/* ===== Navegación ===== */
-nav {
+/* ===== Navegación común ===== */
+.nav-comun {
     text-align: center;
     margin: 15px 0;
+    background-color: #f0f4f7;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-nav a {
+.nav-comun a {
     text-decoration: none;
     color: #006A44;
     font-weight: bold;
     margin: 0 15px;
     padding: 8px 12px;
-    border: 2px solid transparent;
     border-radius: 5px;
+    border: 2px solid transparent;
     transition: all 0.3s ease;
 }
-nav a:hover {
+.nav-comun a:hover {
     border: 2px solid #FFCC00;
     background-color: #FFFFFF;
     color: #006A44;
@@ -67,7 +73,7 @@ h3 {
     width: 300px;
     height: auto;
     margin: 15px auto;
-    border: 4px solid #006A44; /* ahora combina con el verde principal */
+    border: 4px solid #006A44;
     border-radius: 8px;
 }
 
@@ -96,7 +102,8 @@ footer {
     margin: auto;
 }
 .formulario-hernavia input,
-.formulario-hernavia textarea {
+.formulario-hernavia textarea,
+.formulario-hernavia select {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -127,6 +134,7 @@ footer {
     text-align: justify;
 }
 
+/* ===== Himno ===== */
 .himno {
     background-color: #f0f4f7;
     padding: 15px;
