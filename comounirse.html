@@ -44,14 +44,15 @@
         <h1>¿Cómo unirse a Hernavia?</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="Documentos.html">Documentos</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="preguntas.html">Preguntas</a>
-        <a href="simbolos.html">Símbolos</a>
-        <a href="comounirse.html">¿Cómo unirse?</a>
-    </nav>
+<div id="nav-placeholder"></div>
+
+<script>
+fetch('nav.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('nav-placeholder').innerHTML = data;
+});
+</script>
 
     <section class="section">
         <p>Actualmente la ciudadanía por método virtual no está habilitada, aunque si lo desea puede llenar este formulario y cuando se habilite la ciudadanía virtual se le avisará y se tendrá en cuenta.</p>
