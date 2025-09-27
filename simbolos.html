@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Símbolos - Hernavia</title>
-    <link rel="stylesheet" href="estilo.css">
+    <div id="head-placeholder"></div>
+    <script>
+        fetch('head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML += data;
+            });
+    </script>
+
     <style>
         .himno p {
             margin-bottom: 15px;
@@ -16,6 +21,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Símbolos de Hernavia</h1>
