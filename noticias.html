@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <title>Noticias - Hernavia</title>
-    <div id="head-placeholder"></div>
     <script>
         fetch('head.html')
             .then(response => response.text())
@@ -10,7 +9,6 @@
                 document.head.innerHTML += data;
             });
     </script>
-
     <style>
         .ups {
             text-align: center;
@@ -22,19 +20,18 @@
 </head>
 
 <body>
-
     <header>
         <h1>Noticias</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="Documentos.html">Documentos</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="preguntas.html">Preguntas</a>
-        <a href="simbolos.html">Símbolos</a>
-        <a href="comounirse.html">¿Cómo unirse?</a>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 
     <section>
         <div class="ups">Ups… este apartado no tiene información por ahora, espera a que se actualice.</div>
@@ -43,6 +40,6 @@
     <footer>
         &copy; 2025 Hernavia - Proyecto Cultural
     </footer>
-
 </body>
 </html>
+
