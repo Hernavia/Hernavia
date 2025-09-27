@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta Fundacional - Hernavia</title>
-    <link rel="stylesheet" href="estilo.css">
+    <div id="head-placeholder"></div>
+    <script>
+        fetch('head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML += data;
+            });
+    </script>
+
     <style>
-        /* Solo ajuste mínimo: texto justificado y legible */
+        /* Solo ajuste mínimo para esta página */
         section.carta {
             line-height: 1.6;
             text-align: justify;
@@ -15,6 +20,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Carta Fundacional de Hernavia</h1>
