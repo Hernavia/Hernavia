@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugerencias - Hernavia</title>
+    <title>¿Cómo unirse? - Hernavia</title>
     <link rel="stylesheet" href="estilo.css">
     <style>
         form {
@@ -13,7 +13,7 @@
             flex-direction: column;
             gap: 15px;
         }
-        form input, form textarea {
+        form input, form textarea, form select {
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
@@ -32,12 +32,16 @@
         form button:hover {
             background-color: #004a2d;
         }
+        .botones {
+            text-align: center;
+            margin-top: 20px;
+        }
         label { font-weight: bold; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Envíanos tus sugerencias</h1>
+        <h1>¿Cómo unirse a Hernavia?</h1>
     </header>
 
     <nav>
@@ -50,22 +54,33 @@
     </nav>
 
     <section class="section">
-        <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia, por favor envíanos un mensaje:</p>
+        <p>Actualmente la ciudadanía por método virtual no está habilitada, aunque si lo desea puede llenar este formulario y cuando se habilite la ciudadanía virtual se le avisará y se tendrá en cuenta.</p>
 
         <form action="https://formspree.io/f/xldpgjop" method="POST">
-            <label for="nombre">Nombre (opcional):</label>
-            <input type="text" id="nombre" name="nombre">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Correo (opcional):</label>
-            <input type="email" id="correo" name="correo">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
 
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <label for="ciudad">País / Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
 
-            <button type="submit">Enviar sugerencia</button>
+            <label for="ocupacion">Ocupación / Intereses (opcional):</label>
+            <input type="text" id="ocupacion" name="ocupacion">
+
+            <label for="comentario">Motivación para unirse:</label>
+            <textarea id="comentario" name="comentario" rows="5" required></textarea>
+
+            <label>
+                <input type="checkbox" name="terminos" required>
+                Acepto los términos y condiciones de Hernavia.
+            </label>
+
+            <button type="submit">Enviar solicitud</button>
         </form>
     </section>
 
@@ -74,3 +89,4 @@
     </footer>
 </body>
 </html>
+
