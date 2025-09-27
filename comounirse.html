@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Cómo unirse? - Hernavia</title>
+    <title>Sugerencias - Hernavia</title>
     <link rel="stylesheet" href="estilo.css">
     <style>
         form {
@@ -32,11 +32,12 @@
         form button:hover {
             background-color: #004a2d;
         }
+        label { font-weight: bold; }
     </style>
 </head>
 <body>
     <header>
-        <h1>¿Cómo unirse a Hernavia?</h1>
+        <h1>Envíanos tus sugerencias</h1>
     </header>
 
     <nav>
@@ -45,23 +46,26 @@
         <a href="noticias.html">Noticias</a>
         <a href="preguntas.html">Preguntas</a>
         <a href="simbolos.html">Símbolos</a>
-        <a href="comounirse.html">¿Cómo unirme?</a>
+        <a href="comounirse.html">¿Cómo unirse?</a>
     </nav>
 
-    <section id="comounirse">
-        <p>Actualmente la ciudadanía por método virtual no está habilitada, aunque si lo desea puede llenar este formulario y cuando se habilite la ciudadanía virtual se le avisará y se tendrá en cuenta.</p>
+    <section class="section">
+        <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia, por favor envíanos un mensaje:</p>
 
         <form action="https://formspree.io/f/xldpgjop" method="POST">
-            <label for="nombre">Nombre completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-            
-            <label for="comentario">Motivación para unirse:</label>
-            <textarea id="comentario" name="comentario" rows="5" required></textarea>
-            
-            <button type="submit">Enviar solicitud</button>
+            <label for="nombre">Nombre (opcional):</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="correo">Correo (opcional):</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar sugerencia</button>
         </form>
     </section>
 
