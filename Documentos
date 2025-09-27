@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos - Nación Hernaviana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Documentos</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="documentos.html">Documentos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="simbolos.html">Símbolos</a>
+        <a href="comoentrar.html">¿Cómo entrar?</a>
+    </nav>
+
+    <section>
+        <h2>Archivos oficiales</h2>
+        <p>Aquí podrás consultar los documentos de Hernavia.</p>
+        <ul>
+<p> Carta Fundacional de Hernavia
+Preámbulo
+Nosotros, el pueblo hernaviano, nacidos de un sueño y luchando por cumplirlo, declaramos nuestra unión en una sola comunidad, guiados por los principios de respeto, justicia, innovación, progreso y fraternidad.
+
+Artículo 1 – Liderazgo Provisional
+El Arconte, cargo ejercido inicialmente por el fundador, será la máxima autoridad de Hernavia. Tendrá poder total para tomar decisiones administrativas, políticas y sociales mientras la nación consolida sus instituciones.
+El Arconte estará sujeto a esta Carta y deberá velar por la unión y el bienestar del pueblo hernaviano.
+Artículo 2 – Principios Fundamentales
+Todo hernaviano deberá guiar su vida y conducta bajo los siguientes principios:
+1.	Respeto y dignidad hacia los demás ciudadanos.
+2.	Respeto y cuidado de la naturaleza y los recursos comunes.
+3.	Participación activa en votaciones, asambleas o eventos convocados por la nación
+4.	Solidaridad con los demás hernavianos en momentos de necesidad.
+5.	Búsqueda constante del conocimiento, la innovación y el progreso comunitario.
+6.	Fraternidad con otras naciones y culturas, manteniendo la identidad Hernaviana.
+
+Artículo 3 – Obligaciones de los Ciudadanos
+Cada ciudadano hernaviano tendrá como deberes concretos:
+1.	Aportar a la comunidad mediante trabajo, servicio, recursos o conocimiento útil.
+2.	Cumplir y respetar las decisiones del Arconte, como máxima autoridad provisional.
+3.	Defender la paz y rechazar la violencia injustificada.
+4.	Contribuir al desarrollo económico y social de la nación mediante la productividad y el esfuerzo propio.
+5.	Respetar los símbolos de Hernavia como expresión de identidad común.
+6.	Proteger y apoyar a su comunidad en situaciones de crisis o emergencia.
+
+Artículo 4 – Identidad y Objetivos Iniciales
+“La bandera y demás símbolos serán definidos por el Arconte y reconocidos provisionalmente como representación de la identidad hernaviana. Con su lema Paz, naturaleza, innovación y su frase nacidos de un sueño, luchando por cumplirlo.
+Los objetivos iniciales de la Nación Hernaviana serán:
+1.	Fortalecer la unión y crecimiento de la comunidad hernaviana.
+2.	Desarrollar una base económica autosuficiente, iniciando con la producción de alimentos y recursos propios.
+3.	Establecer mecanismos de organización interna simples pero efectivos bajo la guía del Arconte.
+4.	Promover la educación cívica, la innovación y el respeto a la naturaleza.
+
+Artículo 5 – Carácter Transitorio
+Esta Carta es un documento provisional. Podrá ser modificada en el futuro a medida que Hernavia crezca y se fortalezca, por decisión del Arconte o mediante una futura Constitución establecida con la participación del pueblo.
+Toda acción deberá respetar esta Carta, las leyes de Hernavia que se promulguen posteriormente, y las leyes del país donde se encuentre el ciudadano.
+
+Articulo 6 – Símbolos
+Bandera
+
+ <img src="https://i.postimg.cc/vmP589KJ/Flag-Creator-4.png" alt="Bandera Hernavia" class="bandera">
+            
+La bandera simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.                                     Arcontes
+                                                                                                                      Hernán Coronado
+</p>
+
+
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 Hernavia - Proyecto Cultural
+    </footer>
+
+</body>
+</html>
