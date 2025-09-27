@@ -144,3 +144,36 @@ footer {
 .himno p {
     margin-bottom: 15px;
 }
+
+/* ===== Ajustes para pantallas pequeñas (móviles) ===== */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* reduce tamaño general del texto */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* título más pequeño */
+    }
+
+    nav a {
+        display: block;       /* cada enlace ocupa toda la fila */
+        margin: 8px 0;        /* espacio entre enlaces */
+        padding: 10px;        /* más fácil de pulsar con el dedo */
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+        font-size: 0.95em;    /* contenido un poco más compacto */
+    }
+
+    .bandera {
+        width: 90%; /* la bandera ocupa casi todo el ancho en móvil */
+        max-width: 250px;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
