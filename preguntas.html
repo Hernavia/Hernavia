@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas - Hernavia</title>
-    <link rel="stylesheet" href="estilo.css">
+    <div id="head-placeholder"></div>
+    <script>
+        fetch('head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML += data;
+            });
+    </script>
+
     <style>
         .ups {
             text-align: center;
@@ -14,6 +20,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
