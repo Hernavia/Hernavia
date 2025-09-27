@@ -2,3 +2,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicono.png">
 <link rel="stylesheet" href="estilo.css">
+
+<style>
+/* Transición suave entre páginas */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+body.loaded {
+    opacity: 1;
+}
+</style>
+
+<script>
+    // Fade-in al cargar
+    window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("loaded");
+    });
+
+    // Fade-out al cambiar de página
+    document.addEventListener("click", function(e) {
+        if (e.target.tagName === "A" && e.target.href) {
+            e.preventDefault();
+            document.body.classList.remove("loaded");
+            setTimeout(() => {
+                window.location.href = e.target.href;
+            }, 300); 
+        }
+    });
+</script>
