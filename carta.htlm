@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Fundacional - Hernavia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .carta {
+            line-height: 1.6;
+            text-align: justify;
+            font-size: 1.05em;
+            padding: 20px;
+        }
+        .carta h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .carta h3 {
+            color: #006A44;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Carta Fundacional de Hernavia</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="documentos.html">Documentos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="simbolos.html">Símbolos</a>
+        <a href="unirme.html">¿Cómo unirme?</a>
+    </nav>
+
+    <section class="carta">
+        <h2>Preámbulo</h2>
+        <p>
+            Nosotros, el pueblo hernaviano, nacidos de un sueño y luchando por cumplirlo,
+            declaramos nuestra unión en una sola comunidad, guiados por los principios
+            de respeto, justicia, innovación, progreso y fraternidad.
+        </p>
+
+        <h3>Artículo 1 – Liderazgo Provisional</h3>
+        <p>
+            El Arconte, cargo ejercido inicialmente por el fundador, será la máxima autoridad de Hernavia.
+            Tendrá poder total para tomar decisiones administrativas, políticas y sociales
+            mientras Hernavia consolida sus instituciones.
+            El Arconte estará sujeto a esta Carta y deberá velar por la unión y el bienestar del pueblo hernaviano.
+        </p>
+
+        <h3>Artículo 2 – Principios Fundamentales</h3>
+        <ol>
+            <li>Respeto y dignidad hacia los demás ciudadanos.</li>
+            <li>Respeto y cuidado de la naturaleza y los recursos comunes.</li>
+            <li>Participación activa en votaciones, asambleas o eventos convocados por Hernavia.</li>
+            <li>Solidaridad con los demás hernavianos en momentos de necesidad.</li>
+            <li>Búsqueda constante del conocimiento, la innovación y el progreso comunitario.</li>
+            <li>Fraternidad con otras naciones y culturas, manteniendo la identidad hernaviana.</li>
+        </ol>
+
+        <h3>Artículo 3 – Obligaciones de los Ciudadanos</h3>
+        <ol>
+            <li>Aportar a la comunidad mediante trabajo, servicio, recursos o conocimiento útil.</li>
+            <li>Cumplir y respetar las decisiones del Arconte, como máxima autoridad provisional.</li>
+            <li>Defender la paz y rechazar la violencia injustificada.</li>
+            <li>Contribuir al desarrollo económico y social de Hernavia mediante la productividad y el esfuerzo propio.</li>
+            <li>Respetar los símbolos de Hernavia como expresión de identidad común.</li>
+            <li>Proteger y apoyar a su comunidad en situaciones de crisis o emergencia.</li>
+        </ol>
+
+        <h3>Artículo 4 – Identidad y Objetivos Iniciales</h3>
+        <p>
+            La bandera y demás símbolos serán definidos por el Arconte y reconocidos provisionalmente
+            como representación de la identidad hernaviana, con su lema “Paz, naturaleza, innovación”
+            y la frase “Nacidos de un sueño, luchando por cumplirlo”.
+        </p>
+        <p>Los objetivos iniciales de Hernavia serán:</p>
+        <ol>
+            <li>Fortalecer la unión y crecimiento de la comunidad hernaviana.</li>
+            <li>Desarrollar una base económica autosuficiente, iniciando con la producción de alimentos y recursos propios.</li>
+            <li>Establecer mecanismos de organización interna simples pero efectivos bajo la guía del Arconte.</li>
+            <li>Promover la educación cívica, la innovación y el respeto a la naturaleza.</li>
+        </ol>
+
+        <h3>Artículo 5 – Carácter Transitorio</h3>
+        <p>
+            Esta Carta es un documento provisional. Podrá ser modificada en el futuro a medida que Hernavia
+            crezca y se fortalezca, por decisión del Arconte o mediante una futura Constitución establecida
+            con la participación del pueblo.
+            Toda acción deberá respetar esta Carta, las leyes de Hernavia que se promulguen posteriormente,
+            y las leyes del país donde se encuentre el ciudadano.
+        </p>
+
+        <h3>Artículo 6 – Símbolos</h3>
+        <p>
+            La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.
+        </p>
+        <p>
+            Arconte fundador: Hernán Coronado.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2025 Hernavia - Proyecto Cultural
+    </footer>
+</body>
+</html>
