@@ -34,6 +34,17 @@
         h2 {
             color: #006A44;
             margin-top: 0;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #FFD700; /* Amarillo */
+            margin-top: 6px;
+            border-radius: 2px;
         }
         footer {
             text-align: center;
@@ -64,6 +75,16 @@
     <h1>La Identidad Hernaviana</h1>
 </header>
 
+<!-- Barra de navegación cargada dinámicamente -->
+<div id="nav-placeholder"></div>
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+
 <section class="section">
     <h2>¿Qué significa unirse?</h2>
     <p>Unirse a Hernavia no es solo llenar un formulario o recibir un número simbólico.  
@@ -88,6 +109,7 @@
 </section>
 
 <section class="section">
+    <h2>La esencia hernaviana</h2>
     <p>La identidad hernaviana representa los valores que hoy en día parecen olvidados:  
        el respeto al medio ambiente, la protección de la fauna y la flora, la paz, la unión de la comunidad,  
        la verdad, el respeto mutuo y la seguridad de salir a la calle sin miedo.  
@@ -97,7 +119,11 @@
 <!-- Imagen con alt oculto para SEO -->
 <img src="https://i.postimg.cc/vmP589KJ/Flag-Creator-4.png" alt="Identidad cultural relacionada con afrocolombianidad hernaviana" style="display:none;">
 
-  si quieres ver un poco mas de nuestros simbolos puedes ir a simbolos valga la redundancia o a documentos y saber un poco mas sobre lo que tienes que seguir gracias :)
+<section class="section">
+    <p>Si quieres ver más de nuestros símbolos puedes visitar la sección <a href="simbolos.html">Símbolos</a>,  
+       o revisar <a href="documentos.html">Documentos</a> para conocer mejor lo que significa ser hernaviano. ¡Gracias por unirte a esta visión!</p>
+</section>
+
 <footer>
     &copy; 2025 Hernavia - Proyecto Cultural
 </footer>
