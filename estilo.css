@@ -177,3 +177,8 @@ footer {
         padding: 10px;
     }
 }
+
+/* ===== Corrección de espaciado ===== */
+body, h1, h2, h3, p, a {
+    letter-spacing: normal; /* 🔹 Igual que en documentos */
+}
