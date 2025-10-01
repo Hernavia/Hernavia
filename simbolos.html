@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Símbolos - Hernavia</title>
-    <div id="head-placeholder"></div>
     <script>
         fetch('head.html')
             .then(response => response.text())
@@ -10,14 +10,19 @@
                 document.head.innerHTML += data;
             });
     </script>
-
     <style>
         .himno p {
             margin-bottom: 15px;
+            line-height: 1.6;
+            text-align: justify;
         }
-        .botones {
-            text-align: center;
-            margin-top: 20px;
+        .bandera {
+            max-width: 300px;
+            display: block;
+            margin: 15px auto;
+        }
+        .simbolos-section {
+            padding: 20px;
         }
     </style>
 </head>
@@ -27,64 +32,66 @@
         <h1>Símbolos de Hernavia</h1>
     </header>
     
-<div id="nav-placeholder"></div>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 
-<script>
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('nav-placeholder').innerHTML = data;
-});
-</script>
+    <main class="simbolos-section">
+        <section>
+            <h2>Bandera</h2>
+            <img src="https://i.postimg.cc/vmP589KJ/Flag-Creator-4.png" alt="Bandera de Hernavia" class="bandera">
+            <p>La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
+        </section>
 
-    <section id="simbolos">
-        <h2>Bandera</h2>
-        <img src="https://i.postimg.cc/vmP589KJ/Flag-Creator-4.png" alt="Bandera Hernavia" class="bandera">
-        <p>La bandera simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
+        <section>
+            <h2>Lema y Frase</h2>
+            <p><strong>Lema:</strong> Paz, Naturaleza, Innovación</p>
+            <p><strong>Frase:</strong> Nacidos de un sueño, luchando por cumplirlo.</p>
+        </section>
 
-        <h2>Lema y Frase</h2>
-        <p><strong>Lema:</strong> Paz, Naturaleza, Innovación</p>
-        <p><strong>Frase:</strong> Nacidos de un sueño, luchando por cumplirlo.</p>
+        <section>
+            <h2>Himno de Hernavia</h2>
+            <div class="himno">
+                <p><strong>Coro:</strong><br>
+                Un sueño de Hernavia unida,<br>
+                buscando la paz e innovación.<br>
+                Hermandad amarilla, un sueño por cumplir,<br>
+                ¡historia hay que hacer ya!</p>
 
-        <h2>Himno</h2>
-        <div class="himno">
-            <p><strong>Coro:</strong><br>
-            Un sueño de Hernavia unida,<br>
-            buscando la paz e innovación.<br>
-            Hermandad amarilla, un sueño por cumplir,<br>
-            ¡historia hay que hacer ya!</p>
+                <p><strong>Estrofa 1:</strong><br>
+                Verde natural, naturaleza que cuidar,<br>
+                tono singular, innovación al avanzar.<br>
+                Blanco para paz, dice mucho más unión y fraternidad,<br>
+                cohesión, verdad y solidaridad.<br>
+                Amarillo radiante, camino y hermandad,<br>
+                ¡la fuerza del pueblo nos hará avanzar!</p>
 
-            <p><strong>Estrofa 1:</strong><br>
-            Verde natural, naturaleza que cuidar,<br>
-            tono singular, innovación al avanzar.<br>
-            Blanco para paz, dice mucho más unión y fraternidad,<br>
-            cohesión, verdad y solidaridad.<br>
-            Amarillo radiante, camino y hermandad,<br>
-            ¡la fuerza del pueblo nos hará avanzar!</p>
+                <p><strong>Estrofa 2:</strong><br>
+                Pueblo que avanza con paso constante,<br>
+                honor en la voz y mirada brillante.<br>
+                Astucia y coraje en cada labor,<br>
+                Hernavia florece con fuerza y valor.<br>
+                Con manos sinceras forjamos verdad,<br>
+                soñando el futuro que hoy germinará.</p>
 
-            <p><strong>Estrofa 2:</strong><br>
-            Pueblo que avanza con paso constante,<br>
-            honor en la voz y mirada brillante.<br>
-            Astucia y coraje en cada labor,<br>
-            Hernavia florece con fuerza y valor.<br>
-            Con manos sinceras forjamos verdad,<br>
-            soñando el futuro que hoy germinará.</p>
-
-            <p><strong>Estrofa 3:</strong><br>
-            Con paso sereno forjamos nuestro andar,<br>
-            como un pueblo fuerte, juntos sin parar.<br>
-            Nuestro sueño crece y no se detendrá,<br>
-            hacia el mañana juntos vamos a marchar.<br>
-            Con lucha y respeto vivir en verdad,<br>
-            ¡la voz hernaviana jamás callará!</p>
-        </div>
-    </section>
+                <p><strong>Estrofa 3:</strong><br>
+                Con paso sereno forjamos nuestro andar,<br>
+                como un pueblo fuerte, juntos sin parar.<br>
+                Nuestro sueño crece y no se detendrá,<br>
+                hacia el mañana juntos vamos a marchar.<br>
+                Con lucha y respeto vivir en verdad,<br>
+                ¡la voz hernaviana jamás callará!</p>
+            </div>
+        </section>
+    </main>
     
-     <footer>
+    <footer>
         &copy; 2025 Hernavia - Proyecto Cultural
     </footer>
-
-
 </body>
 </html>
-
