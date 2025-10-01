@@ -10,13 +10,21 @@
                 document.head.innerHTML += data;
             });
     </script>
-
     <style>
-        /* Solo ajuste mínimo para esta página */
+        /* Ajuste mínimo para esta página */
         section.carta {
             line-height: 1.6;
             text-align: justify;
             padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-left: 8px solid #006A44;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section.carta h2, section.carta h3, section.carta h4 {
+            color: #006A44;
         }
     </style>
 </head>
@@ -26,15 +34,14 @@
         <h1>Carta Fundacional de Hernavia</h1>
     </header>
 
-<div id="nav-placeholder"></div>
-
-<script>
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('nav-placeholder').innerHTML = data;
-});
-</script>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+    </script>
 
     <section class="carta">
         <h2>Preámbulo</h2>
@@ -99,7 +106,7 @@ fetch('nav.html')
         <img src="https://i.postimg.cc/vmP589KJ/Flag-Creator-4.png" alt="Bandera Hernavia" class="bandera">
         <p>La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
 
-        <p>Arconte fundador: Hernán Coronado.</p>
+        <p><strong>Arconte fundador:</strong> Hernán Coronado.</p>
     </section>
 
     <footer>
