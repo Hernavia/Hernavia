@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Noticias Random</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Random - Hernavia</title>
+    <meta name="description" content="Noticias aleatorias y curiosas de Hernavia y del mundo. Aquí encontrarás novedades y datos curiosos que no entran en otras categorías.">
 
     <div id="head-placeholder"></div>
     <script>
@@ -16,7 +17,6 @@
 </head>
 
 <body>
-
 <header>
     <h1>Noticias Random</h1>  
 </header>
@@ -24,23 +24,31 @@
 <div id="nav-placeholder"></div>
 <script>
     fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
-    });
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
 </script>
 
-<section id="noticias-dia">
-    <h2>Noticias del día</h2>
-    <p>Hoy 30 de septiembre de 2025 no hay noticias que resaltar.</p>
-</section>
+<main>
+    <section id="noticias-dia">
+        <h2>Noticias del día</h2>
+        <p>Hoy <strong>1 de octubre de 2025</strong> Feliz nuevo mes.</p>
+    </section>
 
-<section id="noticias-mundo">
-    <h2>Noticias del mundo</h2>
-    <p>Hoy no hay nada interesante.</p>
-</section>
+    <section id="noticias-mundo">
+        <h2>Noticias del mundo</h2>
+        <p>Hoy no hay nada interesante.</p>
+    </section>
 
+    <section id="curiosidades">
+        <h2>Curiosidades Random</h2>
+        <p>Aquí se mostrarán curiosidades, datos curiosos o cualquier noticia fuera de lo común.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Hernavia - Proyecto Cultural</p>
+</footer>
 </body>
 </html>
-
-
