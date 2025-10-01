@@ -2,7 +2,12 @@
 <html lang="es">
 <head>
     <title>Sugerencias - Hernavia</title>
-    <div id="head-placeholder"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
+    <link rel="icon" type="image/png" href="favicono.png">
+    <link rel="stylesheet" href="estilo.css">
+
     <script>
         fetch('head.html')
             .then(response => response.text())
@@ -39,6 +44,36 @@
             background-color: #004a2d;
         }
         label { font-weight: bold; }
+
+        /* Estilos del mini-ícono + texto */
+        .frase-futuro {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .frase-futuro img {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Botón de audio */
+        .audio-boton {
+            background-color: #006A44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .audio-boton:hover {
+            background-color: #004a2d;
+        }
     </style>
 </head>
 
@@ -47,19 +82,29 @@
         <h1>Envíanos tus sugerencias</h1>
     </header>
 
- <div id="nav-placeholder"></div>
-
-<script>
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('nav-placeholder').innerHTML = data;
-});
-</script>
+    <!-- Barra de navegación -->
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+    </script>
 
     <section class="section">
-        <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia, por favor no dudes en envíarnos un mensaje, ¿puedes cambiar el futuro:?</p>
+        <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia, por favor no dudes en enviarnos un mensaje:</p>
 
+        <!-- Frase con icono -->
+        <div class="frase-futuro">
+            <img src="puedenideas.png" alt="Icono ideas">
+            <span>¿Puedes cambiar el futuro?</span>
+        </div>
+
+        <button class="audio-boton" onclick="document.getElementById('audio-futuro').play()">▶ Escuchar</button>
+        <audio id="audio-futuro" src="futuro.mp3"></audio>
+
+        <!-- Formulario -->
         <form action="https://formspree.io/f/xldpgjop" method="POST">
             <label for="nombre">Nombre (opcional):</label>
             <input type="text" id="nombre" name="nombre">
@@ -76,12 +121,9 @@ fetch('nav.html')
             <button type="submit">Enviar sugerencia</button>
         </form>
         
-       <p>O también puedes visitar nuestras redes sociales y hacernos las preguntas ahí o simplemente echarle un vistazo:</p>
-
-<p>Nuestro Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
-
-<p>Nuestro YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
-
+        <p>O también puedes visitar nuestras redes sociales:</p>
+        <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
+        <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
     </section>
 
     <footer>
