@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Cómo unirse? - Hernavia</title>
-    <!-- Carga head.html (favicon, meta, estilos) -->
-    <div id="head-placeholder"></div>
     <script>
+        // Cargar head.html en el <head>
         fetch('head.html')
             .then(response => response.text())
             .then(data => {
@@ -76,6 +77,21 @@
         .cta a:hover {
             background-color: #004a2d;
         }
+        /* Estilo para enlace tipo botón */
+        .btn-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #006A44;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn-link:hover {
+            background-color: #004a2d;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +100,7 @@
     <h1>¿Cómo unirse a Hernavia?</h1>
 </header>
 
-<!-- Barra de navegación cargada dinámicamente -->
+<!-- Barra de navegación -->
 <div id="nav-placeholder"></div>
 <script>
     fetch('nav.html')
@@ -117,7 +133,7 @@
         <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe aquí tu motivación..."></textarea>
 
         <label>
-            <input type="checkbox" name="terminos" required>
+            <input type="checkbox" name="terminos" aria-label="Aceptar términos y condiciones" required>
             Acepto los términos y condiciones de Hernavia.
         </label>
 
@@ -125,7 +141,6 @@
     </form>
 </section>
 
-<!-- Nueva sección final -->
 <section class="section">
     <h2>¿Qué significa realmente unirse a Hernavia?</h2>
     <p>Más allá de un formulario, unirse es compartir una identidad y una visión de comunidad.  
@@ -133,31 +148,9 @@
     <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
 </section>
 
-<style>
-/* Estilo para el enlace con aspecto de botón */
-.btn-link {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 20px;
-    background-color: #006A44;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-.btn-link:hover {
-    background-color: #004a2d;
-}
-</style>
-
-
 <footer>
     &copy; 2025 Hernavia - Proyecto Cultural
 </footer>
 
 </body>
 </html>
-
-
-
