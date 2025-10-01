@@ -110,6 +110,13 @@ footer {
     font-family: inherit;
 }
 
+/* Mejora accesibilidad: focus visible */
+.formulario-hernavia input:focus, 
+.formulario-hernavia textarea:focus, 
+.formulario-hernavia select:focus {
+    outline: 2px solid #FFCC00;
+}
+
 /* ===== Botones ===== */
 .boton-hernavia, .boton {
     display: inline-block;
@@ -177,4 +184,3 @@ footer {
         padding: 10px;
     }
 }
-
