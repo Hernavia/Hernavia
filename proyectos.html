@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Proyectos - Hernavia</title>
-    <div id="head-placeholder"></div>
     <script>
         fetch('head.html')
             .then(response => response.text())
@@ -10,7 +10,6 @@
                 document.head.innerHTML += data;
             });
     </script>
-
     <style>
         .ups {
             text-align: center;
@@ -22,30 +21,27 @@
 </head>
 
 <body>
-
     <header>
-        <h1>Proyectos</h1>
+        <h1>Proyectos de Hernavia</h1>
     </header>
 
-   <div id="nav-placeholder"></div>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 
-<script>
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('nav-placeholder').innerHTML = data;
-});
-</script>
-
-    <section>
-        <div class="ups">Ups… este apartado no tiene información por ahora, espera a que se actualice.</div>
-    </section>
+    <main>
+        <section>
+            <div class="ups">Ups… este apartado no tiene información por ahora, espera a que se actualice.</div>
+        </section>
+    </main>
 
     <footer>
         &copy; 2025 Hernavia - Proyecto Cultural
     </footer>
-
 </body>
 </html>
-
-
