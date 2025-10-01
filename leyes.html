@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Leyes Transitorias de Hernavia</title>
     <script>
         fetch('head.html')
@@ -10,61 +11,79 @@
             });
     </script>
 </head>
-
 <body>
     <header>
         <h1>Leyes Transitorias de Hernavia</h1>
     </header>
 
     <div id="nav-placeholder"></div>
+
     <script>
-        fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        });
+    fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
     </script>
 
     <section class="section">
         <h2>Ley 1 – Revocación de Ciudadanía Hernaviana</h2>
         <p>Un ciudadano podrá perder su ciudadanía de forma temporal o definitiva si incurre en alguno de los siguientes casos:</p>
         <ul>
-            <li>Traición a Hernavia...</li>
-            <li>Violencia grave contra otros hernavianos...</li>
-            <li>Incumplimiento reiterado de deberes...</li>
-            <li>Engaño en el registro...</li>
-            <li>Actos ilegales...</li>
-            <li>Daño a la comunidad...</li>
-            <li>Decisión voluntaria...</li>
+            <li>Traición a Hernavia: colaborar con intereses que busquen dañar a Hernavia o destruir sus principios.</li>
+            <li>Violencia grave contra otros hernavianos: actos de agresión física, amenazas o acciones que atenten contra la seguridad de la comunidad.</li>
+            <li>Incumplimiento reiterado de deberes: negarse de manera continua e injustificada a aportar o participar en decisiones colectivas.</li>
+            <li>Engaño en el registro: falsificación de identidad o manipulación de documentos de ciudadanía.</li>
+            <li>Actos ilegales: cualquier conducta sancionable conforme a la ley.</li>
+            <li>Daño a la comunidad: acciones que generen perjuicio directo a la colectividad o a sus bienes comunes.</li>
+            <li>Decisión voluntaria: si un ciudadano solicita abandonar su ciudadanía.</li>
         </ul>
-        <p><em>Nota:</em> En casos especiales...</p>
+        <p>Nota: En casos especiales, algunas de estas razones podrán ser consideradas para penalización distinta según lo dictamine el Arconte, sin implicar revocación directa.</p>
 
         <h2>Ley 2 – Aporte Obligatorio</h2>
-        <p>Todo ciudadano deberá aportar...</p>
+        <p>Todo ciudadano deberá aportar a la comunidad mediante al menos una de las siguientes formas:</p>
+        <ul>
+            <li>Trabajo comunitario: construcción, mantenimiento, apoyo agrícola, etc.</li>
+            <li>Aporte de conocimientos: enseñanza, innovación, asesoría técnica, etc.</li>
+            <li>Aporte de recursos: dinero, materiales, herramientas, etc.</li>
+            <li>Servicio comunitario: cuidado, seguridad, cultura, justicia, etc.</li>
+        </ul>
+        <p>La frecuencia y el nivel mínimo de aportes será definido provisionalmente por el Arconte hasta que se cree un sistema más estable.</p>
 
         <h2>Ley 3 – Penalizaciones</h2>
-        <p>El incumplimiento de las leyes anteriores podrá acarrear...</p>
+        <p>El incumplimiento de las leyes anteriores podrá acarrear las siguientes sanciones:</p>
+        <ul>
+            <li>Aumento de lo mínimo obligatorio del aporte.</li>
+            <li>Multa económica o equivalente en recursos.</li>
+            <li>Tareas obligatorias adicionales.</li>
+            <li>Suspensión temporal de participación en actividades.</li>
+            <li>Exclusión de servicios comunitarios.</li>
+            <li>Revocación temporal o definitiva de la ciudadanía.</li>
+            <li>Penalización especial por daños a los símbolos de Hernavia.</li>
+        </ul>
+        <p>Todas las penalizaciones se aplicarán considerando la gravedad del incumplimiento y siguiendo los principios de la Carta Fundacional.</p>
 
         <h2>Ley 4 – Participación Ciudadana</h2>
         <ul>
-            <li>Votaciones comunitarias...</li>
-            <li>Iniciativas ciudadanas...</li>
-            <li>Asambleas representativas...</li>
+            <li>Votaciones comunitarias: convocadas por el Arconte para asuntos de importancia general; cada ciudadano tendrá un voto igualitario.</li>
+            <li>Iniciativas ciudadanas: grupos de al menos tres ciudadanos pueden presentar propuestas; con el voto físico de al menos el 10% de los ciudadanos deberá ser revisada.</li>
+            <li>Asambleas representativas: la comunidad, a través de algunos representantes por vereda, podrá realizar una asamblea junto al Arconte con un 10% de votos ciudadanos físicos para discutir temas de interés general.</li>
         </ul>
+        <p>Nota: Los menores tendrán voto, pero este contará como medio voto.</p>
 
         <h2>Ley 5 – Regulación de Fondos y Recursos</h2>
         <ul>
-            <li>Los aportes económicos...</li>
-            <li>El Arconte debe rendir cuentas...</li>
+            <li>Los aportes económicos o materiales serán administrados por el Arconte.</li>
+            <li>El Arconte debe rendir cuentas al menos una vez al año o cuando lo solicite la comunidad mediante votación.</li>
         </ul>
 
-        <h2>Ley 6 – Inactividad de Ciudadanos</h2>
-        <p>Todo ciudadano que permanezca inactivo...</p>
+        <h2>Ley 6 – Inactividad de Ciudadanos Hernavianos</h2>
+        <p>Todo ciudadano que permanezca inactivo durante dos meses sin participar en actividades, votaciones o aportar a Hernavia recibirá un aviso de su estatus. Si la inactividad continúa al tercer mes, su ciudadanía será suspendida temporalmente, pudiendo recuperarla al participar en cualquier actividad oficial durante el mes siguiente. La reincidencia será vigilada, y a la tercera suspensión injustificada, el ciudadano perderá su ciudadanía por un periodo de 6 meses. Se podrá justificar la inactividad con motivo válido.</p>
 
         <h2>Ley 7 – Eliminación de Datos</h2>
-        <p>Tras la revocación o renuncia...</p>
+        <p>Tras la revocación o renuncia de la ciudadanía, los datos personales del ciudadano deberán ser eliminados y su número de identificación expropiado en un plazo máximo de 30 días.</p>
 
-        <p><strong>Nota final:</strong> El Arconte podrá interpretar...</p>
+        <p><strong>Nota final:</strong> El Arconte podrá interpretar o modificar cualquier disposición de estas Leyes Transitorias y demás documentos de Hernavia, siempre respetando los principios de respeto, paz, innovación y unión, con el propósito de garantizar la seguridad y estabilidad de Hernavia.</p>
     </section>
 
     <footer>
