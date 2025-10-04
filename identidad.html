@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Identidad Hernaviana</title>
     <meta charset="UTF-8">
+    <title>Identidad Hernaviana</title>
     <link rel="icon" type="image/png" href="favicono.png">
-    <meta name="description" content="Explora la Identidad Hernaviana, sus valores, símbolos y principios culturales. Relacionado con la afrocolombianidad hernaviana como concepto cultural.">
+    <meta name="description" content="Mira que es lo que significa ser parte de Hernavia el significado de nuestra identidad.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet" href="estilo.css"> 
+    <link rel="stylesheet" href="estilo.css">
 
     <style>
         .texto-largo, section p, section li {
@@ -18,8 +16,16 @@
         .bandera {
             display: block;
             margin: 20px auto;
-            max-width: 250px;
+            max-width: 283px; 
             height: auto;
+        }
+        main section {
+            min-height: 150px; 
+        }
+        nav.nav-comun a {
+            text-decoration: none;
+            color: #006A44;
+            margin-right: 15px;
         }
     </style>
 </head>
@@ -28,22 +34,25 @@
 <header role="banner">
     <h1>La Identidad Hernaviana</h1>
 </header>
-
-<!-- Barra de navegación cargada dinámicamente -->
-<div id="nav-placeholder"></div>
-<script>
-    fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        });
-</script>
+    
+<nav class="nav-comun">
+    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html">Sugerencias</a>
+    <a href="noticias-random.html">Noticias Random</a>
+</nav>
 
 <main role="main">
     <section>
         <h2>¿Qué significa unirse?</h2>
-        <p class="texto-largo">Unirse a Hernavia no es solo llenar un formulario o recibir un número simbólico.  
-           Es compartir una visión, una forma de entender la comunidad y asumir la identidad hernaviana como una manera de vivir con orgullo, unión y compromiso.</p>
+        <p class="texto-largo">
+            Unirse a Hernavia no es solo llenar un formulario o recibir un número simbólico.  
+            Es compartir una visión, una forma de entender la comunidad y asumir la identidad hernaviana como una manera de vivir con orgullo, unión y compromiso.
+        </p>
     </section>
 
     <section>
@@ -57,26 +66,35 @@
 
     <section>
         <h2>Más que un símbolo</h2>
-        <p class="texto-largo">La bandera hernaviana y un futuro símbolo sorpresa no son simples dibujos,  
-           son colores para enorgullecerse, para gritar y para seguir.  
-           Imagina un partido de futbol donde grites por Hernavia y sus colores.  
-           ¿Te emociona esa idea o tienes otra en mente?</p>
+        <p class="texto-largo">
+            La bandera hernaviana y un futuro símbolo sorpresa no son simples dibujos,  
+            son colores para enorgullecerse, para gritar y para seguir.  
+            Imagina un partido de futbol donde grites por Hernavia y sus colores.  
+            ¿Te emociona esa idea o tienes otra en mente?
+        </p>
     </section>
 
     <section>
         <h2>La esencia hernaviana</h2>
-        <p class="texto-largo">La identidad hernaviana representa los valores que hoy en día parecen olvidados:  
-           el respeto al medio ambiente, la protección de la fauna y la flora, la paz, la unión de la comunidad,  
-           la verdad, el respeto mutuo o hasta el poder salir a la calle sin miedo.  
-           Todos estos siempre se escuchan pero nunca se ven avances reales en ellos.  
-           Así que nosotros tomaremos la batuta para hacer lo que nadie más, aunque no se puede lograr sin ti.  
-           Si quieres que las cosas cambien, cambia tú también.  
-           Todo eso y más hace parte de ser hernaviano.</p>
+        <p class="texto-largo">
+            La identidad hernaviana representa los valores que hoy en día parecen olvidados:  
+            el respeto al medio ambiente, la protección de la fauna y la flora, la paz, la unión de la comunidad,  
+            la verdad, el respeto mutuo o hasta el poder salir a la calle sin miedo.  
+            Todos estos siempre se escuchan pero nunca se ven avances reales en ellos.  
+            Así que nosotros tomaremos la batuta para hacer lo que nadie más, aunque no se puede lograr sin ti.  
+            Si quieres que las cosas cambien, cambia tú también.  
+            Todo eso y más hace parte de ser hernaviano.
+        </p>
     </section>
 
     <section>
-       <p> Recuerdala talvez un dia no puedas olvidarla </p>
-<img src="img/bandera.png" alt="Bandera Hernavia" class="bandera" width="300" height="200" alt="Bandera hernaviana, identidad cultural relacionada con afrocolombianidad hernaviana" class="bandera">
+        <p>Recuérdala, tal vez un día no puedas olvidarla.</p>
+        <img src="img/bandera.png" 
+             alt="Bandera Hernavia, identidad cultural relacionada con afrocolombianidad hernaviana" 
+             class="bandera" 
+             width="283" 
+             height="188" 
+             fetchpriority="high">
     </section>
 </main>
 
@@ -86,3 +104,4 @@
 
 </body>
 </html>
+
