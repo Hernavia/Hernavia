@@ -2,46 +2,46 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Noticias - Hernavia</title>
-    <script>
-        fetch('head.html')
-            .then(response => response.text())
-            .then(data => {
-                document.head.innerHTML += data;
-            });
-    </script>
-    <style>
-        .ups {
-            text-align: center;
-            color: gray;
-            font-size: 1.2em;
-            margin-top: 30px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de Hernavia</title>
+    <meta name="description" content="Últimas noticias y novedades de Hernavia, la identidad colombiana que une creatividad, comunidad y cultura.">
+    <link rel="icon" type="image/png" href="favicono.png">
+    <link rel="preload" href="estilo.css" as="style">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Proyecto Hernavia">
 </head>
 
 <body>
-    <header>
-        <h1>Noticias de Hernavia</h1>
-    </header>
 
-    <div id="nav-placeholder"></div>
-    <script>
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
-    </script>
+<header>
+    <h1>Noticias de Hernavia</h1>
+</header>
 
-    <main>
-        <section>
-            <div class="ups">Ups… este apartado no tiene información por ahora, espera a que se actualice.</div>
-        </section>
-    </main>
+<!-- Nav incrustado -->
+<nav class="nav-comun">
+    <a href="index.html">Inicio</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html">Sugerencias</a>
+    <a href="noticias-random.html">Noticias Random</a>
+</nav>
 
-    <footer>
-        &copy; 2025 Hernavia - Proyecto Cultural
-    </footer>
+<main>
+    <section class="section">
+        <h2>Últimas noticias</h2>
+        <div class="ups">
+            Ups… este apartado no tiene información por ahora, espera a que se actualice.
+        </div>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Hernavia - Proyecto Cultural
+</footer>
+
 </body>
 </html>
