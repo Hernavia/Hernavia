@@ -106,6 +106,8 @@ form input, form textarea, form select, .formulario-hernavia input, .formulario-
     font-family: inherit;
     font-size: 1em;
 }
+
+/* ===== Botones ===== */
 form button, .boton-hernavia, .boton, .btn-link {
     padding: 12px 20px;
     background-color: #006A44;
@@ -117,6 +119,7 @@ form button, .boton-hernavia, .boton, .btn-link {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     transition: background-color 0.3s ease;
+    text-decoration: none; /* <-- quita la línea debajo del texto */
 }
 form button:hover, .boton-hernavia:hover, .boton:hover, .btn-link:hover {
     background-color: #004a2d;
