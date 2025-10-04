@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Cómo unirse? - Hernavia</title>
-    <meta name="description" content="Formulario e información sobre cómo unirse a Hernavia, quieres saber mas? un poco mas abajo encuentra una pagina que te lo explicara.">
+    <meta name="description" content="Formulario e información sobre cómo unirse a Hernavia, quieres saber más? Un poco más abajo encuentra una página que te lo explicará.">
     <link rel="icon" type="image/png" href="favicono.png">
     <link rel="preload" href="estilo.css" as="style">
     <link rel="stylesheet" href="estilo.css">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Proyecto Hernavia">
     <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
         .section {
             max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background-color: white;
+            background-color: white !important; /* Forzar fondo blanco */
             border-left: 8px solid #006A44;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            min-height: 150px; /* Evita CLS */
+            min-height: 150px;
         }
+
         form {
             max-width: 600px;
             margin: 20px auto;
@@ -28,12 +33,14 @@
             flex-direction: column;
             gap: 15px;
         }
+
         form input, form textarea, form select {
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
             font-size: 1em;
         }
+
         form button {
             padding: 12px;
             background-color: #006A44;
@@ -44,24 +51,30 @@
             font-weight: bold;
             transition: background-color 0.3s ease;
         }
+
         form button:hover {
             background-color: #004a2d;
         }
+
         label { font-weight: bold; }
+
         .cta {
             margin-top: 30px;
             padding: 20px;
             text-align: center;
-            background: #f4f4f4;
+            background: white !important; /* Fondo blanco consistente */
             border-radius: 10px;
         }
+
         .cta h2 {
             color: #006A44;
         }
+
         .cta p {
             margin-bottom: 15px;
             font-size: 1.1em;
         }
+
         .btn-link {
             display: inline-block;
             margin-top: 15px;
@@ -73,6 +86,7 @@
             font-weight: bold;
             transition: background-color 0.3s ease;
         }
+
         .btn-link:hover {
             background-color: #004a2d;
         }
@@ -97,41 +111,41 @@
 
 <section class="section">
 <p>
-Actualmente la ciudadanía por método virtual no está habilitada, aunque puede llenar este formulario y será notificado cuando se active. Además, tenga en cuenta que la participación es muy importante para Hernavia: si participa en las consultas de la página <a href="consultas.html">Consultas</a>, esto quedará registrado y se tomará en cuenta.
+Actualmente la ciudadanía por método virtual no está habilitada, aunque puede llenar este formulario y será notificado cuando se active. Además, tenga en cuenta que la participación es muy importante para Hernavia: si participa en las consultas de la página Consultas, esto quedará registrado y se tomará en cuenta.
 </p>
 
-    <form action="https://formspree.io/f/xldpgjop" method="POST">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+<form action="https://formspree.io/f/xldpgjop" method="POST">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
 
-        <label for="edad">Fecha de Nacimiento:</label>
-        <input type="number" id="edad" name="edad" min="1" max="120" required>
+    <label for="edad">Fecha de Nacimiento:</label>
+    <input type="number" id="edad" name="edad" min="1" max="120" required>
 
-        <label for="ciudad">País/Ciudad/Municipio:</label>
-        <input type="text" id="ciudad" name="ciudad" required>
+    <label for="ciudad">País/Ciudad/Municipio:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
 
-        <label for="ocupacion">Ocupación (opcional):</label>
-        <input type="text" id="ocupacion" name="ocupacion">
+    <label for="ocupacion">Ocupación (opcional):</label>
+    <input type="text" id="ocupacion" name="ocupacion">
 
-        <label for="comentario">Motivación para unirse (opcional):</label>
-        <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe aquí tu motivación..."></textarea>
+    <label for="comentario">Motivación para unirse (opcional):</label>
+    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe aquí tu motivación..."></textarea>
 
-        <label>
-            <input type="checkbox" name="terminos" aria-label="Aceptar términos y condiciones" required>
-            Acepto los términos y condiciones de Hernavia.
-        </label>
+    <label>
+        <input type="checkbox" name="terminos" aria-label="Aceptar términos y condiciones" required>
+        Acepto los términos y condiciones de Hernavia.
+    </label>
 
-        <button type="submit">Enviar solicitud</button>
-    </form>
+    <button type="submit">Enviar solicitud</button>
+</form>
 </section>
 
 <section class="section cta">
-    <h2>¿Qué significa realmente unirse a Hernavia?</h2>
-    <p>Más allá de un formulario, unirse es compartir una identidad y una visión de comunidad.</p>
-    <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
+<h2>¿Qué significa realmente unirse a Hernavia?</h2>
+<p>Más allá de un formulario, unirse es compartir una identidad y una visión de comunidad.</p>
+<a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
 </section>
 
 <footer>
@@ -140,3 +154,4 @@ Actualmente la ciudadanía por método virtual no está habilitada, aunque puede
 
 </body>
 </html>
+
