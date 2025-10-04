@@ -46,6 +46,9 @@ header h1 {
     background-color: #FFFFFF;
     color: #006A44;
 }
+#nav-placeholder {
+    min-height: 60px; /* ajusta según la altura del menú */
+}
 
 /* ===== Secciones ===== */
 section {
