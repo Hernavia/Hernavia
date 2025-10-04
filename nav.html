@@ -1,10 +1,24 @@
-<nav class="nav-comun">
-    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
-    <a href="documentos.html">Documentos</a>
-    <a href="noticias.html">Noticias</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="simbolos.html">Símbolos</a>
-    <a href="comounirse.html">¿Cómo unirse?</a>
-    <a href="sugerencias.html">Sugerencias</a>
-    <a href="noticias-random.html">Noticias Random</a>
-</nav>
+<div id="nav-placeholder">
+    <nav class="nav-comun">
+        <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+        <a href="documentos.html">Documentos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="simbolos.html">Símbolos</a>
+        <a href="comounirse.html">¿Cómo unirse?</a>
+        <a href="sugerencias.html">Sugerencias</a>
+        <a href="noticias-random.html">Noticias Random</a>
+    </nav>
+</div>
+
+<script>
+fetch('nav.html')
+  .then(response => {
+    if (!response.ok) throw new Error('No se pudo cargar nav.html');
+    return response.text();
+  })
+  .then(data => {
+    document.getElementById('nav-placeholder').innerHTML = data;
+  })
+  .catch(err => console.error(err));
+</script>
