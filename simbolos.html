@@ -17,20 +17,22 @@
             text-align: justify;
         }
         .bandera {
-            max-width: 300px;
+            width: 300px;
+            height: 200px;
             display: block;
             margin: 15px auto;
-            height: auto;
         }
         .simbolos-section {
             padding: 20px;
+            max-width: 900px; /* ancho original */
+            margin: 0 auto;
         }
         section {
-            min-height: 250px; /* Tamaño grande como antes */
-            padding: 15px 0;
+            min-height: 250px; /* largo original */
+            padding: 15px 20px; /* ajuste interno */
         }
         .section-lema {
-            min-height: 200px; /* Tamaño grande como antes */
+            min-height: 200px; /* largo original del lema */
         }
     </style>
 </head>
@@ -91,7 +93,7 @@
         <!-- Bandera después -->
         <section>
             <h2>Bandera</h2>
-            <img src="img/bandera.png" alt="Bandera Hernavia" class="bandera" width="300" height="200" fetchpriority="high">
+            <img src="img/bandera.png" alt="Bandera Hernavia" class="bandera" fetchpriority="high">
             <p>La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
         </section>
 
