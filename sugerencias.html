@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Sugerencias - Hernavia</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerencias - Hernavia</title>
     <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
     <link rel="icon" type="image/png" href="favicono.png">
     <link rel="stylesheet" href="estilo.css">
-
-    <script>
-        fetch('head.html')
-            .then(response => response.text())
-            .then(data => {
-                document.head.innerHTML += data;
-            });
-    </script>
-
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Proyecto Hernavia">
     <style>
+        .section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-left: 8px solid #006A44;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            min-height: 150px; /* Evita CLS */
+        }
         form {
             max-width: 600px;
             margin: 20px auto;
@@ -45,7 +48,6 @@
         }
         label { font-weight: bold; }
 
-        /* Estilos del mini-ícono + texto */
         .frase-futuro {
             display: flex;
             align-items: center;
@@ -59,8 +61,6 @@
             width: 32px;
             height: 32px;
         }
-
-        /* Botón de audio */
         .audio-boton {
             background-color: #006A44;
             color: white;
@@ -78,56 +78,58 @@
 </head>
 
 <body>
-    <header>
-        <h1>Envíanos tus sugerencias</h1>
-    </header>
 
-    <!-- Barra de navegación -->
-    <div id="nav-placeholder"></div>
-    <script>
-        fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        });
-    </script>
+<header>
+    <h1>Envíanos tus sugerencias</h1>
+</header>
 
-    <section class="section">
-        <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, por favor no dudes en enviarnos un mensaje:</p>
+<!-- Navegación directa -->
+<nav class="nav-comun">
+    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html">Sugerencias</a>
+    <a href="noticias-random.html">Noticias Random</a>
+</nav>
 
-        <!-- Frase con icono -->
-        <div class="frase-futuro">
-            <img src="puedenideas.png" alt="Icono ideas">
+<section class="section">
+    <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, por favor envíanos un mensaje:</p>
+
+    <div class="frase-futuro">
+        <img src="puedenideas.png" alt="Icono ideas">
         ¿Puedes cambiar el futuro?
-        </div>
+    </div>
 
-        <button class="audio-boton" onclick="document.getElementById('audio-futuro').play()">▶ ¿?</button>
-        <audio id="audio-futuro" src="futuro.mp3"></audio>
+    <button class="audio-boton" onclick="document.getElementById('audio-futuro').play()">▶ ¿?</button>
+    <audio id="audio-futuro" src="futuro.mp3"></audio>
 
-        <!-- Formulario -->
-        <form action="https://formspree.io/f/xldpgjop" method="POST">
-            <label for="nombre">Nombre (opcional):</label>
-            <input type="text" id="nombre" name="nombre">
+    <form action="https://formspree.io/f/xldpgjop" method="POST">
+        <label for="nombre">Nombre (opcional):</label>
+        <input type="text" id="nombre" name="nombre">
 
-            <label for="correo">Correo (opcional):</label>
-            <input type="email" id="correo" name="correo">
+        <label for="correo">Correo (opcional):</label>
+        <input type="email" id="correo" name="correo">
 
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-            <button type="submit">Enviar sugerencia</button>
-        </form>
-        
-        <p>O también puedes visitar nuestras redes sociales:</p>
-        <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
-        <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
-    </section>
+        <button type="submit">Enviar sugerencia</button>
+    </form>
 
-    <footer>
-        &copy; 2025 Hernavia - Proyecto Cultural
-    </footer>
+    <p>O también puedes visitar nuestras redes sociales:</p>
+    <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
+    <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
+</section>
+
+<footer>
+    &copy; 2025 Hernavia - Proyecto Cultural
+</footer>
+
 </body>
 </html>
