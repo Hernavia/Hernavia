@@ -6,6 +6,8 @@
     <title>Hernavia</title>
     <meta name="description" content="Descubre Hernavia, una identidad colombiana donde creatividad, comunidad y cultura se unen por un futuro sostenible.">
     <link rel="icon" type="image/png" href="favicono.png">
+    
+    <!-- Preload CSS -->
     <link rel="preload" href="estilo.css" as="style">
     <link rel="stylesheet" href="estilo.css">
     
@@ -48,7 +50,7 @@
             .catch(error => console.error(error));
     </script>
 
-    <main>
+    <main style="min-height: 500px;"> <!-- Reservar espacio para contenido -->
         <section id="que-es" class="texto-largo">
             <h2>¿Qué es Hernavia?</h2>
             <p>Más que un proyecto, Hernavia es un espacio donde la creatividad y la unión se convierten en identidad y tú puedes ayudar a cambiar la historia.</p>
@@ -64,7 +66,7 @@
 
         <section id="bandera">
             <h2>Bandera</h2>
-            <img src="img/bandera.png" alt="Bandera de Hernavia" class="bandera" width="300" height="200" loading="lazy">
+            <img src="img/bandera.png" alt="Bandera de Hernavia" class="bandera" width="300" height="200">
         </section>
 
         <section id="significado">
@@ -83,5 +85,6 @@
 
 </body>
 </html>
+
 
 
