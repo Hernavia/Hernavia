@@ -3,34 +3,36 @@
 
 /* ===== Estilos generales ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* texto común Arial */
     margin: 0;
     padding: 0;
     background-color: #f0f4f7;
     color: #333;
+    line-height: 1.4; /* menos espacio entre líneas para compactar */
+    font-size: 16px;
 }
 
 /* ===== Header ===== */
 header {
-    background-color: #006A44; /* verde bandera */
+    background-color: #006A44;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0; /* un poco más compacto */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em; /* ligeramente más pequeño */
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* más grueso */
+    font-weight: 700;
 }
 
 /* ===== Navegación común ===== */
 .nav-comun {
     text-align: center;
-    margin: 15px 0;
+    margin: 10px 0; /* más compacto */
     background-color: #f0f4f7;
-    padding: 10px 0;
+    padding: 8px 0; /* menos padding */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -39,11 +41,11 @@ header h1 {
 .nav-comun a {
     text-decoration: none;
     color: #006A44;
-    font-weight: 700; /* más grueso para resaltar */
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 15px;
-    padding: 8px 12px;
-    border-radius: 5px;
+    margin: 0 10px; /* menos espacio entre enlaces */
+    padding: 6px 10px; /* más compacto */
+    border-radius: 4px;
     border: 2px solid transparent;
     transition: all 0.3s ease;
 }
@@ -52,32 +54,31 @@ header h1 {
     background-color: #FFFFFF;
     color: #006A44;
 }
-#nav-placeholder {
-    min-height: 60px; /* ajusta según la altura del menú */
-}
 
 /* ===== Secciones ===== */
 section {
     max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 15px auto; /* más compacto */
+    padding: 15px; /* menos padding */
     background-color: white;
-    border-left: 8px solid #006A44;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 6px solid #006A44;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 h2 {
     color: #006A44;
     border-bottom: 2px solid #FFCC00;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* más grueso */
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 h3 {
     color: #006A44;
-    margin-top: 15px;
+    margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* un poco más robusto */
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 /* ===== Imágenes ===== */
@@ -85,9 +86,9 @@ h3 {
     display: block;
     width: 300px;
     height: auto;
-    margin: 15px auto;
+    margin: 10px auto; /* menos espacio */
     border: 4px solid #006A44;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 /* ===== Listas ===== */
@@ -99,51 +100,27 @@ ul {
 /* ===== Footer ===== */
 footer {
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0; /* menos espacio */
     background-color: #006A44;
     color: white;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 0.9em;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600; /* ligeramente más grueso que el texto normal */
-}
-
-/* ===== Formularios ===== */
-.formulario-hernavia {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 600px;
-    margin: auto;
-}
-.formulario-hernavia input,
-.formulario-hernavia textarea,
-.formulario-hernavia select {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-family: inherit;
-}
-
-/* Mejora accesibilidad: focus visible */
-.formulario-hernavia input:focus, 
-.formulario-hernavia textarea:focus, 
-.formulario-hernavia select:focus {
-    outline: 2px solid #FFCC00;
+    font-weight: 600;
 }
 
 /* ===== Botones ===== */
 .boton-hernavia, .boton {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
+    margin-top: 8px; /* menos espacio */
+    padding: 8px 12px; /* más compacto */
     background-color: #006A44;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: all 0.3s ease;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* más robusto */
+    font-weight: 700;
     cursor: pointer;
     text-align: center;
 }
@@ -153,50 +130,34 @@ footer {
 
 /* ===== Texto largo ===== */
 .texto-largo {
-    line-height: 1.6;
+    line-height: 1.4; /* menos espacio entre líneas */
     text-align: justify;
 }
 
-/* ===== Himno ===== */
-.himno {
-    background-color: #f0f4f7;
-    padding: 15px;
-    border-left: 6px solid #006A44;
-    border-radius: 8px;
-}
-.himno p {
-    margin-bottom: 15px;
-}
-
-/* ===== Ajustes para pantallas pequeñas (móviles) ===== */
+/* ===== Ajustes móviles ===== */
 @media (max-width: 600px) {
     body {
-        font-size: 14px; /* reduce tamaño general del texto */
+        font-size: 14px;
     }
-
     header h1 {
-        font-size: 1.5em; /* título más pequeño */
+        font-size: 1.5em;
     }
-
     nav a {
-        display: block;       /* cada enlace ocupa toda la fila */
-        margin: 8px 0;        /* espacio entre enlaces */
-        padding: 10px;        /* más fácil de pulsar con el dedo */
+        display: block;
+        margin: 6px 0;
+        padding: 8px;
     }
-
     section {
         margin: 10px;
-        padding: 15px;
-        font-size: 0.95em;    /* contenido un poco más compacto */
+        padding: 10px;
+        font-size: 0.95em;
     }
-
     .bandera {
-        width: 90%; /* la bandera ocupa casi todo el ancho en móvil */
+        width: 90%;
         max-width: 250px;
     }
-
     footer {
         font-size: 0.8em;
-        padding: 10px;
+        padding: 8px;
     }
 }
