@@ -17,15 +17,16 @@
             text-align: justify;
         }
         .bandera {
-            max-width: 300px;
+            max-width: 100%;
             display: block;
             margin: 15px auto;
+            height: auto;
         }
         .simbolos-section {
             padding: 20px;
         }
         .section-lema {
-            min-height: 100px; 
+            padding: 15px 0;
         }
     </style>
 </head>
@@ -35,7 +36,6 @@
         <h1>Símbolos de Hernavia</h1>
     </header>
 
-    <!-- Nav directo para mejor LCP y CLS -->
     <nav class="nav-comun">
         <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
         <a href="documentos.html">Documentos</a>
@@ -48,18 +48,6 @@
     </nav>
 
     <main class="simbolos-section">
-        <section>
-            <h2>Bandera</h2>
-            <img src="img/bandera.png" alt="Bandera Hernavia" class="bandera" width="300" height="200" fetchpriority="high">
-            <p>La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
-        </section>
-
-        <section class="section-lema">
-            <h2>Lema y Frase</h2>
-            <p><strong>Lema:</strong> Paz, Naturaleza, Innovación</p>
-            <p><strong>Frase:</strong> Nacidos de un sueño, luchando por cumplirlo.</p>
-        </section>
-
         <section>
             <h2>Himno de Hernavia</h2>
             <div class="himno">
@@ -94,6 +82,18 @@
                 ¡la voz hernaviana jamás callará!</p>
             </div>
         </section>
+
+        <section>
+            <h2>Bandera</h2>
+            <img src="img/bandera.png" alt="Bandera Hernavia" class="bandera" width="300" height="200" fetchpriority="high">
+            <p>La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
+        </section>
+
+        <section class="section-lema">
+            <h2>Lema y Frase</h2>
+            <p><strong>Lema:</strong> Paz, Naturaleza, Innovación</p>
+            <p><strong>Frase:</strong> Nacidos de un sueño, luchando por cumplirlo.</p>
+        </section>
     </main>
 
     <footer>
@@ -101,3 +101,4 @@
     </footer>
 </body>
 </html>
+
