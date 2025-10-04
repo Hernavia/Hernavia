@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leyes Transitorias de Hernavia</title>
     <meta name="description" content="Descubre las Leyes Transitorias de Hernavia, que regulan la ciudadanía y el funcionamiento de la comunidad.">
-
-    <!-- Head uniforme -->
-    <script>
-        fetch('head.html')
-            .then(response => response.text())
-            .then(data => { document.head.innerHTML += data; });
-    </script>
+    <link rel="icon" type="image/png" href="favicono.png">
+    <link rel="preload" href="estilo.css" as="style">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Proyecto Hernavia">
 </head>
+
 <body>
 
 <header>
@@ -20,12 +19,16 @@
 </header>
 
 <!-- Nav incrustado -->
-<div id="nav-placeholder"></div>
-<script>
-    fetch('nav.html')
-        .then(response => response.text())
-        .then(data => { document.getElementById('nav-placeholder').innerHTML = data; });
-</script>
+<nav class="nav-comun">
+    <a href="index.html">Inicio</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html">Sugerencias</a>
+    <a href="noticias-random.html">Noticias Random</a>
+</nav>
 
 <main>
     <section class="section">
@@ -43,17 +46,14 @@
         <p>Nota: En casos especiales, algunas de estas razones podrán ser consideradas para penalización distinta según lo dictamine el Arconte, sin implicar revocación directa.</p>
 
         <h2>Ley 2 – Aporte Obligatorio</h2>
-        <p>Todo ciudadano deberá aportar a la comunidad mediante al menos una de las siguientes formas:</p>
         <ul>
             <li>Trabajo comunitario: construcción, mantenimiento, apoyo agrícola, etc.</li>
             <li>Aporte de conocimientos: enseñanza, innovación, asesoría técnica, etc.</li>
             <li>Aporte de recursos: dinero, materiales, herramientas, etc.</li>
             <li>Servicio comunitario: cuidado, seguridad, cultura, justicia, etc.</li>
         </ul>
-        <p>La frecuencia y el nivel mínimo de aportes será definido provisionalmente por el Arconte hasta que se cree un sistema más estable.</p>
 
         <h2>Ley 3 – Penalizaciones</h2>
-        <p>El incumplimiento de las leyes anteriores podrá acarrear las siguientes sanciones:</p>
         <ul>
             <li>Aumento de lo mínimo obligatorio del aporte.</li>
             <li>Multa económica o equivalente en recursos.</li>
@@ -63,7 +63,6 @@
             <li>Revocación temporal o definitiva de la ciudadanía.</li>
             <li>Penalización especial por daños a los símbolos de Hernavia.</li>
         </ul>
-        <p>Todas las penalizaciones se aplicarán considerando la gravedad del incumplimiento y siguiendo los principios de la Carta Fundacional.</p>
 
         <h2>Ley 4 – Participación Ciudadana</h2>
         <ul>
@@ -85,7 +84,7 @@
         <h2>Ley 7 – Eliminación de Datos</h2>
         <p>Tras la revocación o renuncia de la ciudadanía, los datos personales del ciudadano deberán ser eliminados y su número de identificación expropiado en un plazo máximo de 30 días.</p>
 
-        <p><strong>Nota final:</strong> El Arconte podrá interpretar o modificar cualquier disposición de estas Leyes Transitorias y demás documentos de Hernavia, siempre respetando los principios de respeto, paz, innovación y unión, con el propósito de garantizar la seguridad y estabilidad de Hernavia.</p>
+        <p><strong>Nota final:</strong> El Arconte podrá interpretar o modificar cualquier disposición de estas Leyes Transitorias y demás documentos de Hernavia, siempre respetando los principios de respeto, paz, innovación y unión.</p>
     </section>
 </main>
 
