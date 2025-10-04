@@ -1,3 +1,6 @@
+<link rel="preload" href="estilo.css" as="style">
+<link rel="stylesheet" href="estilo.css">
+
 /* ===== Estilos generales ===== */
 body {
     font-family: Arial, sans-serif;
