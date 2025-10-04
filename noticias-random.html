@@ -5,42 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias Random - Hernavia</title>
     <meta name="description" content="Noticias aleatorias y curiosas de Hernavia y del mundo. Aquí encontrarás novedades y datos curiosos que no entran en otras categorías.">
-
-    <div id="head-placeholder"></div>
-    <script>
-        fetch('head.html')
-            .then(response => response.text())
-            .then(data => {
-                document.head.innerHTML += data;
-            });
-    </script>
+    <link rel="icon" type="image/png" href="favicono.png">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Proyecto Hernavia">
+    <style>
+        .section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-left: 8px solid #006A44;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            min-height: 150px; /* Evita CLS */
+        }
+        .section h2 {
+            color: #006A44;
+            margin-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
 </head>
-
 <body>
+
 <header>
     <h1>Noticias Random</h1>  
 </header>
 
-<div id="nav-placeholder"></div>
-<script>
-    fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        });
-</script>
+<!-- Navegación directa -->
+<nav class="nav-comun">
+    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html">Sugerencias</a>
+    <a href="noticias-random.html">Noticias Random</a>
+</nav>
 
-<section id="noticias-dia">
+<section class="section" id="noticias-dia">
     <h2>Noticias del día</h2>
     <p>Hoy 1 de octubre de 2025 feliz mes de octubre, el resto de la existencia por si mañana no puedo festejar el nuevo día.</p>
 </section>
 
-<section id="noticias-mundo">
+<section class="section" id="noticias-mundo">
     <h2>Noticias del mundo</h2>
     <p>Hoy no hay nada interesante.</p>
 </section>
 
-<section id="curiosidades">
+<section class="section" id="curiosidades">
     <h2>Curiosidades Random</h2>
     <p>Aquí se mostrarán curiosidades, datos curiosos o cualquier noticia fuera de lo común.</p>
 </section>
@@ -48,5 +66,6 @@
 <footer>
     <p>&copy; 2025 Hernavia - Proyecto Cultural</p>
 </footer>
+
 </body>
 </html>
