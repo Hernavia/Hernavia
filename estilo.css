@@ -50,10 +50,9 @@ header h1 {
     color: #006A44;
 }
 #nav-placeholder {
-    min-height: 60px; /* ajusta según la altura del menú */
+    min-height: 50px; /* ajusta según la altura del menú */
 }
 
-/* ===== Secciones ===== */
 section {
     max-width: 900px;
     margin: 20px auto;
@@ -125,13 +124,11 @@ form button:hover, .boton-hernavia:hover, .boton:hover, .btn-link:hover {
     background-color: #004a2d;
 }
 
-/* ===== Texto largo ===== */
 .texto-largo {
     line-height: 1.6;
     text-align: justify;
 }
 
-/* ===== Himno / CTA ===== */
 .himno, .cta {
     background-color: #f0f4f7;
     padding: 15px;
@@ -142,7 +139,6 @@ form button:hover, .boton-hernavia:hover, .boton:hover, .btn-link:hover {
     margin-bottom: 15px;
 }
 
-/* ===== Ajustes para pantallas pequeñas (móviles) ===== */
 @media (max-width: 600px) {
     body { font-size: 14px; }
     header h1 { font-size: 1.5em; }
@@ -152,7 +148,6 @@ form button:hover, .boton-hernavia:hover, .boton:hover, .btn-link:hover {
     footer { font-size: 0.8em; padding: 10px; }
 }
 
-/* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 15px 0;
