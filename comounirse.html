@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Cómo unirse? - Hernavia</title>
-    <script>
-        // Cargar head.html en el <head>
-        fetch('head.html')
-            .then(response => response.text())
-            .then(data => {
-                document.head.innerHTML += data;
-            });
-    </script>
+    <meta name="description" content="Formulario e información sobre cómo unirse a Hernavia, quieres saber mas? un poco mas abajo encuentra una pagina que te lo explicara.">
+    <link rel="icon" type="image/png" href="favicono.png">
+    <link rel="preload" href="estilo.css" as="style">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Proyecto Hernavia">
     <style>
-        /* Ajustes específicos de este formulario */
+        .section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-left: 8px solid #006A44;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            min-height: 150px; /* Evita CLS */
+        }
         form {
             max-width: 600px;
             margin: 20px auto;
@@ -41,15 +48,6 @@
             background-color: #004a2d;
         }
         label { font-weight: bold; }
-        .section {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-left: 8px solid #006A44;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
         .cta {
             margin-top: 30px;
             padding: 20px;
@@ -64,20 +62,6 @@
             margin-bottom: 15px;
             font-size: 1.1em;
         }
-        .cta a {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #006A44;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .cta a:hover {
-            background-color: #004a2d;
-        }
-        /* Estilo para enlace tipo botón */
         .btn-link {
             display: inline-block;
             margin-top: 15px;
@@ -100,18 +84,20 @@
     <h1>¿Cómo unirse a Hernavia?</h1>
 </header>
 
-<!-- Barra de navegación -->
-<div id="nav-placeholder"></div>
-<script>
-    fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        });
-</script>
+<!-- Nav directo -->
+<nav class="nav-comun">
+    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html">Sugerencias</a>
+    <a href="noticias-random.html">Noticias Random</a>
+</nav>
 
 <section class="section">
-    <p>Actualmente la ciudadanía por método virtual no está habilitada, aunque si lo desea puede llenar este formulario y cuando se habilite la ciudadanía virtual se le avisará y se tendrá en cuenta.</p>
+    <p>Actualmente la ciudadanía por método virtual no está habilitada, aunque puede llenar este formulario y será notificado cuando se habilite.</p>
 
     <form action="https://formspree.io/f/xldpgjop" method="POST">
         <label for="nombre">Nombre completo:</label>
@@ -141,10 +127,9 @@
     </form>
 </section>
 
-<section class="section">
+<section class="section cta">
     <h2>¿Qué significa realmente unirse a Hernavia?</h2>
-    <p>Más allá de un formulario, unirse es compartir una identidad y una visión de comunidad.  
-       Pero… ¿qué implica ser hernaviano/a?</p>
+    <p>Más allá de un formulario, unirse es compartir una identidad y una visión de comunidad.</p>
     <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
 </section>
 
