@@ -32,19 +32,21 @@
         <h1>Símbolos de Hernavia</h1>
     </header>
     
-    <div id="nav-placeholder"></div>
-    <script>
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
-    </script>
+    <nav class="nav-comun">
+        <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+        <a href="documentos.html">Documentos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="consultas.html">Consultas</a>
+        <a href="simbolos.html">Símbolos</a>
+        <a href="comounirse.html">¿Cómo unirse?</a>
+        <a href="sugerencias.html">Sugerencias</a>
+        <a href="noticias-random.html">Noticias Random</a>
+    </nav>
 
     <main class="simbolos-section">
         <section>
             <h2>Bandera</h2>
-           <img src="img/bandera.png" alt="Bandera Hernavia" class="bandera" width="300" height="200">
+            <img src="img/bandera.png" alt="Bandera Hernavia" class="bandera" width="300" height="200">
             <p>La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
         </section>
 
