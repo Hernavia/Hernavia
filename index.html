@@ -6,12 +6,9 @@
     <title>Hernavia</title>
     <meta name="description" content="Descubre Hernavia, una identidad colombiana donde creatividad, comunidad y cultura se unen por un futuro sostenible.">
     <link rel="icon" type="image/png" href="favicono.png">
-    
-    <!-- Preload CSS -->
     <link rel="preload" href="estilo.css" as="style">
     <link rel="stylesheet" href="estilo.css">
-    
-    <!-- Mejora SEO -->
+
     <meta name="robots" content="index, follow">
     <meta name="author" content="Proyecto Hernavia">
 </head>
@@ -22,35 +19,19 @@
         <h1>Hernavia</h1>
     </header>
 
-    <!-- Carga navegación con fallback -->
-    <div id="nav-placeholder"></div>
-    <noscript>
-        <nav class="nav-comun">
-            <a href="index.html">Inicio</a>
-            <a href="Documentos.html">Documentos</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="simbolos.html">Símbolos</a>
-            <a href="comounirse.html">¿Cómo unirse?</a>
-            <a href="sugerencias.html">Sugerencias</a>
-            <a href="noticias-random.html">Noticias Random</a>
-        </nav>
-    </noscript>
+    <!-- Nav incrustado -->
+    <nav class="nav-comun">
+        <a href="index.html">Inicio</a>
+        <a href="Documentos.html">Documentos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="simbolos.html">Símbolos</a>
+        <a href="comounirse.html">¿Cómo unirse?</a>
+        <a href="sugerencias.html">Sugerencias</a>
+        <a href="noticias-random.html">Noticias Random</a>
+    </nav>
 
-    <script>
-        // Cargar navegación de forma asíncrona
-        fetch('nav.html')
-            .then(response => {
-                if (!response.ok) throw new Error('Error al cargar la navegación');
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error(error));
-    </script>
-
-    <main style="min-height: 500px;"> <!-- Reservar espacio para contenido -->
+    <main>
         <section id="que-es" class="texto-largo">
             <h2>¿Qué es Hernavia?</h2>
             <p>Más que un proyecto, Hernavia es un espacio donde la creatividad y la unión se convierten en identidad y tú puedes ayudar a cambiar la historia.</p>
@@ -85,6 +66,4 @@
 
 </body>
 </html>
-
-
 
