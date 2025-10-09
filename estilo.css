@@ -1,158 +1,198 @@
-/* ===== Estilos generales ===== */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f7;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f0f4f7;
 }
 
-/* ===== Header ===== */
 header {
-    background-color: #006A44; /* verde bandera */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  text-align: center;
+  background-color: #006a44;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
 }
 
-/* ===== Navegación común ===== */
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
 .nav-comun {
-    text-align: center;
-    margin: 15px 0;
-    background-color: #f0f4f7;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px 0;
+  background-color: #f0f4f7;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 .nav-comun a {
-    text-decoration: none;
-    color: #006A44;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 15px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: #006a44;
+  margin: 0 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: .3s;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
 }
+
 .nav-comun a:hover {
-    border: 2px solid #FFCC00;
-    background-color: #FFFFFF;
-    color: #006A44;
+  border: 2px solid #fc0;
+  background-color: #fff;
+  color: #006a44;
 }
+
 #nav-placeholder {
-    min-height: 50px; /* ajusta según la altura del menú */
+  min-height: 50px;
 }
 
 section {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-left: 8px solid #006A44;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 8px solid #006a44;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
 }
+
 h2, h3, h4 {
-    color: #006A44;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  color: #006a44;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
 }
+
 h2 {
-    border-bottom: 2px solid #FFCC00;
-    padding-bottom: 5px;
+  border-bottom: 2px solid #fc0;
+  padding-bottom: 5px;
 }
 
-/* ===== Imágenes ===== */
 .bandera {
-    display: block;
-    width: 300px;
-    height: auto;
-    margin: 15px auto;
-    border: 4px solid #006A44;
-    border-radius: 8px;
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 15px auto;
+  border: 4px solid #006a44;
+  border-radius: 8px;
 }
 
-/* ===== Listas ===== */
-ul, ol {
-    margin: 0;
-    padding-left: 20px;
+ol, ul {
+  margin: 0;
+  padding-left: 20px;
 }
 
-/* ===== Formularios ===== */
-form, .formulario-hernavia {
-    max-width: 600px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-form input, form textarea, form select, .formulario-hernavia input, .formulario-hernavia textarea, .formulario-hernavia select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-family: inherit;
-    font-size: 1em;
+.formulario-hernavia,
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* ===== Botones ===== */
-form button, .boton-hernavia, .boton, .btn-link {
-    padding: 12px 20px;
-    background-color: #006A44;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* <-- quita la línea debajo del texto */
+.formulario-hernavia input,
+.formulario-hernavia select,
+.formulario-hernavia textarea,
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1em;
 }
-form button:hover, .boton-hernavia:hover, .boton:hover, .btn-link:hover {
-    background-color: #004a2d;
+
+.boton,
+.boton-hernavia,
+.btn-link,
+form button {
+  text-align: center;
+  background-color: #006a44;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  transition: background-color .3s;
+  text-decoration: none;
+}
+
+.boton-hernavia:hover,
+.boton:hover,
+.btn-link:hover,
+form button:hover {
+  background-color: #004a2d;
 }
 
 .texto-largo {
-    line-height: 1.6;
-    text-align: justify;
+  line-height: 1.6;
+  text-align: justify;
 }
 
-.himno, .cta {
-    background-color: #f0f4f7;
-    padding: 15px;
-    border-left: 6px solid #006A44;
-    border-radius: 8px;
+.cta,
+.himno {
+  background-color: #f0f4f7;
+  padding: 15px;
+  border-left: 6px solid #006a44;
+  border-radius: 8px;
 }
-.himno p, .cta p {
-    margin-bottom: 15px;
+
+.cta p,
+.himno p {
+  margin-bottom: 15px;
 }
 
 @media (max-width: 600px) {
-    body { font-size: 14px; }
-    header h1 { font-size: 1.5em; }
-    nav a { display: block; margin: 8px 0; padding: 10px; }
-    section { margin: 10px; padding: 15px; font-size: 0.95em; }
-    .bandera { width: 90%; max-width: 250px; }
-    footer { font-size: 0.8em; padding: 10px; }
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+    font-size: .95em;
+  }
+
+  .bandera {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  footer {
+    font-size: .8em;
+    padding: 10px;
+  }
 }
 
 footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #006A44;
-    color: white;
-    margin-top: 20px;
-    font-size: 0.9em;
+  text-align: center;
+  background-color: #006a44;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: .9em;
 }
+
