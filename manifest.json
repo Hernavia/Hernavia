@@ -1,0 +1,16 @@
+{
+  "name": "Hernavia",
+  "short_name": "Hernavia",
+  "description": "Proyecto cultural y ecológico colombiano: creatividad, comunidad y naturaleza.",
+  "start_url": "https://hernavia.github.io/Hernavia/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://hernavia.github.io/Hernavia/favicono.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
