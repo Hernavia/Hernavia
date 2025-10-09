@@ -6,15 +6,20 @@
     <title>Carta Fundacional - Hernavia</title>
     <meta name="description" content="Esta carta nos muestra la columna de Hernavia con los principios básicos e información imprescindible para conocer Hernavia de forma seria.">
     <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Preload CSS para mejorar LCP y evitar bloqueo de renderizado -->
+    <link rel="preload" href="estilo.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo.css"></noscript>
+
     <link rel="canonical" href="https://hernavia.github.io/Hernavia/carta.html">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Proyecto Hernavia">
     <link rel="manifest" href="manifest.json">
+
     <style>
         section.carta {
             min-height: 600px;
-            line-height: 1.7;
+            line-height: 1.6;
             text-align: justify;
             padding: 20px;
             max-width: 900px;
@@ -24,21 +29,9 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
         section.carta h2, section.carta h3, section.carta h4 {
             color: #006A44;
         }
-
-        section.carta h3, section.carta h4 {
-            margin-top: 20px;
-        }
-
-        section.carta p,
-        section.carta ol,
-        section.carta ul {
-            margin-bottom: 15px;
-        }
-
         .bandera {
             display: block;
             width: 300px;
@@ -47,31 +40,6 @@
             margin: 15px auto;
             border: 4px solid #006A44;
             border-radius: 8px;
-        }
-
-        @media (max-width: 600px) {
-            .bandera {
-                width: 90%;
-                max-width: 250px;
-            }
-        }
-
-        .boton-volver {
-            display: inline-block;
-            text-align: center;
-            background-color: #006A44;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 5px;
-            font-weight: 700;
-            font-family: Montserrat, sans-serif;
-            text-decoration: none;
-            transition: background-color .3s;
-            margin-top: 20px;
-        }
-
-        .boton-volver:hover {
-            background-color: #004a2d;
         }
     </style>
 </head>
@@ -92,21 +60,13 @@
         <a href="noticias-random.html">Noticias Random</a>
     </nav>
 
-    <main role="main">
+    <main>
         <section class="carta">
             <h2>Preámbulo</h2>
-            <p>
-                Nosotros, el pueblo hernaviano, declaramos nuestra unión en una sola comunidad, guiados por los principios
-                de respeto, justicia, innovación, progreso y fraternidad.
-            </p>
+            <p>Nosotros, el pueblo hernaviano, declaramos nuestra unión en una sola comunidad, guiados por los principios de respeto, justicia, innovación, progreso y fraternidad.</p>
 
             <h3>Artículo 1 – Liderazgo</h3>
-            <p>
-                El Arconte, cargo ejercido inicialmente por el fundador, será la máxima autoridad de Hernavia.
-                Tendrá poder total para tomar decisiones administrativas, políticas y sociales
-                mientras Hernavia consolida sus instituciones.
-                El Arconte estará sujeto a esta Carta y deberá velar por la unión y el bienestar del pueblo hernaviano.
-            </p>
+            <p>El Arconte, cargo ejercido inicialmente por el fundador, será la máxima autoridad de Hernavia. Tendrá poder total para tomar decisiones administrativas, políticas y sociales mientras Hernavia consolida sus instituciones. El Arconte estará sujeto a esta Carta y deberá velar por la unión y el bienestar del pueblo hernaviano.</p>
 
             <h3>Artículo 2 – Principios Fundamentales</h3>
             <ol>
@@ -129,11 +89,7 @@
             </ol>
 
             <h3>Artículo 4 – Identidad y Objetivos Iniciales</h3>
-            <p>
-                La bandera y demás símbolos serán definidos por el Arconte y reconocidos provisionalmente
-                como representación de la identidad hernaviana, con su lema “Paz, naturaleza, innovación”
-                y la frase “Nacidos de un sueño, luchando por cumplirlo”.
-            </p>
+            <p>La bandera y demás símbolos serán definidos por el Arconte y reconocidos provisionalmente como representación de la identidad hernaviana, con su lema “Paz, naturaleza, innovación” y la frase “Nacidos de un sueño, luchando por cumplirlo”.</p>
             <p>Los objetivos iniciales de Hernavia serán:</p>
             <ol>
                 <li>Fortalecer la unión y crecimiento de la comunidad hernaviana.</li>
@@ -143,13 +99,7 @@
             </ol>
 
             <h3>Artículo 5 – Carácter Transitorio</h3>
-            <p>
-                Esta Carta es un documento provisional. Podrá ser modificada en el futuro a medida que Hernavia
-                crezca y se fortalezca, por decisión del Arconte o mediante una futura Constitución establecida
-                con la participación del pueblo.
-                Toda acción deberá respetar esta Carta, las leyes de Hernavia que se promulguen posteriormente,
-                y las leyes del país donde se encuentre el ciudadano.
-            </p>
+            <p>Esta Carta es un documento provisional. Podrá ser modificada en el futuro a medida que Hernavia crezca y se fortalezca, por decisión del Arconte o mediante una futura Constitución establecida con la participación del pueblo. Toda acción deberá respetar esta Carta, las leyes de Hernavia que se promulguen posteriormente, y las leyes del país donde se encuentre el ciudadano.</p>
 
             <h3>Artículo 6 – Símbolos</h3>
             <h4>Bandera</h4>
@@ -157,8 +107,6 @@
             <p>La bandera de Hernavia simboliza la naturaleza, la innovación, la paz y la fraternidad con Colombia.</p>
 
             <p><strong>Arconte fundador:</strong> Hernán Coronado.</p>
-
-            <a href="documentos.html" class="boton-volver">Volver a Documentos</a>
         </section>
     </main>
 
