@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
- <loc>https://hernavia.github.io/Hernavia/</loc>
+    <loc>https://hernavia.github.io/Hernavia/</loc>
   </url>
   <url>
     <loc>https://hernavia.github.io/Hernavia/documentos.html</loc>
@@ -15,6 +15,9 @@
   </url>
   <url>
     <loc>https://hernavia.github.io/Hernavia/simbolos.html</loc>
+  </url>
+  <url>
+    <loc>https://hernavia.github.io/Hernavia/identidad.html</loc>
   </url>
   <url>
     <loc>https://hernavia.github.io/Hernavia/comounirse.html</loc>
@@ -31,7 +34,5 @@
   <url>
     <loc>https://hernavia.github.io/Hernavia/noticias-random.html</loc>
   </url>
-   <url>
-    <loc>https://hernavia.github.io/Hernavia/identidad.html</loc>
 
 </urlset>
