@@ -6,20 +6,13 @@
     <title>Carta Fundacional - Hernavia</title>
     <meta name="description" content="Esta carta nos muestra la columna de Hernavia con los principios básicos e información imprescindible para conocer Hernavia de forma seria.">
     <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-
-    <!-- Preload CSS para evitar CLS y bloqueo de renderizado -->
-    <link rel="preload" href="estilo.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="estilo.css"></noscript>
-
+    <link rel="stylesheet" href="estilo.css">
     <link rel="canonical" href="https://hernavia.github.io/Hernavia/carta.html">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Proyecto Hernavia">
     <link rel="manifest" href="manifest.json">
-
     <style>
-        /* Sección de carta */
         section.carta {
-            min-height: 700px; /* reserva suficiente espacio para contenido largo */
             line-height: 1.6;
             text-align: justify;
             padding: 20px;
@@ -30,12 +23,10 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
         section.carta h2, section.carta h3, section.carta h4 {
             color: #006A44;
-            margin-top: 1.5em; /* asegura separación vertical */
+            margin-top: 1.5em;
         }
-
         .bandera {
             display: block;
             width: 300px;
@@ -44,12 +35,6 @@
             margin: 15px auto;
             border: 4px solid #006A44;
             border-radius: 8px;
-            min-height: 200px; /* reserva espacio mientras carga la imagen */
-        }
-
-        /* Evitar CLS en párrafos largos */
-        p {
-            min-height: 1.2em; /* cada párrafo reserva espacio inicial */
         }
     </style>
 </head>
