@@ -6,7 +6,7 @@
     <title>Sugerencias - Hernavia</title>
     <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
     <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-    
+
     <!-- CSS no bloqueante -->
     <link rel="preload" href="estilo.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="estilo.css"></noscript>
@@ -88,12 +88,17 @@
         .audio-boton:hover {
             background-color: #004a2d;
         }
+
+        p.redes a {
+            color: #006A44;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
 
-<header>
+<header role="banner">
     <h1>Envíanos tus sugerencias</h1>
 </header>
 
@@ -108,7 +113,7 @@
     <a href="noticias-random.html">Noticias Random</a>
 </nav>
 
-<main>
+<main role="main">
     <section class="sugerencias">
         <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, por favor envíanos un mensaje:</p>
 
@@ -117,15 +122,15 @@
             ¿Puedes cambiar el futuro?
         </div>
 
-        <button class="audio-boton" onclick="document.getElementById('audio-futuro').play()">▶ ¿?</button>
-        <audio id="audio-futuro" src="futuro.mp3"></audio>
+        <button class="audio-boton" aria-label="Reproducir audio ¿Puedes cambiar el futuro?" onclick="document.getElementById('audio-futuro').play()">▶ ¿?</button>
+        <audio id="audio-futuro" src="audio/futuro.mp3" preload="none"></audio>
 
         <form action="https://formspree.io/f/xldpgjop" method="POST">
             <label for="nombre">Nombre (opcional):</label>
-            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="nombre" name="nombre" autocomplete="name">
 
             <label for="correo">Correo (opcional):</label>
-            <input type="email" id="correo" name="correo">
+            <input type="email" id="correo" name="correo" autocomplete="email">
 
             <label for="asunto">Asunto:</label>
             <input type="text" id="asunto" name="asunto" required>
@@ -138,13 +143,13 @@
             </p>
         </form>
 
-        <p>O también puedes visitar nuestras redes sociales:</p>
-        <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
-        <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
+        <p class="redes">O también puedes visitar nuestras redes sociales:</p>
+        <p class="redes">Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
+        <p class="redes">YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
     </section>
 </main>
 
-<footer>
+<footer role="contentinfo">
     &copy; 2025 Hernavia - Proyecto Cultural
 </footer>
 
