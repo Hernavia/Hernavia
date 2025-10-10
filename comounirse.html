@@ -29,7 +29,59 @@
     <a href="noticias-random.html">Noticias Random</a>
 </nav>
 
-<main>
+<!-- Modal de Política (mini página flotante) -->
+<div id="modal-politica" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
+  <div class="contenido" style="background:white; padding:20px; border-radius:10px; max-width:600px; max-height:80vh; overflow-y:auto;">
+    <h2>Política de Seguridad de Datos</h2>
+    <p>En Hernavia, la protección de tus datos es prioritaria. Los siguientes datos son obligatorios: <strong>nombre completo, fecha de nacimiento, país/departamento y correo electrónico.</strong></p>
+    <p>Puedes opcionalmente proporcionar tu municipio y ocupación.</p>
+    <p>Si decides retirarte, tus datos se conservarán hasta por <strong>2 meses</strong> para fines administrativos, luego serán eliminados de manera segura.</p>
+    <p>Puedes solicitar en cualquier momento la <strong>eliminación de tus datos opcionales</strong> o <strong>corrección de información</strong> enviando un correo al equipo de Hernavia.</p>
+    <button id="cerrar-politica" class="faq-toggle">Cerrar</button>
+  </div>
+</div>
+
+<footer>
+    &copy; 2025 Hernavia — Proyecto Cultural
+</footer>
+
+<script>
+  // Mostrar / ocultar bloque de preguntas frecuentes
+  const toggleButton = document.getElementById('toggleFAQ');
+  const faqContainer = document.getElementById('faqContainer');
+  let visible = false;
+
+  toggleButton.addEventListener('click', () => {
+    visible = !visible;
+    faqContainer.style.display = visible ? 'block' : 'none';
+    toggleButton.textContent = visible ? 'Ocultar Preguntas' : 'Mostrar Preguntas';
+  });
+
+  // Modal política de datos
+  const abrir = document.getElementById("abrir-politica");
+  const cerrar = document.getElementById("cerrar-politica");
+  const modal = document.getElementById("modal-politica");
+
+  abrir.addEventListener("click", e => {
+    e.preventDefault();
+    modal.style.display = "flex";
+  });
+
+  cerrar.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Registrar Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/Hernavia/sw.js')
+        .then(reg => console.log('Service Worker registrado:', reg.scope))
+        .catch(err => console.error('Error al registrar el SW:', err));
+    });
+  }
+</script>
+
+    <main>
   <!-- Preguntas Frecuentes -->
   <section class="section" style="text-align:center;">
     <h2>Preguntas Frecuentes</h2>
@@ -86,57 +138,6 @@
     <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
   </section>
 </main>
-
-<!-- Modal de Política (mini página flotante) -->
-<div id="modal-politica" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
-  <div class="contenido" style="background:white; padding:20px; border-radius:10px; max-width:600px; max-height:80vh; overflow-y:auto;">
-    <h2>Política de Seguridad de Datos</h2>
-    <p>En Hernavia, la protección de tus datos es prioritaria. Los siguientes datos son obligatorios: <strong>nombre completo, fecha de nacimiento, país/departamento y correo electrónico.</strong></p>
-    <p>Puedes opcionalmente proporcionar tu municipio y ocupación.</p>
-    <p>Si decides retirarte, tus datos se conservarán hasta por <strong>2 meses</strong> para fines administrativos, luego serán eliminados de manera segura.</p>
-    <p>Puedes solicitar en cualquier momento la <strong>eliminación de tus datos opcionales</strong> o <strong>corrección de información</strong> enviando un correo al equipo de Hernavia.</p>
-    <button id="cerrar-politica" class="faq-toggle">Cerrar</button>
-  </div>
-</div>
-
-<footer>
-    &copy; 2025 Hernavia — Proyecto Cultural
-</footer>
-
-<script>
-  // Mostrar / ocultar bloque de preguntas frecuentes
-  const toggleButton = document.getElementById('toggleFAQ');
-  const faqContainer = document.getElementById('faqContainer');
-  let visible = false;
-
-  toggleButton.addEventListener('click', () => {
-    visible = !visible;
-    faqContainer.style.display = visible ? 'block' : 'none';
-    toggleButton.textContent = visible ? 'Ocultar Preguntas' : 'Mostrar Preguntas';
-  });
-
-  // Modal política de datos
-  const abrir = document.getElementById("abrir-politica");
-  const cerrar = document.getElementById("cerrar-politica");
-  const modal = document.getElementById("modal-politica");
-
-  abrir.addEventListener("click", e => {
-    e.preventDefault();
-    modal.style.display = "flex";
-  });
-
-  cerrar.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  // Registrar Service Worker
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/Hernavia/sw.js')
-        .then(reg => console.log('Service Worker registrado:', reg.scope))
-        .catch(err => console.error('Error al registrar el SW:', err));
-    });
-  }
-</script>
+    
 </body>
 </html>
