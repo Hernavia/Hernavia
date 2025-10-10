@@ -9,17 +9,10 @@
   <meta name="author" content="Proyecto Hernavia">
   <meta name="robots" content="index, follow">
 
-  <!-- Ícono -->
   <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-
-  <!-- Precarga de estilos -->
   <link rel="preload" href="estilo.css" as="style">
   <link rel="stylesheet" href="estilo.css">
-
-  <!-- Manifesto para PWA -->
   <link rel="manifest" href="manifest.json">
-
-  <!-- URL canónica -->
   <link rel="canonical" href="https://hernavia.github.io/Hernavia/">
 </head>
 
@@ -61,16 +54,16 @@
     <section id="significado">
       <h2>Significado de los colores</h2>
       <ul>
-        <li><strong>Verde:</strong> Representa la naturaleza y su tono particular simboliza también la innovación.</li>
-        <li><strong>Blanco:</strong> Simboliza la paz, cohesión, unión y fraternidad.</li>
+        <li><strong>Verde:</strong> Representa la naturaleza y la innovación.</li>
+        <li><strong>Blanco:</strong> Simboliza la paz, unión y fraternidad.</li>
         <li><strong>Amarillo:</strong> Representa las raíces con Colombia.</li>
       </ul>
     </section>
   </main>
 
-  <!-- Sección Preguntas Frecuentes -->
+  <!-- Preguntas Frecuentes -->
   <section class="section">
-    <h2 style="text-align:center; color:#006A44; margin-bottom:20px;">Preguntas Frecuentes</h2>
+    <h2 style="text-align:center; color:#A47A00; margin-bottom:20px;">Preguntas Frecuentes</h2>
 
     <div style="text-align:center;">
       <button id="mostrarPreguntas" class="btn-link">Mostrar Preguntas</button>
@@ -80,7 +73,7 @@
 
       <details class="faq-card">
         <summary>¿Cómo los puedo contactar?</summary>
-        <p>Puedes escribirnos desde la sección de <a href="sugerencias.html">Sugerencias</a> o a través de nuestras redes sociales. Todos los mensajes llegan directamente al equipo de Hernavia.</p>
+        <p>Puedes escribirnos desde la sección de <a href="sugerencias.html">Sugerencias</a> o por nuestras redes sociales. Los mensajes llegan directamente al equipo de Hernavia.</p>
       </details>
 
       <details class="faq-card">
@@ -115,23 +108,23 @@
   .faq-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
   .faq-card {
-    background-color: white;
-    border: 2px solid #006A44;
+    background-color: #fffbea;
+    border: 2px solid #d4b100;
     border-radius: 10px;
-    padding: 25px 20px;
+    padding: 15px 18px; /* más compacto */
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
 
   .faq-card summary {
-    font-weight: bold;
-    color: #006A44;
-    font-size: 1.2em;
+    font-weight: 600;
+    color: #a47a00;
+    font-size: 1.1em;
     list-style: none;
     outline: none;
   }
@@ -141,23 +134,23 @@
   }
 
   .faq-card[open] {
-    background-color: #f4fff9;
-    border-color: #004a2d;
+    background-color: #fff6cc;
+    border-color: #bfa200;
   }
 
   .faq-card p {
-    margin-top: 10px;
+    margin-top: 8px;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   .btn-link {
     display: inline-block;
     margin-top: 10px;
     padding: 12px 25px;
-    background-color: #006A44;
+    background-color: #d4b100;
     color: white;
-    text-decoration: none;
+    border: none;
     border-radius: 8px;
     font-weight: bold;
     font-size: 1.1em;
@@ -166,7 +159,7 @@
   }
 
   .btn-link:hover {
-    background-color: #004a2d;
+    background-color: #bfa200;
   }
   </style>
 
