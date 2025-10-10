@@ -5,11 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sugerencias - Hernavia</title>
 <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
+<meta name="theme-color" content="#006A44">
+
+<!-- Cache de larga duración -->
+<meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
+
 <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
 
-<!-- CSS no bloqueante -->
-<link rel="preload" href="estilo.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="estilo.css"></noscript>
+<!-- CSS con versionado para cache -->
+<link rel="preload" href="estilo.css?v=2" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="estilo.css?v=2"></noscript>
 
 <link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
 <meta name="robots" content="index, follow">
@@ -17,6 +22,10 @@
 
 <!-- Preconnect a Formspree -->
 <link rel="preconnect" href="https://formspree.io" crossorigin>
+
+<!-- Prefetch de recursos que se usan después -->
+<link rel="prefetch" href="futuro.mp3" as="audio" type="audio/mpeg">
+<link rel="prefetch" href="img/puedenideas.png" as="image" type="image/png">
 
 <style>
 section.sugerencias { max-width: 900px; margin: 20px auto; padding: 20px; background:white; border-left:8px solid #006A44; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); min-height:300px; }
