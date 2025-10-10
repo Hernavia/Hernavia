@@ -6,17 +6,24 @@
   <title>Hernavia</title>
   <meta name="description" content="Descubre Hernavia, una identidad colombiana donde creatividad, comunidad y cultura se unen por un futuro sostenible.">
   <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="Proyecto Hernavia">
+  <meta name="robots" content="index, follow">
+
+  <!-- Ícono -->
   <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+
+  <!-- Precarga de estilos -->
   <link rel="preload" href="estilo.css" as="style">
   <link rel="stylesheet" href="estilo.css">
-  <link rel="canonical" href="https://hernavia.github.io/Hernavia/">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Proyecto Hernavia">
+
+  <!-- Manifesto para PWA -->
   <link rel="manifest" href="manifest.json">
+
+  <!-- URL canónica -->
+  <link rel="canonical" href="https://hernavia.github.io/Hernavia/">
 </head>
 
 <body>
-
   <header>
     <h1>Hernavia</h1>
   </header>
@@ -43,8 +50,7 @@
 
     <section id="donde" class="texto-largo">
       <h2>¿Dónde se encuentra?</h2>
-      <p>Hernavia nace en Colombia, específicamente en el municipio de Gachancipá, donde puedes encontrar sus proyectos y su administración.
-      actualmente se encuentra en una etapa inicial y teórica, por lo cual aún no existen estructuras o acciones tangibles. Tus sugerencias y apoyo son esenciales para fortalecerla.</p>
+      <p>Hernavia nace en Colombia, específicamente en el municipio de Gachancipá, donde puedes encontrar sus proyectos y su administración. Actualmente se encuentra en una etapa inicial y teórica, por lo cual aún no existen estructuras o acciones tangibles. Tus sugerencias y apoyo son esenciales para fortalecerla.</p>
     </section>
 
     <section id="bandera">
@@ -66,9 +72,14 @@
     &copy; 2025 Hernavia — Proyecto Cultural
   </footer>
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/Hernavia/sw.js')
+          .then(reg => console.log(' Service Worker registrado:', reg.scope))
+          .catch(err => console.error('Error al registrar el SW:', err));
+      });
+    }
+  </script>
 </body>
 </html>
-
-
-
-
