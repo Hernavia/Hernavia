@@ -5,14 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugerencias - Hernavia</title>
     <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
-    <link rel="icon" type="image/png" href="https://hernavia.github.io/Hernavia/favicono.png">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+    
+    <!-- CSS no bloqueante -->
+    <link rel="preload" href="estilo.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo.css"></noscript>
+
     <link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Proyecto Hernavia">
+
+    <style>
+        section.sugerencias {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-left: 8px solid #006A44;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            min-height: 250px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        form button {
+            padding: 12px;
+            background-color: #006A44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #004a2d;
+        }
+
+        label { font-weight: bold; }
+
+        .frase-futuro {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .frase-futuro img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .audio-boton {
+            background-color: #006A44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .audio-boton:hover {
+            background-color: #004a2d;
+        }
+    </style>
 </head>
 
 <body>
+
 <header>
     <h1>Envíanos tus sugerencias</h1>
 </header>
@@ -29,9 +109,16 @@
 </nav>
 
 <main>
-    <section class="section">
-        <h2>Formulario de Sugerencias</h2>
-        <p>Si tienes ideas, sugerencias o preguntas para mejorar Hernavia, envíanos un mensaje:</p>
+    <section class="sugerencias">
+        <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, por favor envíanos un mensaje:</p>
+
+        <div class="frase-futuro">
+            <img src="puedenideas.png" alt="Icono ideas">
+            ¿Puedes cambiar el futuro?
+        </div>
+
+        <button class="audio-boton" onclick="document.getElementById('audio-futuro').play()">▶ ¿?</button>
+        <audio id="audio-futuro" src="futuro.mp3"></audio>
 
         <form action="https://formspree.io/f/xldpgjop" method="POST">
             <label for="nombre">Nombre (opcional):</label>
@@ -47,27 +134,19 @@
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
             <p style="text-align:center; margin-top:20px;">
-                <button type="submit" class="boton-hernavia">Enviar sugerencia</button>
+                <button type="submit">Enviar sugerencia</button>
             </p>
         </form>
-    </section>
 
-    <section class="section">
-        <h2>Redes Sociales</h2>
-        <p>Puedes seguirnos y contactarnos también a través de nuestras redes:</p>
-        <ul>
-            <li>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">hernaviaoficial</a></li>
-            <li>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">Hernavia Oficial</a></li>
-        </ul>
-
-        <p style="text-align:center; margin-top:20px;">
-            <a href="documentos.html" class="boton-hernavia">Volver a Documentos</a>
-        </p>
+        <p>O también puedes visitar nuestras redes sociales:</p>
+        <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
+        <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
     </section>
 </main>
 
 <footer>
-    &copy; 2025 Hernavia — Proyecto Cultural
+    &copy; 2025 Hernavia - Proyecto Cultural
 </footer>
+
 </body>
 </html>
