@@ -24,29 +24,30 @@
       margin-bottom: 10px;
     }
 
+    /* Botón igual al de índice */
     .faq-toggle-btn {
-      display: block;
-      width: 100%;
+      display: inline-block;
       background-color: #006A44;
       color: white;
+      padding: 15px 25px;
+      font-size: 1.1em;
       border: none;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 1.2em;
+      border-radius: 8px;
       cursor: pointer;
-      margin-top: 10px;
-      transition: background 0.3s ease;
+      margin-top: 15px;
+      transition: background-color 0.3s ease, transform 0.1s ease;
     }
 
     .faq-toggle-btn:hover {
       background-color: #004a2d;
+      transform: scale(1.02);
     }
 
     .faq-container {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
     .faq-card {
@@ -129,7 +130,7 @@
         </details>
 
         <details class="faq-card">
-          <summary>¿Por qué "Arconte"?</summary>
+          <summary>¿Por qué “Arconte”?</summary>
           <p>Es un término simbólico elegido para representar una figura de liderazgo en Hernavia. No implica nada más, solo una forma distintiva de referirse al líder del proyecto.</p>
         </details>
 
@@ -170,4 +171,3 @@
   </script>
 </body>
 </html>
-
