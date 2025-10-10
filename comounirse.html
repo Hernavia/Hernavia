@@ -29,6 +29,64 @@
     <a href="noticias-random.html">Noticias Random</a>
 </nav>
 
+<main>
+  <!-- Formulario de solicitud -->
+  <section class="section">
+    <p>Actualmente, la ciudadanía por vía virtual no está habilitada. Sin embargo, puedes llenar este formulario y recibirás notificación cuando se active.</p>
+
+    <form action="https://formspree.io/f/xldpgjop" method="POST">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="edad">Fecha de nacimiento:</label>
+        <input type="date" id="edad" name="edad" required>
+
+        <label for="ciudad">País / Departamento:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <label for="municipio">Municipio (opcional):</label>
+        <input type="text" id="municipio" name="municipio">
+
+        <label for="ocupacion">Ocupación (opcional):</label>
+        <input type="text" id="ocupacion" name="ocupacion">
+
+        <label>
+            <input type="checkbox" name="terminos" aria-label="Aceptar términos y condiciones" required>
+            Acepto los <a href="#" id="abrir-politica">términos y condiciones</a> de Hernavia.
+        </label>
+
+        <button type="submit" class="faq-toggle">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <!-- Preguntas Frecuentes -->
+  <section class="section" style="text-align:center;">
+    <h2>Preguntas Frecuentes</h2>
+    <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
+
+    <div id="faqContainer" class="faq-container" style="display:none; margin-top:15px;">
+      <details class="faq-card">
+        <summary>¿Por qué la ciudadanía virtual no está activa?</summary>
+        <p>El sistema de ciudadanía virtual está en desarrollo y se activará cuando los mecanismos de registro y participación estén listos.</p>
+      </details>
+      <details class="faq-card">
+        <summary>¿Qué ventajas tendrá la ciudadanía virtual?</summary>
+        <p>Permitirá participar activamente en consultas, recibir comunicados oficiales y representar a Hernavia en proyectos o eventos.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Sección centrada de CTA -->
+  <section class="section cta" style="text-align:center;">
+    <h2>¿Qué significa unirse a Hernavia?</h2>
+    <p>Unirse no es solo llenar un formulario: significa compartir una identidad, valores y visión de comunidad.</p>
+    <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
+  </section>
+</main>
+
 <!-- Modal de Política (mini página flotante) -->
 <div id="modal-politica" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
   <div class="contenido" style="background:white; padding:20px; border-radius:10px; max-width:600px; max-height:80vh; overflow-y:auto;">
@@ -80,64 +138,5 @@
     });
   }
 </script>
-
-    <main>
-  <!-- Preguntas Frecuentes -->
-  <section class="section" style="text-align:center;">
-    <h2>Preguntas Frecuentes</h2>
-    <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
-
-    <div id="faqContainer" class="faq-container" style="display:none; margin-top:15px;">
-      <details class="faq-card">
-        <summary>¿Por qué la ciudadanía virtual no está activa?</summary>
-        <p>El sistema de ciudadanía virtual está en desarrollo y se activará cuando los mecanismos de registro y participación estén listos.</p>
-      </details>
-      <details class="faq-card">
-        <summary>¿Qué ventajas tendrá la ciudadanía virtual?</summary>
-        <p>Permitirá participar activamente en consultas, recibir comunicados oficiales y representar a Hernavia en proyectos o eventos.</p>
-      </details>
-    </div>
-  </section>
-
-  <!-- Formulario de solicitud -->
-  <section class="section">
-    <p>Actualmente, la ciudadanía por vía virtual no está habilitada. Sin embargo, puedes llenar este formulario y recibirás notificación cuando se active.</p>
-
-    <form action="https://formspree.io/f/xldpgjop" method="POST">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-
-        <label for="edad">Fecha de nacimiento:</label>
-        <input type="date" id="edad" name="edad" required>
-
-        <label for="ciudad">País / Departamento:</label>
-        <input type="text" id="ciudad" name="ciudad" required>
-
-        <label for="municipio">Municipio (opcional):</label>
-        <input type="text" id="municipio" name="municipio">
-
-        <label for="ocupacion">Ocupación (opcional):</label>
-        <input type="text" id="ocupacion" name="ocupacion">
-
-        <label>
-            <input type="checkbox" name="terminos" aria-label="Aceptar términos y condiciones" required>
-            Acepto los <a href="#" id="abrir-politica">términos y condiciones</a> de Hernavia.
-        </label>
-
-        <button type="submit" class="faq-toggle">Enviar solicitud</button>
-    </form>
-  </section>
-
-  <!-- Sección CTA centrada -->
-  <section class="section cta">
-    <h2>¿Qué significa unirse a Hernavia?</h2>
-    <p>Unirse no es solo llenar un formulario: significa compartir una identidad, valores y visión de comunidad.</p>
-    <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
-  </section>
-</main>
-    
 </body>
 </html>
