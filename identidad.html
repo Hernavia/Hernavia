@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identidad Hernaviana - Hernavia</title>
-    <meta name="description" content="Mira qué significa ser parte de Hernavia y el valor de nuestra identidad.">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-    <link rel="preload" href="estilo.css" as="style">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="canonical" href="https://hernavia.github.io/Hernavia/identidad.html">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Proyecto Hernavia">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identidad Hernaviana - Hernavia</title>
+<meta name="description" content="Mira qué significa ser parte de Hernavia y el valor de nuestra identidad.">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+<link rel="preload" href="estilo.css" as="style">
+<link rel="stylesheet" href="estilo.css">
+<link rel="canonical" href="https://hernavia.github.io/Hernavia/identidad.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Proyecto Hernavia">
 </head>
 <body>
 
@@ -43,7 +43,7 @@
         <ul>
             <li>Paz hernaviana: Construir desde la armonía, la cohesión, la verdad y la fraternidad.</li>
             <li>Innovación hernaviana: Crear nuevas formas de unión y expresión; no quedarse en los métodos clásicos, sino buscar caminos que beneficien a todos.</li>
-            <li>Respeto hernaviano por la naturaleza: Cuidar lo que nos rodea como parte esencial del entorno. Si piensas “¿qué hace un solo papel?”, recuerda que 8 mil millones de personas pueden pensar lo mismo.</li>
+            <li>Respeto hernaviano por la naturaleza y cuidado del agua: Cuidar lo que nos rodea y los recursos vitales como el agua es parte esencial del entorno.</li>
         </ul>
     </section>
 
@@ -79,11 +79,52 @@
              height="188" 
              fetchpriority="high">
     </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="section" style="text-align:center;">
+        <h2>Preguntas Frecuentes</h2>
+        <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
+
+        <div id="faqContainer" class="faq-container" style="display:none; margin-top:15px;">
+            <details class="faq-card">
+                <summary>¿Qué es Hernavia?</summary>
+                <p>Hernavia es una <strong>identidad colectiva</strong> y un proyecto cultural. Va más allá de un país o estado: es un espacio donde las personas se reconocen y participan bajo una misma visión.</p>
+            </details>
+
+            <details class="faq-card">
+                <summary>¿Hernavia es un país real?</summary>
+                <p>Puedes considerarla una <strong>micronación o nación no reconocida oficialmente</strong>. Aunque no tenga reconocimiento legal, funciona como comunidad organizada con roles y principios propios.</p>
+            </details>
+
+            <details class="faq-card">
+                <summary>¿Cuáles son los principios de Hernavia?</summary>
+                <p>Se fundamenta en la paz, innovación, respeto por la naturaleza, cuidado del agua, unión de la comunidad y verdad.</p>
+            </details>
+
+            <details class="faq-card">
+                <summary>¿Puedo considerarme hernaviano aunque no sea ciudadano?</summary>
+                <p>Sí. Aunque no seas ciudadano hernaviano, puedes <strong>ser hernaviano</strong> como identidad cultural y simbólica. No necesitas registro ni reconocimiento oficial para sentirte parte de Hernavia.</p>
+            </details>
+        </div>
+    </section>
+
 </main>
 
 <footer>
     &copy; 2025 Hernavia - Proyecto Cultural
 </footer>
+
+<script>
+const toggleButton = document.getElementById('toggleFAQ');
+const faqContainer = document.getElementById('faqContainer');
+let visible = false;
+
+toggleButton.addEventListener('click', () => {
+    visible = !visible;
+    faqContainer.style.display = visible ? 'block' : 'none';
+    toggleButton.textContent = visible ? 'Ocultar Preguntas' : 'Mostrar Preguntas';
+});
+</script>
 
 </body>
 </html>
