@@ -69,25 +69,39 @@
   </main>
 
   <!-- Sección de Preguntas Frecuentes -->
- <details class="faq-card">
-  <summary>¿Por qué se creó el himno de Hernavia?</summary>
-  <p>El himno fue creado para acercar Hernavia a la gente, fortalecer la identidad comunitaria y motivar la participación activa de todos los miembros en la construcción de la cultura hernaviana.</p>
-</details>
+  <section class="section">
+    <h2 style="text-align:center; color:#006A44; margin-bottom:15px;">Preguntas Frecuentes</h2>
 
-<details class="faq-card">
-  <summary>¿Por qué la bandera tiene esos colores?</summary>
-  <p>Los colores fueron elegidos para representar los valores de Hernavia, el verde representa la nautraleza y su tono marino simboliza la innovacion, el blanco simboliza la paz la tranqulidad la union la cohesion la verdad y demas extenciones de la paz y el amarillo simboliza la hermandad colombiana y la fraternidad.</p>
-</details>
+    <div style="text-align:center;">
+      <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
+    </div>
 
-<details class="faq-card">
-  <summary>¿Puedo proponer un nuevo símbolo para Hernavia?</summary>
-  <p>¡Claro! Puedes enviar tus propuestas a nuestras redes sociales. Algunas podrían ser adoptadas oficialmente, incluyendo el escudo, y se anunciarán a través de las consultas y comunicados de Hernavia.</p>
-</details>
+    <div id="faqContainer" class="faq-container" style="display:none; margin-top:20px;">
 
-<details class="faq-card">
-  <summary>¿Habrá más símbolos oficiales?</summary>
-  <p>Sí. Además de la bandera y el himno, se planea crear un escudo y otros elementos simbólicos que representen distintos aspectos de Hernavia. La participación ciudadana será clave para decidir cuáles se adoptan oficialmente.</p>
-</details>
+      <details class="faq-card">
+        <summary>¿Cómo los puedo contactar?</summary>
+        <p>Puedes escribirnos desde la sección de <a href="sugerencias.html">Sugerencias</a> o a través de nuestras redes sociales. Todos los mensajes llegan directamente al equipo de Hernavia.</p>
+      </details>
+
+      <details class="faq-card">
+        <summary>¿Por qué “Arconte”?</summary>
+        <p>Es un término simbólico elegido para representar una figura de liderazgo dentro de Hernavia. El nombre de Arconte fue escogido para distinguir a Hernavia sin aferrarse a títulos tradicionales.</p>
+      </details>
+
+      <details class="faq-card">
+        <summary>¿Existen riesgos legales al unirse a Hernavia?</summary>
+        <p>No. Todas las sanciones son internas y no hay riesgos legales reales por incumplimiento. Las sanciones solo pueden incluir medidas internas o la revocación de la ciudadanía según las leyes transitorias.</p>
+      </details>
+
+      <details class="faq-card">
+        <summary>¿Hernavia tiene afiliación política o religiosa?</summary>
+        <p>No. Hernavia es completamente subjetiva e independiente. Aunque puede mostrar apoyo a ciertas ideas ideológicas, siempre lo hace de manera neutral, realista y sin afiliación partidista ni religiosa.</p>
+      </details>
+
+      <details class="faq-card">
+        <summary>¿Qué beneficios tiene unirse a Hernavia?</summary>
+        <p>Formar parte de Hernavia te permite participar en votaciones, ser tomado en cuenta de manera activa y acceder a beneficios internos futuros de la comunidad.</p>
+      </details>
 
     </div>
   </section>
@@ -97,14 +111,14 @@
   .faq-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px; /* ← antes era 15px, ahora hay más espacio entre cuadros */
   }
 
   .faq-card {
     background-color: white;
     border: 2px solid #006A44;
     border-radius: 10px;
-    padding: 18px 20px; /* más compacto */
+    padding: 18px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -177,5 +191,3 @@
 
 </body>
 </html>
-
-
