@@ -1,130 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Cómo unirse? - Hernavia</title>
-    <meta name="description" content="Formulario e información sobre cómo unirse a Hernavia, quieres saber más? Un poco más abajo encuentra una página que te lo explicará.">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-    <link rel="preload" href="estilo.css" as="style">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="canonical" href="https://hernavia.github.io/Hernavia/comounirse.html">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Proyecto Hernavia">
-    <style>
-        body {
-            background-color: #f4f4f4;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Cómo unirse? - Hernavia</title>
+<meta name="description" content="Formulario e información sobre cómo unirse a Hernavia. Participa y forma parte de nuestra comunidad.">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+<link rel="preload" href="estilo.css" as="style">
+<link rel="stylesheet" href="estilo.css">
+<link rel="canonical" href="https://hernavia.github.io/Hernavia/comounirse.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Proyecto Hernavia">
 
-        .section {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white !important;
-            border-left: 8px solid #006A44;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            min-height: 150px;
-        }
+<style>
+    body {
+        background-color: #f4f4f4;
+    }
 
-        form {
-            max-width: 600px;
-            margin: 20px auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+    .section {
+        max-width: 900px;
+        margin: 25px auto;
+        padding: 25px;
+        background-color: white !important;
+        border-left: 8px solid #006A44;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        min-height: 150px;
+    }
 
-        form input, form textarea, form select {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 1em;
-        }
+    form {
+        max-width: 600px;
+        margin: 20px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-        form button {
-            padding: 12px;
-            background-color: #006A44;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+    form input, form textarea, form select {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+    }
 
-        form button:hover {
-            background-color: #004a2d;
-        }
+    form button {
+        padding: 12px;
+        background-color: #006A44;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
 
-        label { font-weight: bold; }
+    form button:hover {
+        background-color: #004a2d;
+    }
 
-        .cta {
-            margin-top: 30px;
-            padding: 20px;
-            text-align: center;
-            background: white !important;
-            border-radius: 10px;
-        }
+    label { font-weight: bold; }
 
-        .cta h2 {
-            color: #006A44;
-        }
+    .cta {
+        margin-top: 30px;
+        padding: 25px;
+        text-align: center;
+        background: white !important;
+        border-radius: 10px;
+    }
 
-        .btn-link {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 20px;
-            background-color: #006A44;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+    .cta h2 {
+        color: #006A44;
+        margin-bottom: 15px;
+    }
 
-        .btn-link:hover {
-            background-color: #004a2d;
-        }
+    .btn-link {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 20px;
+        background-color: #006A44;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
 
-        /* Estilo del modal */
-        #modal-politica {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
+    .btn-link:hover {
+        background-color: #004a2d;
+    }
 
-        #modal-politica .contenido {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
+    /* Estilo del modal */
+    #modal-politica {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
 
-        #cerrar-politica {
-            background: #006A44;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-            margin-top: 15px;
-        }
+    #modal-politica .contenido {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
 
-        #cerrar-politica:hover {
-            background: #004a2d;
-        }
-    </style>
+    #cerrar-politica {
+        background: #006A44;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    #cerrar-politica:hover {
+        background: #004a2d;
+    }
+</style>
 </head>
-<body>
 
+<body>
 <header>
     <h1>¿Cómo unirse a Hernavia?</h1>
 </header>
@@ -141,9 +143,7 @@
 </nav>
 
 <section class="section">
-<p>
-Actualmente la ciudadanía por método virtual no está habilitada, aunque puede llenar este formulario y será notificado cuando se active. Además, tenga en cuenta que la participación es muy importante para Hernavia: si participa en las consultas de la página Consultas, esto quedará registrado y se tomará en cuenta.
-</p>
+<p>Actualmente, la ciudadanía por vía virtual no está habilitada. Sin embargo, puedes llenar este formulario y recibirás notificación cuando se active. La participación es clave: tu participación en consultas y actividades quedará registrada y será tomada en cuenta dentro de la comunidad.</p>
 
 <form action="https://formspree.io/f/xldpgjop" method="POST">
     <label for="nombre">Nombre completo:</label>
@@ -152,7 +152,7 @@ Actualmente la ciudadanía por método virtual no está habilitada, aunque puede
     <label for="correo">Correo electrónico:</label>
     <input type="email" id="correo" name="correo" required>
 
-    <label for="edad">Fecha de Nacimiento:</label>
+    <label for="edad">Fecha de nacimiento:</label>
     <input type="date" id="edad" name="edad" required>
 
     <label for="ciudad">País / Departamento:</label>
@@ -174,46 +174,44 @@ Actualmente la ciudadanía por método virtual no está habilitada, aunque puede
 </section>
 
 <section class="section cta">
-<h2>¿Qué significa realmente unirse a Hernavia?</h2>
-<p>Más allá de un formulario, unirse es compartir una identidad y una visión de comunidad.</p>
+<h2>¿Qué significa unirse a Hernavia?</h2>
+<p>Unirse no es solo un formulario: significa compartir una identidad, valores y visión de comunidad.</p>
 <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
 </section>
 
 <footer>
-    &copy; 2025 Hernavia - Proyecto Cultural
+    &copy; 2025 Hernavia — Proyecto Cultural
 </footer>
 
 <!-- Modal de Política -->
 <div id="modal-politica">
   <div class="contenido">
     <h2>Política de Seguridad de Datos</h2>
-    <p>En Hernavia, la protección de tus datos es prioritaria. Los siguientes datos son obligatorios:
-    <strong>nombre completo, fecha de nacimiento, país/departamento y correo electrónico.</strong></p>
+    <p>En Hernavia, la protección de tus datos es prioritaria. Los siguientes datos son obligatorios: <strong>nombre completo, fecha de nacimiento, país/departamento y correo electrónico.</strong></p>
 
-    <p>También puedes proporcionar de manera opcional tu municipio y ocupación.</p>
+    <p>Puedes opcionalmente proporcionar tu municipio y ocupación.</p>
 
-    <p>Si decides retirarte del proyecto, tus datos se conservarán hasta por <strong>2 meses</strong> para fines administrativos, luego serán eliminados de manera segura.</p>
+    <p>Si decides retirarte, tus datos se conservarán hasta por <strong>2 meses</strong> para fines administrativos, luego serán eliminados de manera segura.</p>
 
-    <p>Puedes solicitar en cualquier momento la <strong>eliminación de tus datos opcionales</strong> o <strong>corrección de cualquier información</strong> enviando un correo al equipo de Hernavia.</p>
+    <p>Puedes solicitar en cualquier momento la <strong>eliminación de tus datos opcionales</strong> o <strong>corrección de información</strong> enviando un correo al equipo de Hernavia.</p>
 
     <button id="cerrar-politica">Cerrar</button>
   </div>
 </div>
 
 <script>
-  const abrir = document.getElementById("abrir-politica");
-  const cerrar = document.getElementById("cerrar-politica");
-  const modal = document.getElementById("modal-politica");
+const abrir = document.getElementById("abrir-politica");
+const cerrar = document.getElementById("cerrar-politica");
+const modal = document.getElementById("modal-politica");
 
-  abrir.addEventListener("click", (e) => {
+abrir.addEventListener("click", e => {
     e.preventDefault();
     modal.style.display = "flex";
-  });
+});
 
-  cerrar.addEventListener("click", () => {
+cerrar.addEventListener("click", () => {
     modal.style.display = "none";
-  });
+});
 </script>
-
 </body>
 </html>
