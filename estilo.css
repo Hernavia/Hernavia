@@ -263,3 +263,43 @@ details p {
   line-height: 1.5;
   }
 }
+/* === Estilo general para las Preguntas Frecuentes === */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* ← más espacio entre cuadros */
+  margin-top: 40px;
+}
+
+.faq-card {
+  background-color: white;
+  border: 2px solid #006A44;
+  border-radius: 10px;
+  padding: 20px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card summary {
+  font-weight: bold;
+  color: #006A44;
+  font-size: 1.2em;
+  list-style: none;
+  outline: none;
+}
+
+.faq-card summary::marker {
+  display: none;
+}
+
+.faq-card[open] {
+  background-color: #f4fff9;
+  border-color: #004a2d;
+}
+
+.faq-card p {
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.5;
+}
