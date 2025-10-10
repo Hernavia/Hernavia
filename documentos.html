@@ -11,12 +11,42 @@
   <link rel="canonical" href="https://hernavia.github.io/Hernavia/documentos.html">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Proyecto Hernavia">
+
   <style>
+    /* ==== Estilo específico para Preguntas Frecuentes ==== */
+    .faq-section {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .faq-section h2 {
+      color: #006A44;
+      margin-bottom: 10px;
+    }
+
+    .faq-toggle-btn {
+      display: block;
+      width: 100%;
+      background-color: #006A44;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .faq-toggle-btn:hover {
+      background-color: #004a2d;
+    }
+
     .faq-container {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-top: 20px;
+      gap: 15px;
+      margin-top: 15px;
     }
 
     .faq-card {
@@ -50,24 +80,6 @@
       margin-top: 10px;
       color: #333;
       line-height: 1.4;
-    }
-
-    .faq-toggle-btn {
-      display: block;
-      width: 100%;
-      background-color: #006A44;
-      color: white;
-      border: none;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 1.2em;
-      cursor: pointer;
-      margin-top: 30px;
-      transition: background 0.3s ease;
-    }
-
-    .faq-toggle-btn:hover {
-      background-color: #004a2d;
     }
   </style>
 </head>
@@ -105,29 +117,33 @@
       <a href="leyes.html" class="boton-hernavia">Leer las leyes completas</a>
     </section>
 
-    <!-- Preguntas Frecuentes -->
-    <button id="mostrarFAQ" class="faq-toggle-btn">Preguntas Frecuentes</button>
-    <div id="faqSection" class="faq-container" style="display: none;">
-      <details class="faq-card">
-        <summary>¿Cómo los puedo contactar?</summary>
-        <p>Desde nuestras redes o en la sección de sugerencias, donde el mensaje nos llega directamente.</p>
-      </details>
+    <!-- === Preguntas Frecuentes === -->
+    <section class="section texto-largo faq-section">
+      <h2>Preguntas Frecuentes</h2>
+      <button id="mostrarFAQ" class="faq-toggle-btn">Mostrar preguntas</button>
 
-      <details class="faq-card">
-        <summary>¿Por qué "Arconte"?</summary>
-        <p>Es un término simbólico elegido para representar una figura de liderazgo en Hernavia. No implica nada más, solo una forma distintiva de referirse al líder del proyecto.</p>
-      </details>
+      <div id="faqSection" class="faq-container" style="display: none;">
+        <details class="faq-card">
+          <summary>¿Cómo los puedo contactar?</summary>
+          <p>Desde nuestras redes o en la sección de sugerencias, donde el mensaje nos llega directamente.</p>
+        </details>
 
-      <details class="faq-card">
-        <summary>¿Por qué aún no está activa la ciudadanía virtual?</summary>
-        <p>Porque la organización de Hernavia no puede coexistir efectivamente si los ciudadanos virtuales tienen los mismos deberes y derechos, debido a la limitada capacidad de alcance actual y la política de aporte obligatorio.</p>
-      </details>
+        <details class="faq-card">
+          <summary>¿Por qué "Arconte"?</summary>
+          <p>Es un término simbólico elegido para representar una figura de liderazgo en Hernavia. No implica nada más, solo una forma distintiva de referirse al líder del proyecto.</p>
+        </details>
 
-      <details class="faq-card">
-        <summary>¿Hay riesgos legales al unirse a Hernavia?</summary>
-        <p>No. Todas las sanciones son únicamente internas y no hay riesgos legales reales por incumplimiento. Las sanciones solo incluyen restricciones internas o la revocación de la ciudadanía según las leyes transitorias.</p>
-      </details>
-    </div>
+        <details class="faq-card">
+          <summary>¿Por qué aún no está activa la ciudadanía virtual?</summary>
+          <p>Porque la organización de Hernavia no puede coexistir efectivamente si los ciudadanos virtuales tienen los mismos deberes y derechos, debido a la limitada capacidad de alcance actual y la política de aporte obligatorio.</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>¿Hay riesgos legales al unirse a Hernavia?</summary>
+          <p>No. Todas las sanciones son únicamente internas y no hay riesgos legales reales por incumplimiento. Las sanciones solo incluyen restricciones internas o la revocación de la ciudadanía según las leyes transitorias.</p>
+        </details>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -135,13 +151,15 @@
   </footer>
 
   <script>
+    // Mostrar/Ocultar sección de preguntas
     document.getElementById('mostrarFAQ').addEventListener('click', function() {
       const faq = document.getElementById('faqSection');
       const visible = faq.style.display === 'flex';
       faq.style.display = visible ? 'none' : 'flex';
-      this.textContent = visible ? 'Preguntas Frecuentes' : 'Ocultar Preguntas';
+      this.textContent = visible ? 'Mostrar preguntas' : 'Ocultar preguntas';
     });
 
+    // Registrar el Service Worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/Hernavia/sw.js')
@@ -152,3 +170,4 @@
   </script>
 </body>
 </html>
+
