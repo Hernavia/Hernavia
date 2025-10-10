@@ -6,15 +6,12 @@
 <title>Sugerencias - Hernavia</title>
 <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
 <meta name="theme-color" content="#006A44">
-
-<!-- Cache de larga duración -->
 <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
 
 <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
 
-<!-- CSS con versionado para cache -->
-<link rel="preload" href="estilo.css?v=2" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="estilo.css?v=2"></noscript>
+<!-- Carga CSS estable -->
+<link rel="stylesheet" href="estilo.css?v=3" media="all">
 
 <link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
 <meta name="robots" content="index, follow">
@@ -23,21 +20,67 @@
 <!-- Preconnect a Formspree -->
 <link rel="preconnect" href="https://formspree.io" crossorigin>
 
-<!-- Prefetch de recursos que se usan después -->
+<!-- Prefetch de recursos -->
 <link rel="prefetch" href="futuro.mp3" as="audio" type="audio/mpeg">
 <link rel="prefetch" href="img/puedenideas.png" as="image" type="image/png">
 
+<!-- Estilos internos para prevenir CLS inicial -->
 <style>
-section.sugerencias { max-width: 900px; margin: 20px auto; padding: 20px; background:white; border-left:8px solid #006A44; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); min-height:300px; }
+html { scroll-behavior: smooth; }
+body { min-height: 100vh; font-family: system-ui, sans-serif; }
+img { display: inline-block; }
+
+section.sugerencias { 
+  max-width: 900px; 
+  margin: 20px auto; 
+  padding: 20px; 
+  background:white; 
+  border-left:8px solid #006A44; 
+  border-radius:10px; 
+  box-shadow:0 4px 8px rgba(0,0,0,0.1); 
+  min-height:300px;
+}
+
 form { max-width:600px; margin:20px auto; display:flex; flex-direction:column; gap:15px; }
 form input, form textarea { padding:10px; border-radius:5px; border:1px solid #ccc; font-size:1em; }
 form button { padding:12px; background-color:#006A44; color:white; border:none; border-radius:5px; cursor:pointer; font-weight:bold; transition:background-color 0.3s ease; }
 form button:hover { background-color:#004a2d; }
 label { font-weight:bold; }
-.frase-futuro { display:flex; align-items:center; gap:8px; font-size:1.1em; font-weight:bold; margin-top:20px; margin-bottom:15px; min-height:40px; }
-.frase-futuro img { width:32px; height:32px; }
-.audio-boton { background-color:#006A44; color:white; border:none; border-radius:5px; padding:8px 14px; cursor:pointer; font-size:0.9em; transition: background-color 0.3s ease; }
+
+.frase-futuro { 
+  display:flex; 
+  align-items:center; 
+  gap:8px; 
+  font-size:1.1em; 
+  font-weight:bold; 
+  margin-top:20px; 
+  margin-bottom:15px; 
+  min-height:40px;
+}
+
+.frase-futuro img { 
+  width:32px; 
+  height:32px; 
+  flex-shrink:0; 
+}
+
+.audio-boton { 
+  background-color:#006A44; 
+  color:white; 
+  border:none; 
+  border-radius:5px; 
+  padding:8px 14px; 
+  cursor:pointer; 
+  font-size:0.9em; 
+  transition: background-color 0.3s ease; 
+}
 .audio-boton:hover { background-color:#004a2d; }
+
+/* Prevenir cambios por fuentes */
+@font-face {
+  font-family: 'system-ui';
+  font-display: swap;
+}
 </style>
 </head>
 
@@ -62,7 +105,7 @@ label { font-weight:bold; }
 <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, envíanos un mensaje:</p>
 
 <div class="frase-futuro">
-    <img src="img/puedenideas.png" alt="Icono ideas" loading="lazy">
+    <img src="img/puedenideas.png" alt="Icono ideas" width="32" height="32" loading="lazy">
     ¿Puedes cambiar el futuro?
 </div>
 
@@ -88,8 +131,8 @@ label { font-weight:bold; }
 </form>
 
 <p>O también puedes visitar nuestras redes sociales:</p>
-<p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">Instagram Hernavia</a></p>
-<p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">YouTube Hernavia</a></p>
+<p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank" rel="noopener">Instagram Hernavia</a></p>
+<p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank" rel="noopener">YouTube Hernavia</a></p>
 </section>
 </main>
 
