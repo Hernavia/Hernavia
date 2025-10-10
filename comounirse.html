@@ -61,26 +61,37 @@
     </form>
   </section>
 
+  <!-- Preguntas Frecuentes -->
   <section class="section faq-section">
-    <h2>Preguntas Frecuentes</h2>
-    <button id="mostrar-faq" class="faq-boton">Mostrar Preguntas</button>
-    <div id="faq-container" class="faq-container" style="display:none;">
-        
+    <h2 style="text-align:center; color:#006A44; margin-bottom:15px;">Preguntas Frecuentes</h2>
+    <div style="text-align:center; margin-bottom:10px;">
+      <button id="mostrar-faq" class="faq-boton">Mostrar Preguntas</button>
+    </div>
+    <div id="faq-container" class="faq-container" style="display:none; text-align:left; max-width:700px; margin:0 auto;">
       <details class="faq-card">
         <summary>¿Por qué la ciudadanía virtual no está activa?</summary>
-        <p>Actualmente, el sistema de ciudadanía virtual está en desarrollo. Se activará cuando se establezcan los mecanismos de registro, validación y participación digital que garanticen igualdad y seguridad.</p>
+        <p>Actualmente, el sistema de ciudadanía virtual está en desarrollo. Se activará cuando se establezcan los mecanismos de registro, validación y participación digital que garanticen seguridad y transparencia.</p>
+      </details>
+
+      <details class="faq-card">
+        <summary>¿Qué ventajas tendrá la ciudadanía virtual?</summary>
+        <p>Permitirá participar activamente en consultas, acceder a documentación interna, recibir comunicados oficiales y representar formalmente a Hernavia en proyectos o eventos colaborativos.</p>
       </details>
 
       <details class="faq-card">
         <summary>¿Puedo participar aunque no tenga ciudadanía?</summary>
-        <p>Sí. Todas las personas pueden enviar sugerencias, responder consultas o aportar ideas al proyecto sin necesidad de tener ciudadanía formal. aunque en algunas votaciones si sera solo para ciudadanos.</p>
+        <p>Sí. Todas las personas pueden enviar sugerencias, responder consultas o aportar ideas al proyecto sin necesidad de tener ciudadanía formal. La participación abierta es parte de la identidad de Hernavia.</p>
       </details>
 
+      <details class="faq-card">
+        <summary>¿Qué compromisos implica unirse?</summary>
+        <p>Unirse significa respetar los principios de Hernavia: cooperación, respeto, innovación y trabajo colectivo. No implica ninguna obligación legal fuera del proyecto, solo compromiso con la comunidad.</p>
+      </details>
     </div>
   </section>
 
   <!-- Identidad / CTA -->
-  <section class="section cta">
+  <section class="section cta" style="background:white; text-align:center;">
     <h2>¿Qué significa unirse a Hernavia?</h2>
     <p>Unirse no es solo llenar un formulario: significa compartir una identidad, valores y visión de comunidad.</p>
     <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
@@ -92,7 +103,7 @@
 </footer>
 
 <!-- Modal de Política -->
-<div id="modal-politica">
+<div id="modal-politica" style="display:none;">
   <div class="contenido">
     <h2>Política de Seguridad de Datos</h2>
     <p>En Hernavia, la protección de tus datos es prioritaria. Los siguientes datos son obligatorios: <strong>nombre completo, fecha de nacimiento, país/departamento y correo electrónico.</strong></p>
