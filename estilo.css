@@ -303,3 +303,18 @@ details p {
   color: #333;
   line-height: 1.5;
 }
+
+.faq-toggle {
+    background-color: #006A44;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-toggle:hover {
+    background-color: #004a2d;
+}
