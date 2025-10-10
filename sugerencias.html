@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sugerencias - Hernavia</title>
-  <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerencias - Hernavia</title>
+    <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
 
-  <!-- CSS no bloqueante -->
-  <link rel="preload" href="estilo.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="estilo.css"></noscript>
+    <!-- CSS no bloqueante -->
+    <link rel="preload" href="estilo.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo.css"></noscript>
 
-  <link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Proyecto Hernavia">
+    <link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Proyecto Hernavia">
 </head>
 
 <body>
 
-  <header>
+<header>
     <h1>Envíanos tus sugerencias</h1>
-  </header>
+</header>
 
-  <nav class="nav-comun">
+<nav class="nav-comun">
     <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
     <a href="documentos.html">Documentos</a>
     <a href="noticias.html">Noticias</a>
@@ -31,49 +31,50 @@
     <a href="comounirse.html">¿Cómo unirse?</a>
     <a href="sugerencias.html">Sugerencias</a>
     <a href="noticias-random.html">Noticias Random</a>
-  </nav>
+</nav>
 
-  <main>
-    <section class="sugerencias" style="max-width:900px; margin:20px auto; padding:20px; background:white; border-left:8px solid #006A44; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); min-height:300px;">
-      
-      <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, por favor envíanos un mensaje:</p>
+<main role="main">
+    <section class="sugerencias" style="min-height: 300px;">
+        <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, por favor envíanos un mensaje:</p>
 
-      <div class="frase-futuro" style="display:flex; align-items:center; gap:8px; font-size:1.1em; font-weight:bold; margin:20px 0;">
-        <img src="img/puedenideas.png" alt="Icono ideas" width="32" height="32" loading="lazy">
-        ¿Puedes cambiar el futuro?
-      </div>
+        <div class="frase-futuro" style="display:flex; align-items:center; gap:8px; font-size:1.1em; font-weight:bold; margin-top:20px; margin-bottom:15px;">
+            <img src="img/puedenideas.png" alt="Icono ideas" width="32" height="32" style="flex-shrink:0;">
+            ¿Puedes cambiar el futuro?
+        </div>
 
-      <button class="audio-boton" style="background-color:#006A44; color:white; border:none; border-radius:5px; padding:8px 14px; cursor:pointer; font-size:0.9em;" onclick="document.getElementById('audio-futuro').play()">▶ ¿?</button>
-      <audio id="audio-futuro" src="audio/futuro.mp3" preload="none"></audio>
+        <button class="audio-boton" style="background-color:#006A44;color:white;border:none;border-radius:5px;padding:8px 14px;cursor:pointer;font-size:0.9em;transition:background-color 0.3s ease;margin-bottom:15px;"
+                onclick="document.getElementById('audio-futuro').play()">
+            ▶ ¿?
+        </button>
+        <audio id="audio-futuro" src="futuro.mp3" preload="auto" style="display:block;height:32px;visibility:hidden;"></audio>
 
-      <form action="https://formspree.io/f/xldpgjop" method="POST" style="max-width:600px; margin:20px auto; display:flex; flex-direction:column; gap:15px;">
-        <label for="nombre">Nombre (opcional):</label>
-        <input type="text" id="nombre" name="nombre" autocomplete="name">
+        <form action="https://formspree.io/f/xldpgjop" method="POST" style="max-width:600px;margin:20px auto;display:flex;flex-direction:column;gap:15px;">
+            <label for="nombre">Nombre (opcional):</label>
+            <input type="text" id="nombre" name="nombre">
 
-        <label for="correo">Correo (opcional):</label>
-        <input type="email" id="correo" name="correo" autocomplete="email">
+            <label for="correo">Correo (opcional):</label>
+            <input type="email" id="correo" name="correo">
 
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto" required>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-        <p style="text-align:center; margin-top:20px;">
-          <button type="submit">Enviar sugerencia</button>
-        </p>
-      </form>
+            <p style="text-align:center;">
+                <button type="submit" style="padding:12px;background-color:#006A44;color:white;border:none;border-radius:5px;cursor:pointer;font-weight:bold;transition:background-color 0.3s ease;">Enviar sugerencia</button>
+            </p>
+        </form>
 
-      <p>O también puedes visitar nuestras redes sociales:</p>
-      <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
-      <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
-
+        <p>O también puedes visitar nuestras redes sociales:</p>
+        <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">https://www.instagram.com/hernaviaoficial</a></p>
+        <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">https://www.youtube.com/@Hernaviaoficial</a></p>
     </section>
-  </main>
+</main>
 
-  <footer>
+<footer>
     &copy; 2025 Hernavia - Proyecto Cultural
-  </footer>
+</footer>
 
 </body>
 </html>
