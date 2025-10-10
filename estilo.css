@@ -232,4 +232,34 @@ footer {
     font-size: 0.8em;
     padding: 10px;
   }
+  
+details {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+details[open] {
+  border-left: 5px solid #006A44;
+  background: #f9f9f9;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #006A44;
+  list-style: none;
+}
+
+summary:hover {
+  color: #004a2d;
+}
+
+details p {
+  margin-top: 8px;
+  line-height: 1.5;
+  }
 }
