@@ -10,8 +10,29 @@
 
 <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
 
-<!-- Carga CSS estable -->
-<link rel="stylesheet" href="estilo.css?v=3" media="all">
+<!-- CSS crítico embebido -->
+<style>
+html,body{margin:0;padding:0;font-family:system-ui,sans-serif;background:white;}
+h1{margin:1em auto;text-align:center;color:#004a2d;}
+.nav-comun{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;background:#006A44;padding:10px;}
+.nav-comun a{color:white;text-decoration:none;font-weight:bold;}
+.nav-comun a:hover{text-decoration:underline;}
+section.sugerencias{max-width:900px;margin:20px auto;padding:20px;background:white;border-left:8px solid #006A44;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.1);min-height:300px;}
+form{max-width:600px;margin:20px auto;display:flex;flex-direction:column;gap:15px;}
+form input,form textarea{padding:10px;border-radius:5px;border:1px solid #ccc;font-size:1em;}
+form button{padding:12px;background-color:#006A44;color:white;border:none;border-radius:5px;cursor:pointer;font-weight:bold;transition:background-color .3s ease;}
+form button:hover{background-color:#004a2d;}
+label{font-weight:bold;}
+.frase-futuro{display:flex;align-items:center;gap:8px;font-size:1.1em;font-weight:bold;margin-top:20px;margin-bottom:15px;min-height:40px;}
+.frase-futuro img{width:32px;height:32px;flex-shrink:0;}
+.audio-boton{background-color:#006A44;color:white;border:none;border-radius:5px;padding:8px 14px;cursor:pointer;font-size:0.9em;transition:background-color .3s ease;}
+.audio-boton:hover{background-color:#004a2d;}
+footer{text-align:center;margin:30px 0;color:#555;}
+</style>
+
+<!-- CSS completo cargado de forma no bloqueante -->
+<link rel="preload" href="estilo.css?v=3" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="estilo.css?v=3"></noscript>
 
 <link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
 <meta name="robots" content="index, follow">
@@ -19,100 +40,40 @@
 
 <!-- Preconnect a Formspree -->
 <link rel="preconnect" href="https://formspree.io" crossorigin>
+<link rel="prefetch" href="futuro.mp3" as="audio">
+<link rel="prefetch" href="img/puedenideas.png" as="image">
 
-<!-- Prefetch de recursos -->
-<link rel="prefetch" href="futuro.mp3" as="audio" type="audio/mpeg">
-<link rel="prefetch" href="img/puedenideas.png" as="image" type="image/png">
-
-<!-- Estilos internos para prevenir CLS inicial -->
-<style>
-html { scroll-behavior: smooth; }
-body { min-height: 100vh; font-family: system-ui, sans-serif; }
-img { display: inline-block; }
-
-section.sugerencias { 
-  max-width: 900px; 
-  margin: 20px auto; 
-  padding: 20px; 
-  background:white; 
-  border-left:8px solid #006A44; 
-  border-radius:10px; 
-  box-shadow:0 4px 8px rgba(0,0,0,0.1); 
-  min-height:300px;
-}
-
-form { max-width:600px; margin:20px auto; display:flex; flex-direction:column; gap:15px; }
-form input, form textarea { padding:10px; border-radius:5px; border:1px solid #ccc; font-size:1em; }
-form button { padding:12px; background-color:#006A44; color:white; border:none; border-radius:5px; cursor:pointer; font-weight:bold; transition:background-color 0.3s ease; }
-form button:hover { background-color:#004a2d; }
-label { font-weight:bold; }
-
-.frase-futuro { 
-  display:flex; 
-  align-items:center; 
-  gap:8px; 
-  font-size:1.1em; 
-  font-weight:bold; 
-  margin-top:20px; 
-  margin-bottom:15px; 
-  min-height:40px;
-}
-
-.frase-futuro img { 
-  width:32px; 
-  height:32px; 
-  flex-shrink:0; 
-}
-
-.audio-boton { 
-  background-color:#006A44; 
-  color:white; 
-  border:none; 
-  border-radius:5px; 
-  padding:8px 14px; 
-  cursor:pointer; 
-  font-size:0.9em; 
-  transition: background-color 0.3s ease; 
-}
-.audio-boton:hover { background-color:#004a2d; }
-
-/* Prevenir cambios por fuentes */
-@font-face {
-  font-family: 'system-ui';
-  font-display: swap;
-}
-</style>
 </head>
 
 <body>
 <header>
-    <h1>Envíanos tus sugerencias</h1>
+  <h1>Envíanos tus sugerencias</h1>
 </header>
 
 <nav class="nav-comun">
-    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
-    <a href="documentos.html">Documentos</a>
-    <a href="noticias.html">Noticias</a>
-    <a href="consultas.html">Consultas</a>
-    <a href="simbolos.html">Símbolos</a>
-    <a href="comounirse.html">¿Cómo unirse?</a>
-    <a href="sugerencias.html">Sugerencias</a>
-    <a href="noticias-random.html">Noticias Random</a>
+  <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+  <a href="documentos.html">Documentos</a>
+  <a href="noticias.html">Noticias</a>
+  <a href="consultas.html">Consultas</a>
+  <a href="simbolos.html">Símbolos</a>
+  <a href="comounirse.html">¿Cómo unirse?</a>
+  <a href="sugerencias.html">Sugerencias</a>
+  <a href="noticias-random.html">Noticias Random</a>
 </nav>
 
 <main>
 <section class="sugerencias">
-<p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, envíanos un mensaje:</p>
+  <p>Si encuentras errores, tienes sugerencias o ideas para mejorar Hernavia o simplemente una pregunta, envíanos un mensaje:</p>
 
-<div class="frase-futuro">
+  <div class="frase-futuro">
     <img src="img/puedenideas.png" alt="Icono ideas" width="32" height="32" loading="lazy">
     ¿Puedes cambiar el futuro?
-</div>
+  </div>
 
-<button class="audio-boton" id="play-audio">▶ ¿?</button>
-<audio id="audio-futuro" src="futuro.mp3" preload="auto"></audio>
+  <button class="audio-boton" id="play-audio">▶ ¿?</button>
+  <audio id="audio-futuro" src="futuro.mp3" preload="auto"></audio>
 
-<form action="https://formspree.io/f/xldpgjop" method="POST">
+  <form action="https://formspree.io/f/xldpgjop" method="POST">
     <label for="nombre">Nombre (opcional):</label>
     <input type="text" id="nombre" name="nombre">
 
@@ -126,23 +87,23 @@ label { font-weight:bold; }
     <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
     <p style="text-align:center; margin-top:20px;">
-        <button type="submit">Enviar sugerencia</button>
+      <button type="submit">Enviar sugerencia</button>
     </p>
-</form>
+  </form>
 
-<p>O también puedes visitar nuestras redes sociales:</p>
-<p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank" rel="noopener">Instagram Hernavia</a></p>
-<p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank" rel="noopener">YouTube Hernavia</a></p>
+  <p>O también puedes visitar nuestras redes sociales:</p>
+  <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank" rel="noopener">Instagram Hernavia</a></p>
+  <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank" rel="noopener">YouTube Hernavia</a></p>
 </section>
 </main>
 
 <footer>
-    &copy; 2025 Hernavia — Proyecto Cultural
+  &copy; 2025 Hernavia — Proyecto Cultural
 </footer>
 
 <script defer>
 document.getElementById('play-audio').addEventListener('click', ()=> {
-    document.getElementById('audio-futuro').play();
+  document.getElementById('audio-futuro').play();
 });
 </script>
 
