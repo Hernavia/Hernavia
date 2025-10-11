@@ -318,3 +318,17 @@ details p {
 .faq-toggle:hover {
     background-color: #004a2d;
 }
+
+/* ======== Noticias Random (verde lima) ======== */
+.news-section details.random {
+    border-color: #ADFF2F; /* borde verde lima/amarillo verdoso */
+}
+
+.news-section details.random summary {
+    color: #ADFF2F; /* título verde lima */
+}
+
+/* Opcional: cambiar color del texto dentro de la noticia si quieres diferenciar */
+.news-section details.random .news-item h3 {
+    color: #ADFF2F;
+}
