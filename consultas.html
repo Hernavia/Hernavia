@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultas - Hernavia</title>
-  <meta name="description" content="Participa en consultas de Hernavia y comparte tus ideas para el logo y escudo del proyecto.">
+  <meta name="description" content="Participa en la planeación del logo y escudo de Hernavia. Envía tus ideas antes de la futura votación comunitaria.">
   <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
   <link rel="preload" href="estilo.css" as="style">
   <link rel="stylesheet" href="estilo.css">
@@ -27,13 +27,14 @@
   <a href="comounirse.html">¿Cómo unirse?</a>
   <a href="sugerencias.html">Sugerencias</a>
 </nav>
-<h2>Consulta 001</h2>
+
 <main>
   <section class="section">
+    <h2>Consulta 001</h2>
     <p>
-      En este momento estamos organizando una <strong>consulta abierta</strong> para definir el futuro 
-      <strong>logo y escudo</strong> de Hernavia.  
-      Si deseas participar con tus ideas o diseños, puedes enviar tu propuesta a continuación.
+      Actualmente se está planeando una <strong>votación futura</strong> para elegir el <strong>logo y escudo oficiales</strong> de Hernavia.  
+      Antes de esa etapa, queremos recibir <strong>ideas, bocetos o sugerencias</strong> de la comunidad.  
+      Si deseas participar, puedes enviar tus propuestas a continuación.
     </p>
 
     <form action="https://formspree.io/f/xldpgjop" method="POST" style="margin-top:15px;">
@@ -46,26 +47,14 @@
       <button type="submit" class="faq-toggle">Enviar propuesta</button>
     </form>
   </section>
-
+</main>
 
 <footer>
   &copy; 2025 Hernavia — Proyecto Cultural
 </footer>
 
 <script>
-  const abrir = document.getElementById("abrir-politica");
-  const cerrar = document.getElementById("cerrar-politica");
-  const modal = document.getElementById("modal-politica");
-
-  abrir.addEventListener("click", e => {
-    e.preventDefault();
-    modal.style.display = "flex";
-  });
-
-  cerrar.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
+  // Registrar Service Worker
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/Hernavia/sw.js')
