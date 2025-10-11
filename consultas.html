@@ -11,16 +11,6 @@
   <link rel="canonical" href="https://hernavia.github.io/Hernavia/consultas.html">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Proyecto Hernavia">
-  <style>
-    main {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 0.95em;
-    }
-    form input, form textarea, form button {
-      font-size: 0.9em;
-    }
-  </style>
 </head>
 
 <body>
@@ -37,7 +27,7 @@
   <a href="comounirse.html">¿Cómo unirse?</a>
   <a href="sugerencias.html">Sugerencias</a>
 </nav>
-
+<h2>Consulta 001</h2>
 <main>
   <section class="section">
     <p>
@@ -47,45 +37,16 @@
     </p>
 
     <form action="https://formspree.io/f/xldpgjop" method="POST" style="margin-top:15px;">
-      <label for="nombre">Tu nombre o seudónimo:</label>
-      <input type="text" id="nombre" name="nombre" required>
-
-      <label for="correo">Correo electrónico (opcional):</label>
-      <input type="email" id="correo" name="correo">
-
       <label for="mensaje">Tu propuesta o idea:</label>
       <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
       <label for="archivo">Adjunta un boceto o imagen (opcional):</label>
       <input type="file" id="archivo" name="archivo" accept="image/*">
 
-      <label>
-        <input type="checkbox" name="terminos" required>
-        Acepto la <a href="#" id="abrir-politica">política de datos</a>.
-      </label>
-
       <button type="submit" class="faq-toggle">Enviar propuesta</button>
     </form>
   </section>
 
-  <section class="section" style="margin-top:25px;">
-    <h2 style="text-align:center;">Consulta actual</h2>
-    <p style="text-align:center;">
-      La identidad visual es una parte esencial de Hernavia. Queremos que la comunidad participe
-      en su creación para reflejar nuestros valores culturales y sociales.
-    </p>
-  </section>
-</main>
-
-<!-- Modal de política -->
-<div id="modal-politica" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
-  <div class="contenido" style="background:white; padding:20px; border-radius:10px; max-width:600px; max-height:80vh; overflow-y:auto;">
-    <h2>Política de Protección de Datos</h2>
-    <p>En Hernavia, los datos se tratan con estricta confidencialidad. Solo se recolectan los necesarios para contacto y verificación de participación.</p>
-    <p>Puedes solicitar la eliminación o modificación de tus datos escribiendo al equipo de Hernavia.</p>
-    <button id="cerrar-politica" class="faq-toggle">Cerrar</button>
-  </div>
-</div>
 
 <footer>
   &copy; 2025 Hernavia — Proyecto Cultural
