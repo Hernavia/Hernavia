@@ -4,60 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultas - Hernavia</title>
-  <meta name="description" content="Participa en consultas de Hernavia y comparte tus ideas para el logo, escudo y símbolos del proyecto.">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="author" content="Proyecto Hernavia">
-  <meta name="robots" content="index, follow">
-
+  <meta name="description" content="Participa en consultas de Hernavia y comparte tus ideas para el logo y escudo del proyecto.">
   <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
   <link rel="preload" href="estilo.css" as="style">
   <link rel="stylesheet" href="estilo.css">
   <link rel="canonical" href="https://hernavia.github.io/Hernavia/consultas.html">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Proyecto Hernavia">
+  <style>
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 0.95em;
+    }
+    form input, form textarea, form button {
+      font-size: 0.9em;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Consultas de Hernavia</h1>
-  </header>
+<header>
+  <h1>Consultas de Hernavia</h1>
+</header>
 
-  <nav class="nav-comun">
-    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
-    <a href="documentos.html">Documentos</a>
-    <a href="noticias.html">Noticias</a>
-    <a href="consultas.html" class="activo">Consultas</a>
-    <a href="simbolos.html">Símbolos</a>
-    <a href="comounirse.html">¿Cómo unirse?</a>
-    <a href="sugerencias.html">Sugerencias</a>
-  </nav>
+<nav class="nav-comun">
+  <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+  <a href="documentos.html">Documentos</a>
+  <a href="noticias.html">Noticias</a>
+  <a href="consultas.html" class="activo">Consultas</a>
+  <a href="simbolos.html">Símbolos</a>
+  <a href="comounirse.html">¿Cómo unirse?</a>
+  <a href="sugerencias.html">Sugerencias</a>
+</nav>
 
-  <main>
-    <section class="texto-largo">
-      <h2>Consulta abierta: Logo y Escudo de Hernavia</h2>
-      <p>
-        En este momento estamos planificando el diseño oficial del <strong>logo y escudo</strong> de Hernavia.  
-        Si tienes una propuesta visual, un boceto o simplemente una idea, puedes enviarla a través del siguiente formulario.  
-        Todas las contribuciones serán revisadas y tomadas en cuenta para las próximas votaciones de identidad visual.
-      </p>
+<main>
+  <section class="section">
+    <p>
+      En este momento estamos organizando una <strong>consulta abierta</strong> para definir el futuro 
+      <strong>logo y escudo</strong> de Hernavia.  
+      Si deseas participar con tus ideas o diseños, puedes enviar tu propuesta a continuación.
+    </p>
 
-      <form action="https://formspree.io/f/xldpgjop" method="POST" style="margin-top: 20px;">
-        <label for="nombre">Tu nombre o seudónimo:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+    <form action="https://formspree.io/f/xldpgjop" method="POST" style="margin-top:15px;">
+      <label for="nombre">Tu nombre o seudónimo:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-        <label for="email">Correo electrónico (opcional):</label><br>
-        <input type="email" id="email" name="email"><br><br>
+      <label for="correo">Correo electrónico (opcional):</label>
+      <input type="email" id="correo" name="correo">
 
-        <label for="mensaje">Describe tu propuesta o idea:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+      <label for="mensaje">Tu propuesta o idea:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-        <label for="archivo">Adjunta una imagen (opcional):</label><br>
-        <input type="file" id="archivo" name="archivo" accept="image/*"><br><br>
+      <label for="archivo">Adjunta un boceto o imagen (opcional):</label>
+      <input type="file" id="archivo" name="archivo" accept="image/*">
 
-        <button type="submit">Enviar propuesta</button>
-      </form>
-    </section>
-  </main>
+      <label>
+        <input type="checkbox" name="terminos" required>
+        Acepto la <a href="#" id="abrir-politica">política de datos</a>.
+      </label>
 
-  <footer>
-    &copy; 2025 Hernavia — Proyecto Cultural
-  </footer>
+      <button type="submit" class="faq-toggle">Enviar propuesta</button>
+    </form>
+  </section>
+
+  <section class="section" style="margin-top:25px;">
+    <h2 style="text-align:center;">Consulta actual</h2>
+    <p style="text-align:center;">
+      La identidad visual es una parte esencial de Hernavia. Queremos que la comunidad participe
+      en su creación para reflejar nuestros valores culturales y sociales.
+    </p>
+  </section>
+</main>
+
+<!-- Modal de política -->
+<div id="modal-politica" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
+  <div class="contenido" style="background:white; padding:20px; border-radius:10px; max-width:600px; max-height:80vh; overflow-y:auto;">
+    <h2>Política de Protección de Datos</h2>
+    <p>En Hernavia, los datos se tratan con estricta confidencialidad. Solo se recolectan los necesarios para contacto y verificación de participación.</p>
+    <p>Puedes solicitar la eliminación o modificación de tus datos escribiendo al equipo de Hernavia.</p>
+    <button id="cerrar-politica" class="faq-toggle">Cerrar</button>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Hernavia — Proyecto Cultural
+</footer>
+
+<script>
+  const abrir = document.getElementById("abrir-politica");
+  const cerrar = document.getElementById("cerrar-politica");
+  const modal = document.getElementById("modal-politica");
+
+  abrir.addEventListener("click", e => {
+    e.preventDefault();
+    modal.style.display = "flex";
+  });
+
+  cerrar.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/Hernavia/sw.js')
+        .then(reg => console.log('Service Worker registrado:', reg.scope))
+        .catch(err => console.error('Error al registrar el SW:', err));
+    });
+  }
+</script>
 </body>
 </html>
