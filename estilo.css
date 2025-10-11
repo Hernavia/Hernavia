@@ -52,13 +52,12 @@ header h1 {
   background-color: #fff;
   color: #006a44;
 }
-
-/* Enlace activo (página actual) */
 .nav-comun a.activo {
-  background-color: #006a44;
-  color: #fff;
-  border: 2px solid #fc0;
+  border: 2px solid #fc0; 
+  color: #006a44; 
+  background-color: transparent; 
 }
+
 
 /* ======== SECCIONES ======== */
 section {
