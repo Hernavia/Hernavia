@@ -1,159 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sugerencias - Hernavia</title>
-<meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
-<link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugerencias - Hernavia</title>
+  <meta name="description" content="Envía tus ideas y sugerencias para mejorar Hernavia. Participa activamente en este proyecto cultural.">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
 
-<!-- Carga no bloqueante del CSS -->
-<link rel="preload" href="estilo.css" as="style">
-<link rel="stylesheet" href="estilo.css">
+  <!-- CSS general -->
+  <link rel="preload" href="estilo.css" as="style">
+  <link rel="stylesheet" href="estilo.css">
 
-<link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Proyecto Hernavia">
+  <link rel="canonical" href="https://hernavia.github.io/Hernavia/sugerencias.html">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Proyecto Hernavia">
 
-<style>
-body {
-  background-color: #f4f4f4;
-}
+  <style>
+    /* Solo estilo para el botón de audio */
+    .audio-boton {
+      padding: 10px 15px;
+      background-color: #006A44;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
 
-.section {
-  max-width: 900px;
-  margin: 25px auto;
-  padding: 25px;
-  background-color: white !important;
-  border-left: 8px solid #006A44;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  min-height: 150px;
-}
-
-form {
-  max-width: 600px;
-  margin: 20px auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-}
-
-form button {
-  padding: 12px;
-  background-color: #006A44;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: #004a2d;
-}
-
-label { font-weight: bold; }
-
-.audio-boton {
-  padding: 10px 15px;
-  background-color: #006A44;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9em;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.audio-boton:hover {
-  background-color: #004a2d;
-}
-
-.frase {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-.frase img {
-  width: 32px;
-  height: 32px;
-}
-</style>
+    .audio-boton:hover {
+      background-color: #004a2d;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-  <h1>Envía tus sugerencias</h1>
-</header>
+  <header>
+    <h1>Envía tus sugerencias</h1>
+  </header>
 
-<nav class="nav-comun">
-  <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
-  <a href="documentos.html">Documentos</a>
-  <a href="noticias.html">Noticias</a>
-  <a href="consultas.html">Consultas</a>
-  <a href="simbolos.html">Símbolos</a>
-  <a href="comounirse.html">¿Cómo unirse?</a>
-  <a href="sugerencias.html">Sugerencias</a>
-</nav>
+  <nav class="nav-comun">
+    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html" class="activo">Sugerencias</a>
+  </nav>
 
-<section class="section">
-  <p>Si tienes ideas, sugerencias o detectas algo que podríamos mejorar en Hernavia, usa este formulario para comunicarte con nosotros:</p>
+  <main>
+    <section class="section">
+      <p>Si tienes ideas, sugerencias o detectas algo que podríamos mejorar en Hernavia, usa este formulario para comunicarte con nosotros:</p>
 
-  <div class="frase">
-    <img src="img/puedenideas.png" alt="Icono ideas" width="32" height="32" loading="lazy">
-    <span>¿Puedes cambiar el futuro?</span>
-  </div>
+      <div class="frase">
+        <img src="img/puedenideas.png" alt="Icono ideas" width="32" height="32" loading="lazy">
+        <span>¿Puedes cambiar el futuro?</span>
+      </div>
 
-  <button class="audio-boton" id="play-audio">▶ ¿?</button>
-  <audio id="audio-futuro" src="futuro.mp3" preload="none"></audio>
+      <button class="audio-boton" id="play-audio">▶ Escuchar</button>
+      <audio id="audio-futuro" src="futuro.mp3" preload="none"></audio>
 
-  <form action="https://formspree.io/f/xldpgjop" method="POST">
-    <label for="nombre">Nombre (opcional):</label>
-    <input type="text" id="nombre" name="nombre">
+      <form action="https://formspree.io/f/xldpgjop" method="POST">
+        <label for="nombre">Nombre (opcional):</label>
+        <input type="text" id="nombre" name="nombre">
 
-    <label for="correo">Correo (opcional):</label>
-    <input type="email" id="correo" name="correo">
+        <label for="correo">Correo (opcional):</label>
+        <input type="email" id="correo" name="correo">
 
-    <label for="asunto">Asunto:</label>
-    <input type="text" id="asunto" name="asunto" required>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <button type="submit">Enviar sugerencia</button>
-  </form>
-</section>
+        <button type="submit">Enviar sugerencia</button>
+      </form>
+    </section>
 
-<section class="section">
-  <h2>También puedes seguirnos</h2>
-  <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">Instagram Hernavia</a></p>
-  <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">YouTube Hernavia</a></p>
-</section>
+    <section class="section">
+      <h2>También puedes seguirnos</h2>
+      <p>Instagram: <a href="https://www.instagram.com/hernaviaoficial" target="_blank">Instagram Hernavia</a></p>
+      <p>YouTube: <a href="https://www.youtube.com/@Hernaviaoficial" target="_blank">YouTube Hernavia</a></p>
+    </section>
+  </main>
 
-<footer>
-  &copy; 2025 Hernavia — Proyecto Cultural
-</footer>
+  <footer>
+    &copy; 2025 Hernavia — Proyecto Cultural
+  </footer>
 
-<script>
-document.getElementById('play-audio').addEventListener('click', () => {
-  const audio = document.getElementById('audio-futuro');
-  audio.play();
-});
-</script>
+  <script>
+    document.getElementById('play-audio').addEventListener('click', () => {
+      const audio = document.getElementById('audio-futuro');
+      audio.play();
+    });
+  </script>
 </body>
 </html>
