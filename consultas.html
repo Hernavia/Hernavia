@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultas - Hernavia</title>
-    <meta name="description" content="Encontraras consultas hechas por Hernavia para saber su opinion.">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-    <link rel="preload" href="estilo.css" as="style">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="canonical" href="https://hernavia.github.io/Hernavia/consultas.html">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Consultas Hernavia">
-    <style>
-        .ups {
-            text-align: center;
-            color: #333; 
-            font-size: 1.2em;
-            font-style: italic;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultas - Hernavia</title>
+  <meta name="description" content="Participa en consultas de Hernavia y comparte tus ideas para el logo, escudo y símbolos del proyecto.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="Proyecto Hernavia">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+  <link rel="preload" href="estilo.css" as="style">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="canonical" href="https://hernavia.github.io/Hernavia/consultas.html">
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Consultas de Hernavia</h1>
-</header>
+  </header>
 
-<nav class="nav-comun">
+  <nav class="nav-comun">
     <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
     <a href="documentos.html">Documentos</a>
     <a href="noticias.html">Noticias</a>
-    <a href="consultas.html">Consultas</a>
+    <a href="consultas.html" class="activo">Consultas</a>
     <a href="simbolos.html">Símbolos</a>
     <a href="comounirse.html">¿Cómo unirse?</a>
     <a href="sugerencias.html">Sugerencias</a>
-</nav>
+  </nav>
 
-<main>
-    <section class="section">
-        <div class="ups">Ups… este apartado no tiene información por ahora, espera a que se actualice.</div>
+  <main>
+    <section class="texto-largo">
+      <h2>Consulta abierta: Logo y Escudo de Hernavia</h2>
+      <p>
+        En este momento estamos planificando el diseño oficial del <strong>logo y escudo</strong> de Hernavia.  
+        Si tienes una propuesta visual, un boceto o simplemente una idea, puedes enviarla a través del siguiente formulario.  
+        Todas las contribuciones serán revisadas y tomadas en cuenta para las próximas votaciones de identidad visual.
+      </p>
+
+      <form action="https://formspree.io/f/xldpgjop" method="POST" style="margin-top: 20px;">
+        <label for="nombre">Tu nombre o seudónimo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico (opcional):</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mensaje">Describe tu propuesta o idea:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+        <label for="archivo">Adjunta una imagen (opcional):</label><br>
+        <input type="file" id="archivo" name="archivo" accept="image/*"><br><br>
+
+        <button type="submit">Enviar propuesta</button>
+      </form>
     </section>
-</main>
+  </main>
 
-<footer>
-    &copy; 2025 Hernavia - Proyecto Cultural
-</footer>
-
+  <footer>
+    &copy; 2025 Hernavia — Proyecto Cultural
+  </footer>
 </body>
 </html>
