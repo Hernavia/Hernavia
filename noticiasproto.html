@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hernavia</title>
-  <meta name="description" content="Descubre Hernavia, una identidad colombiana donde creatividad, comunidad y cultura se unen por un futuro sostenible.">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="author" content="Proyecto Hernavia">
-  <meta name="robots" content="index, follow">
-
-  <!-- Ícono -->
-  <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-
-  <!-- Precarga de estilos -->
-  <link rel="preload" href="estilo.css" as="style">
-  <link rel="stylesheet" href="estilo.css">
-
-  <!-- Manifesto para PWA -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- URL canónica -->
-  <link rel="canonical" href="https://hernavia.github.io/Hernavia/noticiasproto">
-</head>
-  
-  <body>
+<body>
   <header>
     <h1>Noticias</h1>
   </header>
@@ -36,24 +11,56 @@
     <a href="simbolos.html">Símbolos</a>
     <a href="comounirse.html">¿Cómo unirse?</a>
     <a href="sugerencias.html">Sugerencias</a>
+  </nav>
 
-<section class="texto-largo" style="border-left:8px solid #ADFF2F;">
-  <h2 style="color:#ADFF2F;">Noticias Random</h2>
+  <!-- Botones de filtrado -->
+  <div style="text-align:center; margin:20px 0;">
+    <a href="#" class="nav-comun" onclick="showNews('official')" style="margin-right:10px;">Noticias Oficiales</a>
+    <a href="#" class="nav-comun" onclick="showNews('random')">Noticias Random</a>
+  </div>
 
-  <details>
-    <summary>Curiosidad 1</summary>
-    <div class="news-item">
-      <h3 style="color:#ADFF2F;">Curiosidad 1</h3>
-      <p>Contenido random divertido o curioso...</p>
-    </div>
-  </details>
+  <!-- Secciones de noticias -->
+  <section id="official" class="texto-largo" style="border-left:8px solid #006A44;">
+    <h2 style="color:#006A44;">Noticias Oficiales</h2>
+    <details open>
+      <summary>Noticia Oficial 1</summary>
+      <div class="news-item">
+        <h3>Noticia Oficial 1</h3>
+        <p>Contenido oficial de Hernavia...</p>
+      </div>
+    </details>
+    <details>
+      <summary>Noticia Oficial 2</summary>
+      <div class="news-item">
+        <h3>Noticia Oficial 2</h3>
+        <p>Otro contenido oficial...</p>
+      </div>
+    </details>
+  </section>
 
-  <details>
-    <summary>Curiosidad 2</summary>
-    <div class="news-item">
-      <h3 style="color:#ADFF2F;">Curiosidad 2</h3>
-      <p>Otro contenido ligero...</p>
-    </div>
-  </details>
-</section>
- </nav>
+  <section id="random" class="texto-largo" style="border-left:8px solid #ADFF2F; display:none;">
+    <h2 style="color:#ADFF2F;">Noticias Random</h2>
+    <details>
+      <summary>Curiosidad 1</summary>
+      <div class="news-item">
+        <h3 style="color:#ADFF2F;">Curiosidad 1</h3>
+        <p>Contenido random divertido o curioso...</p>
+      </div>
+    </details>
+    <details>
+      <summary>Curiosidad 2</summary>
+      <div class="news-item">
+        <h3 style="color:#ADFF2F;">Curiosidad 2</h3>
+        <p>Otro contenido ligero...</p>
+      </div>
+    </details>
+  </section>
+
+<script>
+function showNews(section) {
+    document.getElementById('official').style.display = 'none';
+    document.getElementById('random').style.display = 'none';
+    document.getElementById(section).style.display = 'block';
+}
+</script>
+</body>
