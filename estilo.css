@@ -338,6 +338,7 @@ footer {
 }
 
 .audio-boton {
+  margin-top: 15px; /* separa el botón del elemento de arriba */
   padding: 10px 15px;
   background-color: #006A44;
   color: white;
@@ -352,4 +353,5 @@ footer {
 .audio-boton:hover {
   background-color: #004a2d;
 }
+
 
