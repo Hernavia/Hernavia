@@ -354,41 +354,31 @@ footer {
   background-color: #004a2d;
 }
 
-/* Noticias Random */
 .noticias-random {
   border-left: 8px solid #750404;
-  padding: 20px;
+  padding: 15px;
   margin: 20px auto;
   max-width: 900px;
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(117,4,4,0.3); 
 }
 
-/* Títulos dentro de noticias random */
 .noticias-random h2 {
   color: #750404;
-  margin-bottom: 15px;
 }
 
-/* Detalles (summary y sombra del desplegable) */
 .noticias-random details {
-  margin-bottom: 10px;
+  margin: 10px 0;
   padding: 10px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(117,4,4,0.2);
+  border: 2px solid #750404;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(117,4,4,0.3); 
 }
 
-.noticias-random summary {
-  cursor: pointer;
+.noticias-random details summary {
+  color: #750404;
   font-weight: bold;
-  color: #750404;
-}
-
-.noticias-random details p {
-  margin-top: 8px;
-  color: #750404;
+  cursor: pointer;
 }
 
 
