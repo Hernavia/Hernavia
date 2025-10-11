@@ -29,7 +29,7 @@
   </header>
 
   <nav class="nav-comun">
-    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+    <a href="https://hernavia.github.io/Hernavia/" class="activo">Inicio</a>
     <a href="documentos.html">Documentos</a>
     <a href="noticias.html">Noticias</a>
     <a href="consultas.html">Consultas</a>
@@ -41,97 +41,87 @@
   <main>
     <section id="que-es" class="texto-largo">
       <h2>¿Qué es Hernavia?</h2>
-      <p>Más que un proyecto, Hernavia es un espacio donde la creatividad y la unión se convierten en identidad. Aquí, cada persona puede aportar ideas y ayudar a cambiar la historia.</p>
-      <p>Se fundamenta en los principios del respeto y cuidado por la naturaleza, la protección de los animales, el reciclaje, la recolección de basura, el cuidado del agua y la promoción de fines ambientales.</p>
-      <p>Además, Hernavia impulsa la innovación, apoyando nuevos proyectos y fomentando un espíritu creativo en la sociedad para encontrar soluciones reales a los retos actuales.</p>
-      <p>En resumen, la identidad hernaviana se sostiene sobre la naturaleza, la paz y la innovación.</p>
+      <p>Hernavia es un espacio donde la creatividad y la unión se convierten en identidad. Cada persona puede aportar ideas, ayudar a construir comunidad y contribuir a un futuro más sostenible.</p>
+      <p>Se fundamenta en el respeto y cuidado de la naturaleza, la protección de los animales, el reciclaje, la recolección de basura, el cuidado del agua y la promoción de fines ambientales.</p>
+      <p>Además, Hernavia impulsa la innovación y apoya proyectos que fomentan un espíritu creativo para resolver los desafíos actuales.</p>
+      <p>En resumen, la identidad hernaviana se sostiene sobre tres pilares: naturaleza, paz e innovación.</p>
     </section>
 
     <section id="donde" class="texto-largo">
       <h2>¿Dónde se encuentra?</h2>
-      <p>Hernavia nace en Colombia, específicamente en el municipio de Gachancipá, donde puedes encontrar sus proyectos y su administración. Actualmente se encuentra en una etapa inicial y teórica, por lo cual aún no existen estructuras o acciones tangibles. Tus sugerencias y apoyo son esenciales para fortalecerla.</p>
+      <p>Hernavia nace en Colombia, específicamente en el municipio de Gachancipá, donde se desarrollan sus primeros proyectos y su organización. Actualmente está en una etapa teórica y de planificación, por lo que aún no existen estructuras físicas. Tu participación y sugerencias son esenciales para fortalecerla.</p>
     </section>
 
-    <section id="bandera">
+    <section id="bandera" class="texto-largo">
       <h2>Bandera</h2>
       <img src="img/bandera.png" alt="Bandera de Hernavia" class="bandera" width="300" height="200" loading="lazy">
     </section>
 
-    <section id="significado">
+    <section id="significado" class="texto-largo">
       <h2>Significado de los colores</h2>
       <ul>
-        <li><strong>Verde:</strong> Representa la naturaleza, agua y innovacion.</li>
-        <li><strong>Blanco:</strong> Simboliza la paz, cohesión, unión y verdad.</li>
-        <li><strong>Amarillo:</strong> Representa las raíces con Colombia y la fraternidad.</li>
+        <li><strong>Verde:</strong> Representa la naturaleza, el agua y la innovación.</li>
+        <li><strong>Blanco:</strong> Simboliza la paz, la unión y la verdad.</li>
+        <li><strong>Amarillo:</strong> Hace referencia a las raíces con Colombia y la fraternidad.</li>
       </ul>
     </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="texto-largo">
+      <h2 class="titulo-centro">Preguntas Frecuentes</h2>
+
+      <div class="centro">
+        <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
+      </div>
+
+      <div id="faqContainer" class="faq-container" style="display:none;">
+        <details class="faq-card">
+          <summary>¿Cómo puedo contactarlos?</summary>
+          <p>Puedes escribirnos desde la sección de <a href="sugerencias.html">Sugerencias</a> o por nuestras redes sociales. Todos los mensajes llegan directamente al equipo de Hernavia.</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>¿Por qué “Arconte”?</summary>
+          <p>El término “Arconte” se usa de forma simbólica para representar una figura de liderazgo dentro de Hernavia. Fue elegido para distinguir la organización sin recurrir a títulos políticos o tradicionales.</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>¿Por qué la ciudadanía virtual aún no está disponible?</summary>
+          <p>Porque actualmente no existen mecanismos suficientes para equilibrar derechos y deberes entre ciudadanos virtuales y presenciales. Se planea activar en el futuro, cuando existan más herramientas de gestión.</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>¿Existen riesgos legales al unirse?</summary>
+          <p>No. Hernavia funciona como un proyecto ciudadano y no tiene implicaciones legales. Las sanciones o medidas internas no afectan la vida legal o civil de los participantes.</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>¿Tiene afiliación política o religiosa?</summary>
+          <p>No. Hernavia es totalmente neutral. Puede coincidir con ciertas ideas, pero nunca adopta afiliaciones políticas o religiosas.</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>¿Qué beneficios tiene unirse?</summary>
+          <p>Participar en Hernavia permite ser parte de decisiones colectivas, apoyar iniciativas locales y acceder a beneficios comunitarios futuros.</p>
+        </details>
+      </div>
+    </section>
   </main>
-
-  <!-- Sección de Preguntas Frecuentes -->
-<section class="section">
-          <h2 style="text-align:center; color:#006A44; margin-bottom:15px;">Preguntas Frecuentes</h2>
-
-          <div style="text-align:center;">
-            <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
-          </div>
-
-          <div id="faqContainer" class="faq-container" style="display:none; margin-top:20px;">
-
-    <details class="faq-card">
-      <summary>¿Cómo los puedo contactar?</summary>
-      <p>Puedes escribirnos desde la sección de <a href="sugerencias.html">Sugerencias</a> o a través de nuestras redes sociales. Todos los mensajes llegan directamente al equipo de Hernavia.</p>
-    </details>
-
-    <details class="faq-card">
-      <summary>¿Por qué “Arconte”?</summary>
-      <p>Es un término simbólico elegido para representar una figura de liderazgo dentro de Hernavia. El nombre de Arconte fue escogido para distinguir a Hernavia sin aferrarse a títulos tradicionales.</p>
-    </details>
-
-    <details class="faq-card">
-      <summary>¿Por qué la ciudadanía virtual aún no está disponible?</summary>
-      <p>Porque la organización de Hernavia aún no puede coexistir de manera efectiva si los ciudadanos virtuales tienen los mismos deberes y derechos. Esto se debe a la capacidad limitada de alcance y la política de aporte obligatorio vigente.</p>
-    </details>
-
-    <details class="faq-card">
-      <summary>¿Existen riesgos legales al unirse a Hernavia?</summary>
-      <p>No. Todas las sanciones son internas y no hay riesgos legales reales por incumplimiento. Las sanciones solo pueden incluir medidas internas o la revocación de la ciudadanía según las leyes transitorias.</p>
-    </details>
-
-    <details class="faq-card">
-      <summary>¿Hernavia tiene afiliación política o religiosa?</summary>
-      <p>No. Hernavia es completamente subjetiva e independiente. Aunque puede mostrar apoyo a ciertas ideas ideológicas, siempre lo hace de manera neutral, realista y sin afiliación partidista ni religiosa.</p>
-    </details>
-
-    <details class="faq-card">
-      <summary>¿Qué beneficios tiene unirse a Hernavia?</summary>
-      <p>Formar parte de Hernavia te permite participar en votaciones, ser tomado en cuenta de manera activa y acceder a beneficios internos futuros de la comunidad.</p>
-    </details>
-
-  </div>
-</section>
-
 
   <footer>
     &copy; 2025 Hernavia — Proyecto Cultural
   </footer>
-<script>
-  // Mostrar / ocultar bloque de preguntas
-  const toggleButton = document.getElementById('toggleFAQ');
-  const faqContainer = document.getElementById('faqContainer');
-  let visible = false;
 
-  toggleButton.addEventListener('click', () => {
-    visible = !visible;
-    faqContainer.style.display = visible ? 'block' : 'none';
-    toggleButton.textContent = visible ? 'Ocultar Preguntas' : 'Mostrar Preguntas';
-  });
-</script>
+  <script>
+    const toggleButton = document.getElementById('toggleFAQ');
+    const faqContainer = document.getElementById('faqContainer');
+    let visible = false;
 
+    toggleButton.addEventListener('click', () => {
+      visible = !visible;
+      faqContainer.style.display = visible ? 'block' : 'none';
+      toggleButton.textContent = visible ? 'Ocultar Preguntas' : 'Mostrar Preguntas';
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
