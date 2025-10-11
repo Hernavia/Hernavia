@@ -33,7 +33,6 @@
 </nav>
 
 <main>
-  <!-- Formulario de solicitud -->
   <section class="section">
     <p>
       Actualmente, la ciudadanía virtual no está habilitada.  
@@ -68,7 +67,6 @@
     </form>
   </section>
 
-  <!-- Preguntas frecuentes -->
   <section class="section" style="text-align:center;">
     <h2>Preguntas Frecuentes</h2>
     <div style="text-align:center;">
@@ -92,7 +90,6 @@
     </div>
   </section>
 
-  <!-- Explicación adicional -->
   <section id="que-significa" class="texto-largo">
     <h2>¿Qué significa unirse a Hernavia?</h2>
     <p>
@@ -104,8 +101,7 @@
     </div>
   </section>
 </main>
-
-<!-- Modal de Política de Datos -->
+  
 <div id="modal-politica" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
   <div class="contenido" style="background:white; padding:20px; border-radius:10px; max-width:600px; max-height:80vh; overflow-y:auto;">
     <h2>Política de Seguridad de Datos</h2>
@@ -142,7 +138,6 @@
     toggleButton.textContent = visible ? 'Ocultar Preguntas' : 'Mostrar Preguntas';
   });
 
-  // Modal de política de datos
   const abrir = document.getElementById("abrir-politica");
   const cerrar = document.getElementById("cerrar-politica");
   const modal = document.getElementById("modal-politica");
