@@ -12,15 +12,16 @@ const urlsToCache = [
   '/Hernavia/simbolos.html',
   '/Hernavia/comounirse.html',
   '/Hernavia/sugerencias.html',
+  '/Hernavia/identidad.html', // faltaba esta
   '/Hernavia/noticias-random.html'
 ];
 
 // Instalar y precachear archivos
 self.addEventListener('install', event => {
-  self.skipWaiting(); // fuerza al SW a activarse más rápido
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => cache.addAll(urlsToCache))
+      .then(() => self.skipWaiting()) // mejor poner skipWaiting después del precache
       .catch(err => console.error('Error al precachear:', err))
   );
 });
@@ -42,27 +43,28 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Estrategia de cache mejorada: cache-first con validación en red
+// Estrategia: cache-first con actualización en segundo plano
 self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET') return; // ignorar POST (como los formularios)
+  if (event.request.method !== 'GET') return; // ignorar POST y otros métodos
 
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
-      const fetchPromise = fetch(event.request)
-        .then(networkResponse => {
-          // solo cachea si es válido
-          if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
-            const responseClone = networkResponse.clone();
-            caches.open(CACHE_NAME).then(cache => {
-              cache.put(event.request, responseClone);
-            });
+      const networkFetch = fetch(event.request)
+        .then(response => {
+          if (
+            response &&
+            response.status === 200 &&
+            response.type === 'basic'
+          ) {
+            const cloned = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, cloned));
           }
-          return networkResponse;
+          return response;
         })
-        .catch(() => cachedResponse); // si no hay red, usar caché
+        .catch(() => cachedResponse); // fallback a caché si no hay red
 
-      // responde rápido con el caché mientras valida en segundo plano
-      return cachedResponse || fetchPromise;
+      // respuesta inmediata con caché o red si no hay nada guardado
+      return cachedResponse || networkFetch;
     })
   );
 });
