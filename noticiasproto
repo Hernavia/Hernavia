@@ -1,0 +1,52 @@
+<section>
+  <h2>Noticias Hernavia</h2>
+
+  <!-- Botones de cambio de sección -->
+  <div style="text-align:center; margin-bottom:20px;">
+    <button class="news-btn" onclick="showSection('official')"
+            style="background-color:#ADFF2F; color:#333; padding:10px 18px; border:none; border-radius:6px; cursor:pointer; font-weight:bold;">
+      Noticias Oficiales
+    </button>
+    <button class="news-btn" onclick="showSection('random')"
+            style="background-color:#006A44; color:white; padding:10px 18px; border:none; border-radius:6px; cursor:pointer; font-weight:bold;">
+      Noticias Random
+    </button>
+  </div>
+
+  <!-- Secciones con details/summary -->
+  <details id="official" open>
+    <summary style="padding:8px 12px; border-radius:6px;">Noticias Oficiales</summary>
+    <div class="news-item">
+      <h3>Noticia Oficial 1</h3>
+      <p>Contenido de la noticia oficial de Hernavia...</p>
+    </div>
+    <div class="news-item">
+      <h3>Noticia Oficial 2</h3>
+      <p>Otro contenido oficial...</p>
+    </div>
+  </details>
+
+  <details id="random">
+    <summary style="padding:8px 12px; border-radius:6px;">Noticias Random</summary>
+    <div class="news-item">
+      <h3>Curiosidad 1</h3>
+      <p>Contenido random divertido o curioso...</p>
+    </div>
+    <div class="news-item">
+      <h3>Curiosidad 2</h3>
+      <p>Otro contenido ligero...</p>
+    </div>
+  </details>
+</section>
+
+<script>
+  function showSection(id) {
+    // Cerramos todo
+    document.getElementById('official').removeAttribute('open');
+    document.getElementById('random').removeAttribute('open');
+    // Abrimos la sección seleccionada
+    document.getElementById(id).setAttribute('open', true);
+    // Scroll opcional al top de la sección
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
