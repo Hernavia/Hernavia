@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noticias Random - Hernavia</title>
+  <meta name="description" content="Noticias aleatorias, curiosidades y novedades casi diarias del proyecto Hernavia.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="Proyecto Hernavia">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+  <link rel="preload" href="estilo.css" as="style">
   <link rel="stylesheet" href="estilo.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://hernavia.github.io/Hernavia/noticias-random.html">
 </head>
 <body>
   <header>
@@ -12,65 +21,82 @@
   </header>
 
   <nav class="nav-comun">
-    <a href="index.html">Inicio</a>
+    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+    <a href="documentos.html">Documentos</a>
     <a href="noticias.html">Noticias</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="simbolos.html">Símbolos</a>
+    <a href="comounirse.html">¿Cómo unirse?</a>
+    <a href="sugerencias.html">Sugerencias</a>
     <a href="noticias-random.html" style="color:#ADFF2F; border-color:#ADFF2F;">Noticias Random</a>
   </nav>
+
+  <!-- Botones para redirigir entre Noticias y Noticias Random -->
+  <div style="text-align:center; margin:20px 0;">
+    <nav class="nav-comun">
+      <a href="noticias.html">Noticias</a>
+      <a href="noticias-random.html" style="color:#ADFF2F; border-color:#ADFF2F;">Noticias Random</a>
+    </nav>
+  </div>
 
   <main>
     <section class="texto-largo" style="border-left:8px solid #ADFF2F;">
       <h2 style="color:#ADFF2F;">Noticias Casi Diarias</h2>
 
       <details>
-        <summary>Banco Mundial eleva previsión de crecimiento para América Latina en 2026</summary>
+        <summary>World Bank eleva su proyección de crecimiento para Latinoamérica en 2026</summary>
         <p>
-          El Banco Mundial ajustó al alza su estimación de crecimiento para América Latina en 2026, proyectando un crecimiento del 2,5 % frente al 2,4 % anterior. :contentReference[oaicite:0]{index=0}  
-        </p>
-        <p style="font-size:0.85em; color:#666;">
-          Fuente: <a href="https://www.reuters.com/world/americas/world-bank-lifts-latin-america-economic-growth-estimate-2026-2025-10-07/" target="_blank">Reuters</a>
+          El Banco Mundial ajustó al alza su proyección de crecimiento para América Latina y el Caribe en 2026, estimando ahora un 2,5 % frente al 2,4 % anterior. <sup><a href="#ref1">[1]</a></sup>
         </p>
       </details>
 
       <details>
-        <summary>Autoridades mexicanas capturan líder de la banda Tren de Aragua</summary>
+        <summary>Salesforce invertirá mil millones de dólares en México para impulsar IA</summary>
         <p>
-          Las autoridades mexicanas detuvieron a un presunto líder local de la banda Tren de Aragua, acusado de tráfico de drogas, secuestro y otros delitos. :contentReference[oaicite:1]{index=1}  
-        </p>
-        <p style="font-size:0.85em; color:#666;">
-          Fuente: <a href="https://apnews.com/article/772785159e295bdacce122b5edebf295" target="_blank">AP News</a>
+          La empresa anunció una inversión de USD 1.000 millones en México durante los próximos cinco años para expandir operaciones y promover adopción de inteligencia artificial. <sup><a href="#ref2">[2]</a></sup>
         </p>
       </details>
-
     </section>
 
     <section class="texto-largo" style="border-left:8px solid #ADFF2F;">
       <h2 style="color:#ADFF2F;">Curiosidades Random</h2>
 
       <details>
-        <summary>La bioluminiscencia en organismos vivos</summary>
+        <summary>La bioluminiscencia: organismos que producen luz propia</summary>
         <p>
-          Algunos organismos, como ciertos hongos, algas y animales marinos, son capaces de producir luz propia a través de reacciones químicas internas, fenómeno conocido como bioluminiscencia. :contentReference[oaicite:2]{index=2}  
-        </p>
-        <p style="font-size:0.85em; color:#666;">
-          Fuente: <a href="https://www.ecologiaverde.com/curiosidades-de-la-naturaleza-que-te-sorprenderan-1297.html" target="_blank">Ecología Verde</a>
+          Muchos organismos marinos, como ciertos peces, medusas y bacterias, tienen la capacidad de producir luz mediante reacciones químicas internas. <sup><a href="#ref3">[3]</a></sup>
         </p>
       </details>
 
       <details>
-        <summary>Rocas que “se mueven” por sí solas en el Valle de la Muerte</summary>
+        <summary>Pyrocystis fusiformis: dinoflagelado que brilla al molestarlo</summary>
         <p>
-          En el Valle de la Muerte (EE. UU.), algunas piedras dejan huellas en la superficie sin intervención aparente humana. Esto se debe a la formación de una capa fina de hielo y viento, que las desliza lentamente. :contentReference[oaicite:3]{index=3}  
-        </p>
-        <p style="font-size:0.85em; color:#666;">
-          Fuente: <a href="https://www.ambientum.com/ambientum/medio-natural/7-curiosidades-y-fenomenos-naturales-que-no-creeras.asp" target="_blank">Ambientum</a>
+          Pyrocystis fusiformis es un dinoflagelado marino que emite luz (bioluminiscencia) cuando es perturbado o agitado. <sup><a href="#ref4">[4]</a></sup>
         </p>
       </details>
 
+      <details>
+        <summary>“Railroad worm”: gusano que emite diferentes colores de luz</summary>
+        <p>
+          El “gusano-tren” (Railroad worm) tiene órganos lumínicos que pueden emitir luz verde-amarilla a lo largo de su cuerpo, y luz roja en la cabeza. <sup><a href="#ref5">[5]</a></sup>
+        </p>
+      </details>
     </section>
   </main>
 
+  <section style="margin:30px;">
+    <h2>Referencias</h2>
+    <ol>
+      <li id="ref1"><a href="https://www.reuters.com/world/americas/world-bank-lifts-latin-america-economic-growth-estimate-2026-2025-10-07/" target="_blank">Reuters — World Bank lifts Latin America growth estimate for 2026</a></li>
+      <li id="ref2"><a href="https://www.reuters.com/world/americas/salesforce-spend-1-billion-mexico-over-next-five-years-drive-ai-adoption-2025-10-08/" target="_blank">Reuters — Salesforce to spend $1 billion in Mexico over next five years</a></li>
+      <li id="ref3"><a href="https://education.nationalgeographic.org/resource/bioluminescence/" target="_blank">National Geographic — Bioluminiscencia (explicación científica)</a></li>
+      <li id="ref4"><a href="https://en.wikipedia.org/wiki/Pyrocystis_fusiformis" target="_blank">Wikipedia — Pyrocystis fusiformis</a></li>
+      <li id="ref5"><a href="https://en.wikipedia.org/wiki/Railroad_worm" target="_blank">Wikipedia — Railroad worm</a></li>
+    </ol>
+  </section>
+
   <footer>
-    &copy; 2025 Hernavia
+    &copy; 2025 Hernavia — Proyecto Cultural
   </footer>
 </body>
 </html>
