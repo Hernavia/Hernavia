@@ -1,117 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>¿Cómo unirse? - Hernavia</title>
-<meta name="description" content="Formulario e información sobre cómo unirse a Hernavia. Participa y forma parte de nuestra comunidad.">
-<link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-<link rel="preload" href="estilo.css" as="style">
-<link rel="stylesheet" href="estilo.css">
-<link rel="canonical" href="https://hernavia.github.io/Hernavia/comounirse.html">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Proyecto Hernavia">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Cómo unirse? - Hernavia</title>
+  <meta name="description" content="Formulario e información sobre cómo unirse a Hernavia. Participa y forma parte de nuestra comunidad.">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
+  <link rel="preload" href="estilo.css" as="style">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="canonical" href="https://hernavia.github.io/Hernavia/comounirse.html">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Proyecto Hernavia">
 </head>
 
 <body>
 <header>
-    <h1>¿Cómo unirse a Hernavia?</h1>
+  <h1>¿Cómo unirse a Hernavia?</h1>
 </header>
 
 <nav class="nav-comun">
-    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
-    <a href="documentos.html">Documentos</a>
-    <a href="noticias.html">Noticias</a>
-    <a href="consultas.html">Consultas</a>
-    <a href="simbolos.html">Símbolos</a>
-    <a href="comounirse.html">¿Cómo unirse?</a>
-    <a href="sugerencias.html">Sugerencias</a>
+  <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+  <a href="documentos.html">Documentos</a>
+  <a href="noticias.html">Noticias</a>
+  <a href="consultas.html">Consultas</a>
+  <a href="simbolos.html">Símbolos</a>
+  <a href="comounirse.html" class="activo">¿Cómo unirse?</a>
+  <a href="sugerencias.html">Sugerencias</a>
 </nav>
 
 <main>
   <!-- Formulario de solicitud -->
   <section class="section">
-    <p>Actualmente, la ciudadanía por vía virtual no está habilitada. Sin embargo, puedes llenar este formulario y recibirás notificación cuando se active.</p>
+    <p>
+      Actualmente, la <strong>ciudadanía virtual</strong> no está habilitada.  
+      Sin embargo, puedes llenar este formulario y recibirás una notificación cuando se active oficialmente.
+    </p>
 
     <form action="https://formspree.io/f/xldpgjop" method="POST">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
 
-        <label for="edad">Fecha de nacimiento:</label>
-        <input type="date" id="edad" name="edad" required>
+      <label for="edad">Fecha de nacimiento:</label>
+      <input type="date" id="edad" name="edad" required>
 
-        <label for="ciudad">País / Departamento:</label>
-        <input type="text" id="ciudad" name="ciudad" required>
+      <label for="ciudad">País / Departamento:</label>
+      <input type="text" id="ciudad" name="ciudad" required>
 
-        <label for="municipio">Municipio (opcional):</label>
-        <input type="text" id="municipio" name="municipio">
+      <label for="municipio">Municipio (opcional):</label>
+      <input type="text" id="municipio" name="municipio">
 
-        <label for="ocupacion">Ocupación (opcional):</label>
-        <input type="text" id="ocupacion" name="ocupacion">
+      <label for="ocupacion">Ocupación (opcional):</label>
+      <input type="text" id="ocupacion" name="ocupacion">
 
-        <label>
-            <input type="checkbox" name="terminos" aria-label="Aceptar términos y condiciones" required>
-            Acepto los <a href="#" id="abrir-politica">términos y condiciones</a> de Hernavia.
-        </label>
+      <label>
+        <input type="checkbox" name="terminos" aria-label="Aceptar términos y condiciones" required>
+        Acepto los <a href="#" id="abrir-politica">términos y condiciones</a> de Hernavia.
+      </label>
 
-        <button type="submit" class="faq-toggle">Enviar solicitud</button>
+      <button type="submit" class="faq-toggle">Enviar solicitud</button>
     </form>
   </section>
 
+  <!-- Preguntas frecuentes -->
   <section class="section" style="text-align:center;">
-  <h2 style="text-align:center;">Preguntas Frecuentes</h2>
-<div style="text-align:center;">
-  <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
-</div>
+    <h2>Preguntas Frecuentes</h2>
+    <div style="text-align:center;">
+      <button id="toggleFAQ" class="faq-toggle">Mostrar Preguntas</button>
+    </div>
 
-<div id="faqContainer" class="faq-container" style="display:none; margin-top:15px; text-align:left;">
+    <div id="faqContainer" class="faq-container" style="display:none; margin-top:15px; text-align:left;">
+      <details class="faq-card">
+        <summary>¿Por qué la ciudadanía virtual no está activa?</summary>
+        <p>
+          El sistema de ciudadanía virtual está en desarrollo y se activará cuando los mecanismos de registro y participación estén completamente listos.
+        </p>
+      </details>
 
-  <details class="faq-card">
-    <summary>¿Por qué la ciudadanía virtual no está activa?</summary>
-    <p>El sistema de ciudadanía virtual está en desarrollo y se activará cuando los mecanismos de registro y participación estén listos.</p>
-  </details>
+      <details class="faq-card">
+        <summary>¿Qué ventajas tendrá la ciudadanía virtual?</summary>
+        <p>
+          Permitirá participar activamente en consultas, acceder a documentación interna, recibir comunicados oficiales y representar formalmente a Hernavia en proyectos o eventos colaborativos.
+        </p>
+      </details>
+    </div>
+  </section>
 
-  <details class="faq-card">
-    <summary>¿Qué ventajas tendrá la ciudadanía virtual?</summary>
-    <p>Permitirá participar activamente en consultas, acceder a documentación interna, recibir comunicados oficiales y representar formalmente a Hernavia en proyectos o eventos colaborativos.</p>
-  </details>
-</section>
-</div>
-
-
- <section id="¿que significa?" class="texto-largo">
-  <h2>¿Que significa unirse a Hernavia?</h2>
-  <p>Unirse no es solo llenar un formulario es una identidad.¿quieres saber mas?.</p>
-  <div style="text-align:center;">
-    <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
-  </div>
-  <div id="faqContainer" class="faq-container" style="display:none; margin-top:15px;">
-</section>
-
-    
+  <!-- Explicación adicional -->
+  <section id="que-significa" class="texto-largo">
+    <h2>¿Qué significa unirse a Hernavia?</h2>
+    <p>
+      Unirse no es solo llenar un formulario, es formar parte de una identidad compartida.  
+      ¿Quieres saber más?
+    </p>
+    <div style="text-align:center;">
+      <a href="identidad.html" class="btn-link">Descúbrelo aquí</a>
+    </div>
+  </section>
 </main>
 
-<!-- Modal de Política (mini página flotante) -->
+<!-- Modal de Política de Datos -->
 <div id="modal-politica" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
   <div class="contenido" style="background:white; padding:20px; border-radius:10px; max-width:600px; max-height:80vh; overflow-y:auto;">
     <h2>Política de Seguridad de Datos</h2>
-    <p>En Hernavia, la protección de tus datos es prioritaria. Los siguientes datos son obligatorios: <strong>nombre completo, fecha de nacimiento, país/departamento y correo electrónico.</strong></p>
+    <p>
+      En Hernavia, la protección de tus datos es prioritaria.  
+      Los siguientes datos son obligatorios: <strong>nombre completo, fecha de nacimiento, país/departamento y correo electrónico.</strong>
+    </p>
     <p>Puedes opcionalmente proporcionar tu municipio y ocupación.</p>
-    <p>Si decides retirarte, tus datos se conservarán hasta por <strong>2 meses</strong> para fines administrativos, luego serán eliminados de manera segura.</p>
-    <p>Puedes solicitar en cualquier momento la <strong>eliminación de tus datos opcionales</strong> o <strong>corrección de información</strong> enviando un correo al equipo de Hernavia.</p>
+    <p>
+      Si decides retirarte, tus datos se conservarán hasta por <strong>2 meses</strong> para fines administrativos, 
+      luego serán eliminados de manera segura.
+    </p>
+    <p>
+      Puedes solicitar en cualquier momento la <strong>eliminación de tus datos opcionales</strong> o la <strong>corrección de información</strong> 
+      enviando un mensaje al equipo de Hernavia.
+    </p>
     <button id="cerrar-politica" class="faq-toggle">Cerrar</button>
   </div>
 </div>
 
 <footer>
-    &copy; 2025 Hernavia — Proyecto Cultural
+  &copy; 2025 Hernavia — Proyecto Cultural
 </footer>
 
 <script>
-  // Mostrar / ocultar bloque de preguntas frecuentes
+  // Mostrar / ocultar preguntas frecuentes
   const toggleButton = document.getElementById('toggleFAQ');
   const faqContainer = document.getElementById('faqContainer');
   let visible = false;
@@ -122,7 +138,7 @@
     toggleButton.textContent = visible ? 'Ocultar Preguntas' : 'Mostrar Preguntas';
   });
 
-  // Modal política de datos
+  // Modal de política de datos
   const abrir = document.getElementById("abrir-politica");
   const cerrar = document.getElementById("cerrar-politica");
   const modal = document.getElementById("modal-politica");
