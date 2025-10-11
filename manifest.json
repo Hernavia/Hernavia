@@ -5,11 +5,22 @@
   "start_url": "https://hernavia.github.io/Hernavia/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#006A44",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "https://hernavia.github.io/Hernavia/favicono.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://hernavia.github.io/Hernavia/favicono.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://hernavia.github.io/Hernavia/favicono.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
