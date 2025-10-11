@@ -54,8 +54,9 @@ header h1 {
 }
 .nav-comun a.activo {
   border: 2px solid #fc0; 
-  color: #006a44; 
+  color: #006a44;
   background-color: transparent; 
+  background-color: #fff;
 }
 
 
