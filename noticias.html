@@ -1,61 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias - Hernavia</title>
-    <meta name="description" content="Mantente informado sobre las noticias mas importantes de Hernavia.">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://hernavia.github.io/Hernavia/favicono.png">
-    <link rel="preload" href="estilo.css" as="style">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="canonical" href="https://hernavia.github.io/Hernavia/noticias.html">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Noticias Hernavia Hernavia">
-    <style>
-        .ups {
-            text-align: center;
-            color: #333; 
-            font-size: 1.2em;
-            font-style: italic;
-            margin-top: 40px;
-        }
-        section.section {
-            background-color: #fff;
-            border-left: 8px solid #006A44;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 900px;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias - Hernavia</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+  <header>
+    <h1>Noticias Hernavia</h1>
+  </header>
 
-<header>
-    <h1>Noticias de Hernavia</h1>
-</header>
-
-<nav class="nav-comun">
-    <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+  <nav class="nav-comun">
+    <a href="index.html">Inicio</a>
     <a href="documentos.html">Documentos</a>
     <a href="noticias.html">Noticias</a>
     <a href="consultas.html">Consultas</a>
     <a href="simbolos.html">Símbolos</a>
     <a href="comounirse.html">¿Cómo unirse?</a>
     <a href="sugerencias.html">Sugerencias</a>
-    <a href="noticias-random.html">Noticias Random</a>
-</nav>
+  </nav>
 
-<main>
-    <section class="section">
-        <div class="ups">Ups… este apartado no tiene información por ahora, espera a que se actualice.</div>
-    </section>
-</main>
+  <!-- Botones para redirigir a cada tipo de noticia -->
+  <div style="text-align:center; margin:20px 0;">
+    <a href="noticias-.html" class="nav-comun" style="margin-right:10px;">Noticias</a>
+    <a href="noticias-random.html" class="nav-comun">Noticias Random</a>
+  </div>
 
-<footer>
-    &copy; 2025 Hernavia - Proyecto Cultural
-</footer>
+  <!-- Sección de ejemplo -->
+  <section class="texto-largo" style="border-left:8px solid #006A44;">
+    <h2 style="color:#006A44;">Noticias Oficiales</h2>
+    <details open>
+      <summary>Noticia Oficial 1</summary>
+      <div class="news-item">
+        <h3>Noticia Oficial 1</h3>
+        <p>Contenido oficial de Hernavia...</p>
+      </div>
+    </details>
 
+    <details>
+      <summary>Noticia Oficial 2</summary>
+      <div class="news-item">
+        <h3>Noticia Oficial 2</h3>
+        <p>Otro contenido oficial...</p>
+      </div>
+    </details>
+  </section>
+
+  <footer>
+    &copy; 2025 Hernavia — Proyecto Cultural
+  </footer>
 </body>
 </html>
