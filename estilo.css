@@ -53,8 +53,11 @@ header h1 {
   color: #006a44;
 }
 
-#nav-placeholder {
-  min-height: 50px;
+/* Enlace activo (página actual) */
+.nav-comun a.activo {
+  background-color: #006a44;
+  color: #fff;
+  border: 2px solid #fc0;
 }
 
 /* ======== SECCIONES ======== */
@@ -191,6 +194,106 @@ form button:hover {
   margin-bottom: 12px;
 }
 
+/* ======== PREGUNTAS FRECUENTES (FAQ) ======== */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.faq-card {
+  background-color: white;
+  border: 2px solid #006A44;
+  border-radius: 10px;
+  padding: 20px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card summary {
+  font-weight: bold;
+  color: #006A44;
+  font-size: 1.2em;
+  list-style: none;
+  outline: none;
+}
+
+.faq-card summary::marker {
+  display: none;
+}
+
+.faq-card[open] {
+  background-color: #f4fff9;
+  border-color: #004a2d;
+}
+
+.faq-card p {
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.faq-toggle {
+  background-color: #006A44;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-toggle:hover {
+  background-color: #004a2d;
+}
+
+/* ======== DETAILS y SUMMARY (general) ======== */
+details {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+details[open] {
+  border-left: 5px solid #006A44;
+  background: #f9f9f9;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #006A44;
+  list-style: none;
+}
+
+summary:hover {
+  color: #004a2d;
+}
+
+details p {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* ======== Noticias Random (verde lima) ======== */
+.news-section details.random {
+  border-color: #ADFF2F;
+}
+
+.news-section details.random summary {
+  color: #ADFF2F;
+}
+
+.news-section details.random .news-item h3 {
+  color: #ADFF2F;
+}
+
 /* ======== PIE DE PÁGINA ======== */
 footer {
   text-align: center;
@@ -232,103 +335,4 @@ footer {
     font-size: 0.8em;
     padding: 10px;
   }
-  
-details {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-}
-
-details[open] {
-  border-left: 5px solid #006A44;
-  background: #f9f9f9;
-}
-
-summary {
-  font-weight: bold;
-  cursor: pointer;
-  color: #006A44;
-  list-style: none;
-}
-
-summary:hover {
-  color: #004a2d;
-}
-
-details p {
-  margin-top: 8px;
-  line-height: 1.5;
-  }
-}
-/* === Estilo general para las Preguntas Frecuentes === */
-.faq-container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px; /* ← más espacio entre cuadros */
-  margin-top: 40px;
-}
-
-.faq-card {
-  background-color: white;
-  border: 2px solid #006A44;
-  border-radius: 10px;
-  padding: 20px 18px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.faq-card summary {
-  font-weight: bold;
-  color: #006A44;
-  font-size: 1.2em;
-  list-style: none;
-  outline: none;
-}
-
-.faq-card summary::marker {
-  display: none;
-}
-
-.faq-card[open] {
-  background-color: #f4fff9;
-  border-color: #004a2d;
-}
-
-.faq-card p {
-  margin-top: 10px;
-  color: #333;
-  line-height: 1.5;
-}
-
-.faq-toggle {
-    background-color: #006A44;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 25px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.faq-toggle:hover {
-    background-color: #004a2d;
-}
-
-/* ======== Noticias Random (verde lima) ======== */
-.news-section details.random {
-    border-color: #ADFF2F; /* borde verde lima/amarillo verdoso */
-}
-
-.news-section details.random summary {
-    color: #ADFF2F; /* título verde lima */
-}
-
-/* Opcional: cambiar color del texto dentro de la noticia si quieres diferenciar */
-.news-section details.random .news-item h3 {
-    color: #ADFF2F;
 }
