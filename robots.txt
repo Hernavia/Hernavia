@@ -1,12 +1,9 @@
-# robots.txt para Hernavia
 User-agent: *
 # Bloquear páginas que no quieres que Google indexe:
 Disallow: /pruebas.html
 Disallow: /borradores/
 Disallow: /privado/
 
-# Permitir todo lo demás:
 Allow: /
 
-# Sitemap: esto ayuda a Google a encontrar todas tus páginas más rápido
 Sitemap: https://hernavia.github.io/Hernavia/sitemap.xml
