@@ -1,9 +1,13 @@
 User-agent: *
-# Bloquear páginas que no quieres que Google indexe:
-Disallow: /pruebas.html
-Disallow: /borradores/
-Disallow: /privado/
+# Bloquear secciones internas no públicas
+Disallow: /Hernavia/pruebas.html
+Disallow: /Hernavia/borradores/
+Disallow: /Hernavia/privado/
+Disallow: /Hernavia/index.html  
 
+# Permitir todo lo demás
 Allow: /
 
+# Indicar sitemap principal
 Sitemap: https://hernavia.github.io/Hernavia/sitemap.xml
+
