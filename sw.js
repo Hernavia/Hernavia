@@ -1,7 +1,6 @@
 const CACHE_NAME = 'hernavia-cache-v2';
 const urlsToCache = [
   '/Hernavia/',
-  '/Hernavia/index.html',
   '/Hernavia/estilo.css',
   '/Hernavia/favicono.png',
   '/Hernavia/futuro.mp3',
