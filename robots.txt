@@ -1,13 +1,9 @@
 User-agent: *
-# Bloquear secciones internas no públicas
-Disallow: /Hernavia/pruebas.html
-Disallow: /Hernavia/borradores/
-Disallow: /Hernavia/privado/
-Disallow: /Hernavia/index.html  
 
-# Permitir todo lo demás
+Disallow: /pruebas.html
+Disallow: /borradores/
+Disallow: /privado/
+
 Allow: /
 
-# Indicar sitemap principal
 Sitemap: https://hernavia.github.io/Hernavia/sitemap.xml
-
