@@ -1,0 +1,49 @@
+<header>
+  <h1>Símbolos de Hernavia</h1>
+</header>
+
+<nav class="nav-comun">
+  <a href="https://hernavia.github.io/Hernavia/">Inicio</a>
+  <a href="documentos.html">Documentos</a>
+  <a href="noticias.html">Noticias</a>
+  <a href="consultas.html">Consultas</a>
+  <a href="simbolos.html" class="activo">Símbolos</a>
+  <a href="comounirse.html">¿Cómo unirse?</a>
+  <a href="sugerencias.html">Sugerencias</a>
+</nav>
+
+<main class="simbolos-section">
+  <section>
+    <h2>Himno de Hernavia</h2>
+    <div class="himno">
+      <p><strong>Coro:</strong><br>
+      Un sueño de Hernavia unida,<br>
+      buscando la paz e innovación.<br>
+      Hermandad amarilla, un sueño por cumplir,<br>
+      ¡Historia hay que hacer ya!</p>
+
+      <p><strong>Estrofa 1:</strong><br>
+      Verde natural, naturaleza que cuidar,<br>
+      tono singular, innovación al avanzar.<br>
+      Blanco para paz, dice mucho más: unión y fraternidad,<br>
+      cohesión, verdad y solidaridad.<br>
+      Amarillo radiante, camino y hermandad,<br>
+      ¡la fuerza del pueblo nos hará avanzar!</p>
+
+      <p><strong>Estrofa 2:</strong><br>
+      Pueblo que avanza con paso constante,<br>
+      honor en la voz y mirada brillante.<br>
+      Astucia y coraje en cada labor,<br>
+      Hernavia florece con fuerza y valor.<br>
+      Con manos sinceras forjamos verdad,<br>
+      soñando el futuro que hoy germinará.</p>
+
+      <p><strong>Estrofa 3:</strong><br>
+      Con paso sereno forjamos nuestro andar,<br>
+      como un pueblo fuerte, juntos sin parar.<br>
+      Nuestro sueño crece y no se detendrá,<br>
+      hacia el mañana juntos vamos a marchar.<br>
+      Con lucha y respeto, vivir en verdad,<br>
+      ¡la voz hernaviana jamás callará!</p>
+    </div>
+  </section>
